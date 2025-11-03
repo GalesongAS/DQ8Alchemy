@@ -43,14 +43,6 @@ So I built this as a lightweight static web app that works entirely offline.
 
 That’s it! No server, no sign-in, no downloads.
 
----
-
-## 🧱 Technical details
-
-* **Built with:** plain HTML, CSS, and vanilla JS
-* **Data:** static JSON (`items.json` and `recipes.json`)
-* **Persistence:** browser localStorage
-
 You can clone it locally and open `index.html` directly — it’ll work offline once the JSON files are there.
 
 ---
