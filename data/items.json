@@ -173,7 +173,7 @@
   {
     "id": "conquerors_axe",
     "name": "Conqueror's Axe",
-    "isIngredient": true
+    "isIngredient": false
   },
   {
     "id": "cool_cheese",
@@ -1402,4 +1402,5 @@
   }
 
 ]
+
 
