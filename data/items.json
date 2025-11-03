@@ -275,11 +275,7 @@
     "name": "Double Edged Sword",
     "isIngredient": false
   },
-  {
-    "id": "dragon_claw",
-    "name": "Dragon Claw",
-    "isIngredient": true
-  },
+
   {
     "id": "dragon_dung",
     "name": "Dragon Dung",
@@ -305,11 +301,7 @@
     "name": "Dragon Slayer",
     "isIngredient": false
   },
-  {
-    "id": "dragonlord_claw",
-    "name": "Dragonlord Claw",
-    "isIngredient": false
-  },
+
   {
     "id": "dragonsbane",
     "name": "Dragonsbane",
@@ -390,11 +382,7 @@
     "name": "Feathered Cap",
     "isIngredient": true
   },
-  {
-    "id": "fire_claw",
-    "name": "Fire Claw",
-    "isIngredient": true
-  },
+
   {
     "id": "fishnet_stockings",
     "name": "Fishnet Stockings",
@@ -600,19 +588,10 @@
     "name": "Iron Axe",
     "isIngredient": true
   },
-  {
-    "id": "iron_claw",
-    "name": "Iron Claw",
-    "isIngredient": true
-  },
+
   {
     "id": "iron_cuirass",
     "name": "Iron Cuirass",
-    "isIngredient": true
-  },
-  {
-    "id": "iron_fan",
-    "name": "Iron Fan",
     "isIngredient": true
   },
   {
@@ -935,11 +914,7 @@
     "name": "Raging Bull Helm",
     "isIngredient": false
   },
-  {
-    "id": "rainbow_fan",
-    "name": "Rainbow Fan",
-    "isIngredient": true
-  },
+
   {
     "id": "razor_wing_boomerang",
     "name": "Razor Wing Boomerang",
@@ -1206,11 +1181,6 @@
     "isIngredient": false
   },
   {
-    "id": "solar_fan",
-    "name": "Solar Fan",
-    "isIngredient": false
-  },
-  {
     "id": "sorcerers_ring",
     "name": "Sorcerers Ring",
     "isIngredient": true
@@ -1258,11 +1228,6 @@
   {
     "id": "steel_shield",
     "name": "Steel Shield",
-    "isIngredient": true
-  },
-  {
-    "id": "stellar_fan",
-    "name": "Stellar Fan",
     "isIngredient": true
   },
   {
@@ -1435,4 +1400,5 @@
     "name": "Zombiesbane",
     "isIngredient": true
   }
+
 ]
