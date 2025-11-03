@@ -1,0 +1,1438 @@
+[
+  {
+    "id": "agility_ring",
+    "name": "Agility Ring",
+    "isIngredient": true
+  },
+  {
+    "id": "amor_seco_essence",
+    "name": "Amor Seco Essence",
+    "isIngredient": true
+  },
+  {
+    "id": "angel_cheese",
+    "name": "Angel Cheese",
+    "isIngredient": false
+  },
+  {
+    "id": "angels_robe",
+    "name": "Angels Robe",
+    "isIngredient": true
+  },
+  {
+    "id": "antidotal_herb",
+    "name": "Antidotal Herb",
+    "isIngredient": true
+  },
+  {
+    "id": "assassins_dagger",
+    "name": "Assassins Dagger",
+    "isIngredient": true
+  },
+  {
+    "id": "bandana",
+    "name": "Bandana",
+    "isIngredient": true
+  },
+  {
+    "id": "bandit_axe",
+    "name": "Bandit Axe",
+    "isIngredient": true
+  },
+  {
+    "id": "bandit_mail",
+    "name": "Bandit Mail",
+    "isIngredient": true
+  },
+  {
+    "id": "bandits_grass_skirt",
+    "name": "Bandit's Grass Skirt",
+    "isIngredient": true
+  },
+  {
+    "id": "bastard_sword",
+    "name": "Bastard Sword",
+    "isIngredient": true
+  },
+  {
+    "id": "battle_axe",
+    "name": "Battle Axe",
+    "isIngredient": true
+  },
+  {
+    "id": "battle_fork",
+    "name": "Battle Fork",
+    "isIngredient": true
+  },
+  {
+    "id": "big_boss_shield",
+    "name": "Big Boss Shield",
+    "isIngredient": true
+  },
+  {
+    "id": "blizzard_blade",
+    "name": "Blizzard Blade",
+    "isIngredient": false
+  },
+  {
+    "id": "boomerang",
+    "name": "Boomerang",
+    "isIngredient": true
+  },
+  {
+    "id": "boxer_shorts",
+    "name": "Boxer Shorts",
+    "isIngredient": true
+  },
+  {
+    "id": "bronze_armour",
+    "name": "Bronze Armour",
+    "isIngredient": false
+  },
+  {
+    "id": "bronze_helmet",
+    "name": "Bronze Helmet",
+    "isIngredient": false
+  },
+  {
+    "id": "bronze_knife",
+    "name": "Bronze Knife",
+    "isIngredient": true
+  },
+  {
+    "id": "bronze_shield",
+    "name": "Bronze Shield",
+    "isIngredient": true
+  },
+  {
+    "id": "bunny_ears",
+    "name": "Bunny Ears",
+    "isIngredient": false
+  },
+  {
+    "id": "bunny_suit",
+    "name": "Bunny Suit",
+    "isIngredient": false
+  },
+  {
+    "id": "bunny_tail",
+    "name": "Bunny Tail",
+    "isIngredient": true
+  },
+  {
+    "id": "c_c_cold_cheese",
+    "name": "C C Cold Cheese",
+    "isIngredient": true
+  },
+  {
+    "id": "catholicon_ring",
+    "name": "Catholicon Ring",
+    "isIngredient": false
+  },
+  {
+    "id": "chain_mail",
+    "name": "Chain Mail",
+    "isIngredient": true
+  },
+  {
+    "id": "chain_whip",
+    "name": "Chain Whip",
+    "isIngredient": true
+  },
+  {
+    "id": "cheirons_bow",
+    "name": "Cheirons Bow",
+    "isIngredient": true
+  },
+  {
+    "id": "chilly_cheese",
+    "name": "Chilly Cheese",
+    "isIngredient": true
+  },
+  {
+    "id": "chimaera_wing",
+    "name": "Chimaera Wing",
+    "isIngredient": true
+  },
+  {
+    "id": "chunky_cheese",
+    "name": "Chunky Cheese",
+    "isIngredient": false
+  },
+  {
+    "id": "cloak_of_evasion",
+    "name": "Cloak Of Evasion",
+    "isIngredient": true
+  },
+
+  {
+    "id": "cold_cheese",
+    "name": "Cold Cheese",
+    "isIngredient": true
+  },
+  {
+    "id": "conquerors_axe",
+    "name": "Conquerors Axe",
+    "isIngredient": true
+  },
+  {
+    "id": "cool_cheese",
+    "name": "Cool Cheese",
+    "isIngredient": true
+  },
+  {
+    "id": "copper_sword",
+    "name": "Copper Sword",
+    "isIngredient": false
+  },
+  {
+    "id": "coral_hairpin",
+    "name": "Coral Hairpin",
+    "isIngredient": true
+  },
+  {
+    "id": "cowpat",
+    "name": "Cowpat",
+    "isIngredient": true
+  },
+  {
+    "id": "crimson_robe",
+    "name": "Crimson Robe",
+    "isIngredient": true
+  },
+  {
+    "id": "cured_cheese",
+    "name": "Cured Cheese",
+    "isIngredient": true
+  },
+  {
+    "id": "cypress_stick",
+    "name": "Cypress Stick",
+    "isIngredient": true
+  },
+  {
+    "id": "dagger",
+    "name": "Dagger",
+    "isIngredient": true
+  },
+  {
+    "id": "dancers_costume",
+    "name": "Dancers Costume",
+    "isIngredient": true
+  },
+  {
+    "id": "dancers_mail",
+    "name": "Dancers Mail",
+    "isIngredient": false
+  },
+  {
+    "id": "dangerous_bustier",
+    "name": "Dangerous Bustier",
+    "isIngredient": true
+  },
+  {
+    "id": "dark_robe",
+    "name": "Dark Robe",
+    "isIngredient": true
+  },
+  {
+    "id": "demon_spear",
+    "name": "Demon Spear",
+    "isIngredient": false
+  },
+  {
+    "id": "demon_whip",
+    "name": "Demon Whip",
+    "isIngredient": true
+  },
+  {
+    "id": "devils_tail",
+    "name": "Devil's Tail",
+    "isIngredient": true
+  },
+  {
+    "id": "divine_bustier",
+    "name": "Divine Bustier",
+    "isIngredient": false
+  },
+  {
+    "id": "dogsbodys_hood",
+    "name": "Dogsbodys Hood",
+    "isIngredient": false
+  },
+  {
+    "id": "dogsbodys_vest",
+    "name": "Dogsbodys Vest",
+    "isIngredient": false
+  },
+  {
+    "id": "double_edge_sword",
+    "name": "Double Edge Sword",
+    "isIngredient": true
+  },
+  {
+    "id": "double_edged_sword",
+    "name": "Double Edged Sword",
+    "isIngredient": false
+  },
+  {
+    "id": "dragon_claw",
+    "name": "Dragon Claw",
+    "isIngredient": true
+  },
+  {
+    "id": "dragon_dung",
+    "name": "Dragon Dung",
+    "isIngredient": true
+  },
+  {
+    "id": "dragon_mail",
+    "name": "Dragon Mail",
+    "isIngredient": false
+  },
+  {
+    "id": "dragon_scale",
+    "name": "Dragon Scale",
+    "isIngredient": true
+  },
+  {
+    "id": "dragon_shield",
+    "name": "Dragon Shield",
+    "isIngredient": false
+  },
+  {
+    "id": "dragon_slayer",
+    "name": "Dragon Slayer",
+    "isIngredient": false
+  },
+  {
+    "id": "dragonlord_claw",
+    "name": "Dragonlord Claw",
+    "isIngredient": false
+  },
+  {
+    "id": "dragonsbane",
+    "name": "Dragonsbane",
+    "isIngredient": true
+  },
+  {
+    "id": "dragontail_whip",
+    "name": "Dragontail Whip",
+    "isIngredient": false
+  },
+  {
+    "id": "dragovian_king_sword",
+    "name": "Dragovian King Sword",
+    "isIngredient": false
+  },
+  {
+    "id": "dragovian_sword",
+    "name": "Dragovian Sword",
+    "isIngredient": true
+  },
+  {
+    "id": "dream_blade",
+    "name": "Dream Blade",
+    "isIngredient": true
+  },
+  {
+    "id": "eagle_dagger",
+    "name": "Eagle Dagger",
+    "isIngredient": true
+  },
+  {
+    "id": "edged_boomerang",
+    "name": "Edged Boomerang",
+    "isIngredient": true
+  },
+  {
+    "id": "elevating_shoes",
+    "name": "Elevating Shoes",
+    "isIngredient": true
+  },
+  {
+    "id": "elfin_elixer",
+    "name": "Elfin Elixer",
+    "isIngredient": false
+  },
+  {
+    "id": "eros_bow",
+    "name": "Eros' Bow",
+    "isIngredient": true
+  },
+  {
+    "id": "ethereal_stone",
+    "name": "Ethereal Stone",
+    "isIngredient": true
+  },
+  {
+    "id": "falcon_blade",
+    "name": "Falcon Blade",
+    "isIngredient": true
+  },
+  {
+    "id": "falcon_knife",
+    "name": "Falcon Knife",
+    "isIngredient": false
+  },
+  {
+    "id": "fallen_angel_rapier",
+    "name": "Fallen Angel Rapier",
+    "isIngredient": true
+  },
+  {
+    "id": "farmers_scythe",
+    "name": "Farmers Scythe",
+    "isIngredient": true
+  },
+  {
+    "id": "feathered_cap",
+    "name": "Feathered Cap",
+    "isIngredient": true
+  },
+  {
+    "id": "fire_claw",
+    "name": "Fire Claw",
+    "isIngredient": true
+  },
+  {
+    "id": "fishnet_stockings",
+    "name": "Fishnet Stockings",
+    "isIngredient": true
+  },
+  {
+    "id": "flame_shield",
+    "name": "Flame Shield",
+    "isIngredient": true
+  },
+  {
+    "id": "flametang_boomerang",
+    "name": "Flametang Boomerang",
+    "isIngredient": true
+  },
+  {
+    "id": "flowing_dress",
+    "name": "Flowing Dress",
+    "isIngredient": true
+  },
+  {
+    "id": "fresh_milk",
+    "name": "Fresh Milk",
+    "isIngredient": true
+  },
+  {
+    "id": "full_moon_ring",
+    "name": "Full Moon Ring",
+    "isIngredient": true
+  },
+  {
+    "id": "full_plate_armour",
+    "name": "Full Plate Armour",
+    "isIngredient": true
+  },
+  {
+    "id": "fur_hood",
+    "name": "Fur Hood",
+    "isIngredient": false
+  },
+  {
+    "id": "fur_poncho",
+    "name": "Fur Poncho",
+    "isIngredient": true
+  },
+  {
+    "id": "garter",
+    "name": "Garter",
+    "isIngredient": true
+  },
+  {
+    "id": "giant_mallet",
+    "name": "Giant Mallet",
+    "isIngredient": true
+  },
+  {
+    "id": "gigant_armour",
+    "name": "Gigant Armour",
+    "isIngredient": false
+  },
+  {
+    "id": "goddess_ring",
+    "name": "Goddess Ring",
+    "isIngredient": false
+  },
+  {
+    "id": "goddess_shield",
+    "name": "Goddess Shield",
+    "isIngredient": true
+  },
+  {
+    "id": "gold_bracer",
+    "name": "Gold Bracer",
+    "isIngredient": true
+  },
+  {
+    "id": "gold_nugget",
+    "name": "Gold Nugget",
+    "isIngredient": true
+  },
+  {
+    "id": "gold_ring",
+    "name": "Gold Ring",
+    "isIngredient": true
+  },
+  {
+    "id": "gold_rosary",
+    "name": "Gold Rosary",
+    "isIngredient": true
+  },
+  {
+    "id": "golden_axe",
+    "name": "Golden Axe",
+    "isIngredient": true
+  },
+  {
+    "id": "golden_tiara",
+    "name": "Golden Tiara",
+    "isIngredient": false
+  },
+  {
+    "id": "great_bow",
+    "name": "Great Bow",
+    "isIngredient": true
+  },
+  {
+    "id": "greater_panacea",
+    "name": "Greater Panacea",
+    "isIngredient": false
+  },
+  {
+    "id": "hades_helm",
+    "name": "Hades' Helm",
+    "isIngredient": true
+  },
+  {
+    "id": "hairband",
+    "name": "Hairband",
+    "isIngredient": true
+  },
+  {
+    "id": "happy_hat",
+    "name": "Happy Hat",
+    "isIngredient": true
+  },
+  {
+    "id": "hard_cheese",
+    "name": "Hard Cheese",
+    "isIngredient": false
+  },
+  {
+    "id": "heavy_armour",
+    "name": "Heavy Armour",
+    "isIngredient": true
+  },
+  {
+    "id": "hell_scythe",
+    "name": "Hell Scythe",
+    "isIngredient": false
+  },
+  {
+    "id": "hermes_hat",
+    "name": "Hermes Hat",
+    "isIngredient": true
+  },
+  {
+    "id": "hexlets_hat",
+    "name": "Hexlets Hat",
+    "isIngredient": false
+  },
+  {
+    "id": "hexlets_skirt",
+    "name": "Hexlets Skirt",
+    "isIngredient": false
+  },
+  {
+    "id": "highly_strung_cheese",
+    "name": "Highly Strung Cheese",
+    "isIngredient": true
+  },
+  {
+    "id": "holy_lance",
+    "name": "Holy Lance",
+    "isIngredient": true
+  },
+  {
+    "id": "holy_silver_rapier",
+    "name": "Holy Silver Rapier",
+    "isIngredient": true
+  },
+  {
+    "id": "holy_talisman",
+    "name": "Holy Talisman",
+    "isIngredient": true
+  },
+  {
+    "id": "holy_water",
+    "name": "Holy Water",
+    "isIngredient": true
+  },
+  {
+    "id": "hunters_bow",
+    "name": "Hunters Bow",
+    "isIngredient": true
+  },
+  {
+    "id": "ice_shield",
+    "name": "Ice Shield",
+    "isIngredient": false
+  },
+  {
+    "id": "icicle_dirk",
+    "name": "Icicle Dirk",
+    "isIngredient": true
+  },
+  {
+    "id": "imp_knife",
+    "name": "Imp Knife",
+    "isIngredient": true
+  },
+  {
+    "id": "iron_axe",
+    "name": "Iron Axe",
+    "isIngredient": true
+  },
+  {
+    "id": "iron_claw",
+    "name": "Iron Claw",
+    "isIngredient": true
+  },
+  {
+    "id": "iron_cuirass",
+    "name": "Iron Cuirass",
+    "isIngredient": true
+  },
+  {
+    "id": "iron_fan",
+    "name": "Iron Fan",
+    "isIngredient": true
+  },
+  {
+    "id": "iron_headgear",
+    "name": "Iron Headgear",
+    "isIngredient": true
+  },
+  {
+    "id": "iron_helmet",
+    "name": "Iron Helmet",
+    "isIngredient": true
+  },
+  {
+    "id": "iron_lance",
+    "name": "Iron Lance",
+    "isIngredient": true
+  },
+  {
+    "id": "iron_nail",
+    "name": "Iron Nail",
+    "isIngredient": true
+  },
+  {
+    "id": "iron_shield",
+    "name": "Iron Shield",
+    "isIngredient": true
+  },
+  {
+    "id": "king_axe",
+    "name": "King Axe",
+    "isIngredient": false
+  },
+  {
+    "id": "leather_armour",
+    "name": "Leather Armour",
+    "isIngredient": true
+  },
+  {
+    "id": "leather_dress",
+    "name": "Leather Dress",
+    "isIngredient": false
+  },
+  {
+    "id": "leather_hat",
+    "name": "Leather Hat",
+    "isIngredient": true
+  },
+  {
+    "id": "leather_kilt",
+    "name": "Leather Kilt",
+    "isIngredient": true
+  },
+  {
+    "id": "leather_shield",
+    "name": "Leather Shield",
+    "isIngredient": true
+  },
+  {
+    "id": "leather_whip",
+    "name": "Leather Whip",
+    "isIngredient": true
+  },
+  {
+    "id": "lesser_panacea",
+    "name": "Lesser Panacea",
+    "isIngredient": true
+  },
+  {
+    "id": "life_bracer",
+    "name": "Life Bracer",
+    "isIngredient": true
+  },
+  {
+    "id": "light_shield",
+    "name": "Light Shield",
+    "isIngredient": true
+  },
+  {
+    "id": "liquid_metal_armour",
+    "name": "Liquid Metal Armour",
+    "isIngredient": true
+  },
+  {
+    "id": "liquid_metal_sword",
+    "name": "Liquid Metal Sword",
+    "isIngredient": true
+  },
+  {
+    "id": "long_spear",
+    "name": "Long Spear",
+    "isIngredient": true
+  },
+  {
+    "id": "magic_armour",
+    "name": "Magic Armour",
+    "isIngredient": true
+  },
+  {
+    "id": "magic_beast_hide",
+    "name": "Magic Beast Hide",
+    "isIngredient": true
+  },
+  {
+    "id": "magic_shield",
+    "name": "Magic Shield",
+    "isIngredient": true
+  },
+  {
+    "id": "magic_vestment",
+    "name": "Magic Vestment",
+    "isIngredient": true
+  },
+  {
+    "id": "magic_water",
+    "name": "Magic Water",
+    "isIngredient": true
+  },
+  {
+    "id": "magical_hat",
+    "name": "Magical Hat",
+    "isIngredient": true
+  },
+  {
+    "id": "magical_mace",
+    "name": "Magical Mace",
+    "isIngredient": true
+  },
+  {
+    "id": "magical_skirt",
+    "name": "Magical Skirt",
+    "isIngredient": true
+  },
+  {
+    "id": "magma_staff",
+    "name": "Magma Staff",
+    "isIngredient": true
+  },
+  {
+    "id": "medicinal_herb",
+    "name": "Medicinal Herb",
+    "isIngredient": true
+  },
+  {
+    "id": "megaton_hammer",
+    "name": "Megaton Hammer",
+    "isIngredient": false
+  },
+  {
+    "id": "mercury_rapier",
+    "name": "Mercury Rapier",
+    "isIngredient": false
+  },
+  {
+    "id": "mercurys_bandana",
+    "name": "Mercury's Bandana",
+    "isIngredient": true
+  },
+  {
+    "id": "metal_king_armour",
+    "name": "Metal King Armour",
+    "isIngredient": false
+  },
+  {
+    "id": "metal_king_shield",
+    "name": "Metal King Shield",
+    "isIngredient": true
+  },
+  {
+    "id": "metal_king_spear",
+    "name": "Metal King Spear",
+    "isIngredient": true
+  },
+  {
+    "id": "metal_wing_boomerang",
+    "name": "Metal Wing Boomerang",
+    "isIngredient": true
+  },
+  {
+    "id": "meteorite_bracer",
+    "name": "Meteorite Bracer",
+    "isIngredient": true
+  },
+  {
+    "id": "mighty_armlet",
+    "name": "Mighty Armlet",
+    "isIngredient": true
+  },
+  {
+    "id": "mild_cheese",
+    "name": "Mild Cheese",
+    "isIngredient": true
+  },
+  {
+    "id": "miracle_sword",
+    "name": "Miracle Sword",
+    "isIngredient": true
+  },
+  {
+    "id": "mirror_armour",
+    "name": "Mirror Armour",
+    "isIngredient": false
+  },
+  {
+    "id": "mirror_shield",
+    "name": "Mirror Shield",
+    "isIngredient": true
+  },
+  {
+    "id": "moon_axe",
+    "name": "Moon Axe",
+    "isIngredient": false
+  },
+  {
+    "id": "moons_mercy",
+    "name": "Moon's Mercy",
+    "isIngredient": true
+  },
+  {
+    "id": "moonwort_bulb",
+    "name": "Moonwort Bulb",
+    "isIngredient": true
+  },
+  {
+    "id": "mystifying_mixture",
+    "name": "Mystifying Mixture",
+    "isIngredient": true
+  },
+  {
+    "id": "mythril_helm",
+    "name": "Mythril Helm",
+    "isIngredient": true
+  },
+  {
+    "id": "nitid_tutu",
+    "name": "Nitid Tutu",
+    "isIngredient": false
+  },
+  {
+    "id": "nook_grass",
+    "name": "Nook Grass",
+    "isIngredient": true
+  },
+  {
+    "id": "odins_bow",
+    "name": "Odins Bow",
+    "isIngredient": false
+  },
+  {
+    "id": "orichalcum",
+    "name": "Orichalcum",
+    "isIngredient": true
+  },
+  {
+    "id": "partisan",
+    "name": "Partisan",
+    "isIngredient": true
+  },
+  {
+    "id": "phantom_mask",
+    "name": "Phantom Mask",
+    "isIngredient": false
+  },
+  {
+    "id": "plain_cheese",
+    "name": "Plain Cheese",
+    "isIngredient": true
+  },
+  {
+    "id": "plain_clothes",
+    "name": "Plain Clothes",
+    "isIngredient": true
+  },
+  {
+    "id": "platinum_mail",
+    "name": "Platinum Mail",
+    "isIngredient": true
+  },
+  {
+    "id": "pointy_hat",
+    "name": "Pointy Hat",
+    "isIngredient": true
+  },
+  {
+    "id": "poison_moth_knife",
+    "name": "Poison Moth Knife",
+    "isIngredient": true
+  },
+  {
+    "id": "poison_needle",
+    "name": "Poison Needle",
+    "isIngredient": true
+  },
+  {
+    "id": "pot_lid",
+    "name": "Pot Lid",
+    "isIngredient": true
+  },
+  {
+    "id": "power_shield",
+    "name": "Power Shield",
+    "isIngredient": true
+  },
+  {
+    "id": "prayer_ring",
+    "name": "Prayer Ring",
+    "isIngredient": true
+  },
+  {
+    "id": "premium_mould",
+    "name": "Premium Mould",
+    "isIngredient": true
+  },
+  {
+    "id": "princesss_robe",
+    "name": "Princesss Robe",
+    "isIngredient": false
+  },
+  {
+    "id": "raging_bull_helm",
+    "name": "Raging Bull Helm",
+    "isIngredient": false
+  },
+  {
+    "id": "rainbow_fan",
+    "name": "Rainbow Fan",
+    "isIngredient": true
+  },
+  {
+    "id": "razor_wing_boomerang",
+    "name": "Razor Wing Boomerang",
+    "isIngredient": true
+  },
+  {
+    "id": "recovery_ring",
+    "name": "Recovery Ring",
+    "isIngredient": true
+  },
+  {
+    "id": "red_mould",
+    "name": "Red Mould",
+    "isIngredient": true
+  },
+  {
+    "id": "reinforced_boomerang",
+    "name": "Reinforced Boomerang",
+    "isIngredient": false
+  },
+  {
+    "id": "rennet_powder",
+    "name": "Rennet Powder",
+    "isIngredient": true
+  },
+  {
+    "id": "ring_of_awakening",
+    "name": "Ring Of Awakening",
+    "isIngredient": true
+  },
+  {
+    "id": "ring_of_clarity",
+    "name": "Ring Of Clarity",
+    "isIngredient": true
+  },
+  {
+    "id": "ring_of_immunity",
+    "name": "Ring Of Immunity",
+    "isIngredient": true
+  },
+  {
+    "id": "ring_of_truth",
+    "name": "Ring Of Truth",
+    "isIngredient": true
+  },
+  {
+    "id": "robe_of_serenity",
+    "name": "Robe Of Serenity",
+    "isIngredient": false
+  },
+  {
+    "id": "rock_salt",
+    "name": "Rock Salt",
+    "isIngredient": true
+  },
+  {
+    "id": "rockbomb_shard",
+    "name": "Rockbomb Shard",
+    "isIngredient": true
+  },
+  {
+    "id": "rose_wort",
+    "name": "Rose Wort",
+    "isIngredient": true
+  },
+  {
+    "id": "ruby_of_protection",
+    "name": "Ruby Of Protection",
+    "isIngredient": true
+  },
+  {
+    "id": "ruinous_shield",
+    "name": "Ruinous Shield",
+    "isIngredient": true
+  },
+  {
+    "id": "rune_staff",
+    "name": "Rune Staff",
+    "isIngredient": true
+  },
+  {
+    "id": "rusty_old_sword",
+    "name": "Rusty Old Sword",
+    "isIngredient": true
+  },
+  {
+    "id": "sacred_armour",
+    "name": "Sacred Armour",
+    "isIngredient": true
+  },
+  {
+    "id": "sages_robe",
+    "name": "Sages Robe",
+    "isIngredient": true
+  },
+  {
+    "id": "sages_stone",
+    "name": "Sages Stone",
+    "isIngredient": false
+  },
+  {
+    "id": "saintess_shield",
+    "name": "Saintess Shield",
+    "isIngredient": false
+  },
+  {
+    "id": "saints_ashes",
+    "name": "Saints Ashes",
+    "isIngredient": true
+  },
+  {
+    "id": "sandstorm_spear",
+    "name": "Sandstorm Spear",
+    "isIngredient": true
+  },
+  {
+    "id": "scale_armour",
+    "name": "Scale Armour",
+    "isIngredient": false
+  },
+  {
+    "id": "scale_shield",
+    "name": "Scale Shield",
+    "isIngredient": true
+  },
+  {
+    "id": "scholar_cap",
+    "name": "Scholar Cap",
+    "isIngredient": true
+  },
+  {
+    "id": "scholar_specs",
+    "name": "Scholar Specs",
+    "isIngredient": true
+  },
+  {
+    "id": "scholars_cap",
+    "name": "Scholar's Cap",
+    "isIngredient": true
+  },
+  {
+    "id": "scholars_specs",
+    "name": "Scholar's Specs",
+    "isIngredient": false
+  },
+  {
+    "id": "scourching_cheese",
+    "name": "Scourching Cheese",
+    "isIngredient": true
+  },
+  {
+    "id": "scourge_whip",
+    "name": "Scourge Whip",
+    "isIngredient": true
+  },
+  {
+    "id": "seed_of_agility",
+    "name": "Seed Of Agility",
+    "isIngredient": true
+  },
+  {
+    "id": "seed_of_defense",
+    "name": "Seed Of Defense",
+    "isIngredient": true
+  },
+  {
+    "id": "seed_of_life",
+    "name": "Seed Of Life",
+    "isIngredient": true
+  },
+  {
+    "id": "seed_of_magic",
+    "name": "Seed Of Magic",
+    "isIngredient": true
+  },
+  {
+    "id": "seed_of_strength",
+    "name": "Seed Of Strength",
+    "isIngredient": true
+  },
+  {
+    "id": "seed_of_wisdom",
+    "name": "Seed Of Wisdom",
+    "isIngredient": true
+  },
+  {
+    "id": "shamshir_of_light",
+    "name": "Shamshir Of Light",
+    "isIngredient": false
+  },
+  {
+    "id": "shimmering_dress",
+    "name": "Shimmering Dress",
+    "isIngredient": true
+  },
+  {
+    "id": "short_bow",
+    "name": "Short Bow",
+    "isIngredient": true
+  },
+  {
+    "id": "silk_bustier",
+    "name": "Silk Bustier",
+    "isIngredient": true
+  },
+  {
+    "id": "silver_cuirass",
+    "name": "Silver Cuirass",
+    "isIngredient": false
+  },
+  {
+    "id": "silver_mail",
+    "name": "Silver Mail",
+    "isIngredient": true
+  },
+  {
+    "id": "silver_platter",
+    "name": "Silver Platter",
+    "isIngredient": true
+  },
+  {
+    "id": "silver_shield",
+    "name": "Silver Shield",
+    "isIngredient": false
+  },
+  {
+    "id": "silver_tiara",
+    "name": "Silver Tiara",
+    "isIngredient": true
+  },
+  {
+    "id": "skull_helm",
+    "name": "Skull Helm",
+    "isIngredient": true
+  },
+  {
+    "id": "skull_ring",
+    "name": "Skull Ring",
+    "isIngredient": true
+  },
+  {
+    "id": "sledgehammer",
+    "name": "Sledgehammer",
+    "isIngredient": false
+  },
+  {
+    "id": "slime_crown",
+    "name": "Slime Crown",
+    "isIngredient": true
+  },
+  {
+    "id": "slime_earrings",
+    "name": "Slime Earrings",
+    "isIngredient": true
+  },
+  {
+    "id": "snakeskin_whip",
+    "name": "Snakeskin Whip",
+    "isIngredient": true
+  },
+  {
+    "id": "soft_cheese",
+    "name": "Soft Cheese",
+    "isIngredient": false
+  },
+  {
+    "id": "solar_fan",
+    "name": "Solar Fan",
+    "isIngredient": false
+  },
+  {
+    "id": "sorcerers_ring",
+    "name": "Sorcerers Ring",
+    "isIngredient": true
+  },
+  {
+    "id": "spangled_dress",
+    "name": "Spangled Dress",
+    "isIngredient": true
+  },
+  {
+    "id": "special_antidote",
+    "name": "Special Antidote",
+    "isIngredient": false
+  },
+  {
+    "id": "special_medicine",
+    "name": "Special Medicine",
+    "isIngredient": true
+  },
+  {
+    "id": "spicy_cheese",
+    "name": "Spicy Cheese",
+    "isIngredient": true
+  },
+  {
+    "id": "spiked_armour",
+    "name": "Spiked Armour",
+    "isIngredient": false
+  },
+  {
+    "id": "staff_of_antimagic",
+    "name": "Staff Of Antimagic",
+    "isIngredient": false
+  },
+  {
+    "id": "staff_of_resurrection",
+    "name": "Staff Of Resurrection",
+    "isIngredient": false
+  },
+  {
+    "id": "steel_scythe",
+    "name": "Steel Scythe",
+    "isIngredient": true
+  },
+  {
+    "id": "steel_shield",
+    "name": "Steel Shield",
+    "isIngredient": true
+  },
+  {
+    "id": "stellar_fan",
+    "name": "Stellar Fan",
+    "isIngredient": true
+  },
+  {
+    "id": "stone_axe",
+    "name": "Stone Axe",
+    "isIngredient": true
+  },
+  {
+    "id": "stone_hardhat",
+    "name": "Stone Hardhat",
+    "isIngredient": true
+  },
+  {
+    "id": "strength_ring",
+    "name": "Strength Ring",
+    "isIngredient": true
+  },
+  {
+    "id": "strong_antidote",
+    "name": "Strong Antidote",
+    "isIngredient": true
+  },
+  {
+    "id": "strong_medicine",
+    "name": "Strong Medicine",
+    "isIngredient": true
+  },
+  {
+    "id": "sun_crown",
+    "name": "Sun Crown",
+    "isIngredient": true
+  },
+  {
+    "id": "super_spicy_cheese",
+    "name": "Super Spicy Cheese",
+    "isIngredient": true
+  },
+  {
+    "id": "swallowtail",
+    "name": "Swallowtail",
+    "isIngredient": true
+  },
+  {
+    "id": "templars_shield",
+    "name": "Templars Shield",
+    "isIngredient": true
+  },
+  {
+    "id": "templars_sword",
+    "name": "Templars Sword",
+    "isIngredient": true
+  },
+  {
+    "id": "templars_uniform",
+    "name": "Templars Uniform",
+    "isIngredient": true
+  },
+  {
+    "id": "thanatos_shield",
+    "name": "Thanatos' Shield",
+    "isIngredient": true
+  },
+  {
+    "id": "thiefs_key",
+    "name": "Thiefs Key",
+    "isIngredient": true
+  },
+  {
+    "id": "thinking_cap",
+    "name": "Thinking Cap",
+    "isIngredient": true
+  },
+  {
+    "id": "timbrel_of_tension",
+    "name": "Timbrel Of Tension",
+    "isIngredient": false
+  },
+  {
+    "id": "titan_belt",
+    "name": "Titan Belt",
+    "isIngredient": true
+  },
+  {
+    "id": "tough_guy_tattoo",
+    "name": "Tough Guy Tattoo",
+    "isIngredient": true
+  },
+  {
+    "id": "turban",
+    "name": "Turban",
+    "isIngredient": false
+  },
+  {
+    "id": "uber_double_edge",
+    "name": "Über Double Edge",
+    "isIngredient": true
+  },
+  {
+    "id": "uber_falcon_blade",
+    "name": "Über Falcon Blade",
+    "isIngredient": false
+  },
+  {
+    "id": "uber_miracle_sword",
+    "name": "Über Miracle Sword",
+    "isIngredient": false
+  },
+  {
+    "id": "uber_sacred_armour",
+    "name": "Über Sacred Armour",
+    "isIngredient": false
+  },
+  {
+    "id": "uber_war_hammer",
+    "name": "Über War Hammer",
+    "isIngredient": true
+  },
+  {
+    "id": "war_hammer",
+    "name": "War Hammer",
+    "isIngredient": true
+  },
+  {
+    "id": "waterweed_mould",
+    "name": "Waterweed Mould",
+    "isIngredient": true
+  },
+  {
+    "id": "wayfarers_clothes",
+    "name": "Wayfarers Clothes",
+    "isIngredient": true
+  },
+  {
+    "id": "white_shield",
+    "name": "White Shield",
+    "isIngredient": false
+  },
+  {
+    "id": "wing_of_bat",
+    "name": "Wing Of Bat",
+    "isIngredient": true
+  },
+  {
+    "id": "wizards_staff",
+    "name": "Wizards Staff",
+    "isIngredient": true
+  },
+  {
+    "id": "yggdrasil_dew",
+    "name": "Yggdrasil Dew",
+    "isIngredient": true
+  },
+  {
+    "id": "yggdrasil_leaf",
+    "name": "Yggdrasil Leaf",
+    "isIngredient": true
+  },
+  {
+    "id": "zombie_mail",
+    "name": "Zombie Mail",
+    "isIngredient": true
+  },
+  {
+    "id": "zombie_slayer",
+    "name": "Zombie Slayer",
+    "isIngredient": false
+  },
+  {
+    "id": "zombiesbane",
+    "name": "Zombiesbane",
+    "isIngredient": true
+  }
+]

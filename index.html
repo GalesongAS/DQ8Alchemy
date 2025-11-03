@@ -1,0 +1,434 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DQ8 Alchemy Pot — Recipes</title>
+    <!-- App styles (tables, cards, checklist, badges, etc.) -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- ===== Header: app title and short usage hint ===== -->
+    <header class="container">
+        <h1>Dragon Quest VIII — Alchemy Pot Recipes</h1>
+        <p class="muted">Filter ingredients, select what you have, and see matching recipes below.</p>
+    </header>
+
+    <main class="container grid">
+        <!-- ===== Controls card: search, toggles, clear =====
+             Why: let users filter ingredients and tweak matching behavior.
+             - Search filters the left list
+             - "Upgraded Pot" toggles inclusion of 3-ingredient recipes
+             - "Match ANY" switches between OR/AND recipe filtering
+             - Clear wipes all selected ingredients
+        -->
+        <section class="card">
+            <h2>Ingredients</h2>
+            <div class="controls-row">
+                <!-- Text filter for the ingredient checklist -->
+                <label for="ingredient-search" class="sr-only">Search ingredients</label>
+                <input id="ingredient-search" type="search" placeholder="Search ingredients…" autocomplete="off" />
+                <!-- Toggle: allow 3-ingredient recipes -->
+                <label class="toggle">
+                    <input id="upgraded-pot" type="checkbox" />
+                    <span>Upgraded Pot (allows 3‑ingredient recipes)</span>
+                </label>
+
+                <!-- Toggle: OR (any) vs AND (all) selection matching -->
+                <label class="toggle">
+                    <input id="match-any" type="checkbox" />
+                    <span>Match ANY selected (OR)</span>
+                </label>
+
+                <!-- Wipes all selected checkboxes -->
+                <button id="clear-selection" type="button" class="secondary">Clear selection</button>
+            </div>
+
+            <!-- The ingredient checklist is rendered here -->
+            <ul id="ingredient-list" class="checklist" aria-label="Ingredient list"></ul>
+        </section>
+
+        <!-- ===== Recipes table card =====
+             Why: shows current recipe matches based on user selections + toggles.
+             The body is fully rendered by JS.
+        -->
+        <section class="card">
+            <h2>Recipes</h2>
+            <table id="recipes-table" class="recipes">
+                <thead>
+                    <tr>
+                        <th style="width:28%">Recipe Result</th>
+                        <th>Item 1</th>
+                        <th>Item 2</th>
+                        <th>Item 3</th>
+                        <th style="width:20%">Notes</th>
+                    </tr>
+                </thead>
+                <tbody id="recipes-tbody">
+                    <tr><td colspan="5" class="muted">Loading…</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- ===== Footer tip ===== -->
+    <footer class="container muted small">
+        <p>Tip: typing in the search filters the ingredient list. Checking ingredients shows only recipes that contain <em>all</em> selected items. Uncheck “Upgraded Pot” to hide 3‑ingredient recipes.</p>
+    </footer>
+    
+    <script>
+        (function () {
+
+  /**
+   * Reactive-ish state container
+   * Why: keep all data/UI flags together to drive rendering.
+   * What:
+   *  - items: available items (id, name, isIngredient)
+   *  - recipes: alchemy recipes data
+   *  - selected: checked ingredient IDs
+   *  - search: current ingredient text filter
+   *  - matchAny: OR (true) vs AND (false) for filtering recipes
+   *  - upgraded: whether to include 3-ingredient recipes
+   *  - itemById: quick lookup map from id -> item
+   */
+
+            const state = {
+                items: [],
+                recipes: [],
+                selected: new Set(),
+                search: "",
+                matchAny: false,
+                upgraded: false,
+                itemById: new Map(),
+            };
+
+            /**
+   * Cached DOM elements
+   * Why: avoid repeated document.getElementById calls.
+   */
+
+            const els = {
+                search: document.getElementById('ingredient-search'),
+                upgraded: document.getElementById('upgraded-pot'),
+                clear: document.getElementById('clear-selection'),
+                list: document.getElementById('ingredient-list'),
+                tbody: document.getElementById('recipes-tbody'),
+                matchAny: document.getElementById('match-any'),
+            };
+
+            /* === PERSISTENCE (localStorage)
+             * Why: remember user choices (selected ingredients, toggles, search) across page reloads.
+             * What: small helpers that serialize/deserialize simple values.
+             * ============================================================= */
+            const LS_KEYS = {
+                selected: 'dq8.selected',
+                upgraded: 'dq8.upgraded',
+                matchAny: 'dq8.matchAny',
+                search: 'dq8.search',
+            };
+
+            /**
+ * saveSelected
+ * Why: persist current selection of ingredients to localStorage.
+ * What: stores an array of IDs as JSON.
+ */
+            function saveSelected() {
+                try { localStorage.setItem(LS_KEYS.selected, JSON.stringify([...state.selected])); } catch { }
+            }
+
+            /**
+             * saveFlag
+             * Why: generic boolean flag persistence (upgraded, matchAny).
+             * What: JSON.stringify a boolean under the given key.
+             */
+            function saveFlag(key, value) {
+                try { localStorage.setItem(key, JSON.stringify(!!value)); } catch { }
+            }
+
+            /**
+             * saveSearch
+             * Why: remember last search query to restore the filtered list on reload.
+             * What: store raw string (no JSON parse needed later).
+             */
+            function saveSearch(value) {
+                try { localStorage.setItem(LS_KEYS.search, value ?? ''); } catch { }
+            }
+
+            /**
+             * loadFlagsEarly IIFE
+             * Why: preload persistent toggles/search before data so initial UI matches stored state.
+             * What: read localStorage, apply to state, reflect in controls.
+             */
+
+            (function loadFlagsEarly() {
+                try {
+                    const up = localStorage.getItem(LS_KEYS.upgraded);
+                    const ma = localStorage.getItem(LS_KEYS.matchAny);
+                    const q = localStorage.getItem(LS_KEYS.search);
+                    if (up !== null) state.upgraded = JSON.parse(up);
+                    if (ma !== null) state.matchAny = JSON.parse(ma);
+                    if (q !== null) state.search = q;
+                } catch { }
+                // Mirror into the UI immediately
+                els.upgraded.checked = state.upgraded;
+                els.matchAny.checked = state.matchAny;
+                els.search.value = state.search;
+            })();
+
+            /**
+               * Persisted selection loader
+               * Why: selection needs the items list to reconcile IDs; load now, apply after fetch.
+               */
+            let persistedSelected = null;
+            (function loadSelectedEarly() {
+                try {
+                    const raw = localStorage.getItem(LS_KEYS.selected);
+                    if (raw) persistedSelected = new Set(JSON.parse(raw));
+                } catch { }
+            })();
+            /* =============================================================== */
+
+            /**
+             * Data loading
+             * Why: fetch static JSON for items and recipes.
+             * What: initializes state and triggers first render when done.
+             */
+            Promise.all([
+                fetch('data/items.json').then(r => r.json()),
+                fetch('data/recipes.json').then(r => r.json()),
+            ])
+                .then(([items, recipes]) => {
+                    state.items = items;
+                    state.recipes = recipes;
+                    state.itemById = new Map(items.map(i => [i.id, i]));
+
+                    // Reconcile persisted selection with current items (drop stale IDs)
+                    if (persistedSelected) {
+                        const valid = new Set(items.map(i => i.id));
+                        state.selected = new Set([...persistedSelected].filter(id => valid.has(id)));
+                    }
+
+                    renderAll();
+                })
+                .catch(err => {
+                    console.error(err);
+                    els.tbody.innerHTML = '<tr><td colspan="5" class="error">Failed to load data. Check console.</td></tr>';
+                });
+            /**
+               * Event wiring
+               * Why: keep state in sync with UI interactions and re-render as needed.
+               */
+            els.search.addEventListener('input', (e) => {
+                state.search = (e.target.value || '').trim().toLowerCase();
+                saveSearch(e.target.value || '');
+                renderIngredientList();
+            });
+
+            els.upgraded.addEventListener('change', (e) => {
+                state.upgraded = !!e.target.checked;
+                saveFlag(LS_KEYS.upgraded, state.upgraded);
+                renderRecipes();
+            });
+
+            els.clear.addEventListener('click', () => {
+                state.selected.clear();
+                // Uncheck all visible checkboxes
+                els.list.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+                saveSelected(); // persist cleared selection
+                renderRecipes();
+            });
+
+            els.matchAny.addEventListener('change', (e) => {
+                state.matchAny = !!e.target.checked;
+                saveFlag(LS_KEYS.matchAny, state.matchAny);
+                renderRecipes();
+            });
+            /**
+               * renderAll
+               * Why: initial paint after data load; full UI refresh entrypoint.
+               * What: draws the ingredient checklist and the recipe table.
+               */
+
+            function renderAll() {
+                renderIngredientList();
+                renderRecipes();
+            }
+
+            /**
+             * renderIngredientList
+             * Why: show the available items as a checklist, filtered by search.
+             * What: builds the list, binds checkbox events, and reflects persisted selection.
+             */
+
+            function renderIngredientList() {
+                const q = (state.search || '').trim().toLowerCase();
+
+                // Only show items that can be ingredients (treat undefined as true)
+                const ingredientOnly = state.items.filter(i => i.isIngredient !== false);
+
+                // Apply case-insensitive search
+                const items = q
+                    ? ingredientOnly.filter(i => (i.name || '').toLowerCase().includes(q))
+                    : ingredientOnly;
+
+
+                // If empty due to search, show a helper to clear it
+                if (!items.length) {
+                    els.list.innerHTML = `
+                      <li class="muted">
+                        No ingredients match${q ? ` “${escapeHtml(state.search)}”` : ''}.
+                        ${q ? `<button id="clear-search" class="linklike" type="button">Clear search</button>` : ''}
+                      </li>`;
+                    const clearBtn = document.getElementById('clear-search');
+                    if (clearBtn) {
+                        clearBtn.addEventListener('click', () => {
+                            state.search = '';
+                            els.search.value = '';
+                            saveSearch('');
+                            renderIngredientList();
+                        });
+                    }
+                    return;
+                }
+
+                const frag = document.createDocumentFragment();
+                items
+                    .slice()
+                    .sort((a, b) => a.name.trim().localeCompare(b.name.trim(), undefined, { sensitivity: 'base' }))
+                    .forEach(item => {
+                        const li = document.createElement('li');
+                        li.className = 'check';
+                        const id = `ing-${item.id}`;
+                        li.innerHTML = `
+        <label for="${id}">
+          <input id="${id}" type="checkbox" data-id="${item.id}">
+          <span>${escapeHtml(item.name)}</span>
+        </label>`;
+                        const cb = li.querySelector('input');
+
+                        cb.checked = state.selected.has(item.id);
+                        cb.addEventListener('change', (e) => {
+                            const iid = e.target.getAttribute('data-id');
+                            if (e.target.checked) state.selected.add(iid); else state.selected.delete(iid);
+                            saveSelected();
+                            renderRecipes();
+                        });
+
+                        frag.appendChild(li);
+                    });
+
+                els.list.innerHTML = '';
+                els.list.appendChild(frag);
+            }
+
+            /**
+             * renderRecipes
+             * Why: display and prioritize recipes based on current selection and toggles.
+             * What:
+             *  - Filters out 3-ingredient recipes if upgraded=false
+             *  - Applies AND/OR matching based on matchAny
+             *  - Sorts so that fully-complete recipes appear first,
+             *    then partials (fewer missing first), then alphabetically.
+             */
+            function renderRecipes() {
+                const selected = Array.from(state.selected);
+                const allow3 = state.upgraded;
+
+                // Step 1: filter by pot capability (2-only vs 2&3)
+                const base = state.recipes.filter(r => allow3 ? true : r.ingredientIds.length <= 2);
+
+                // Step 2: filter by selected ingredients using AND( every ) or OR( some )
+                const filtered = selected.length === 0 ? base : base.filter(r => {
+                    const has = (id) => r.ingredientIds.includes(id);
+                    return state.matchAny ? selected.some(has) : selected.every(has);
+                });
+
+                if (!filtered.length) {
+                    els.tbody.innerHTML = '<tr><td colspan="5" class="muted">No recipes match your selection.</td></tr>';
+                    return;
+                }
+
+                /**
+                 * meta
+                 * Why: derive match/completion metrics used for sorting and badges.
+                 * What:
+                 *  - total: ingredient count of this recipe
+                 *  - have: how many selected ingredients the user has
+                 *  - complete: whether all required ingredients are selected
+                 *  - primary: 2 (complete) / 1 (partial) / 0 (none) — used for sorting priority
+                 *  - missing: remaining items to complete — used for tie-break sorting
+                 */
+                const meta = (r) => {
+                    const total = r.ingredientIds.length;
+                    const have = r.ingredientIds.reduce((n, id) => n + (state.selected.has(id) ? 1 : 0), 0);
+                    const complete = have === total; // full completion means ALL ingredients are selected
+                    // Higher primary score is better: 2=complete, 1=partial, 0=no overlap
+                    const primary = complete ? 2 : (have > 0 ? 1 : 0);
+                    const missing = total - have; // fewer missing is better
+                    return { total, have, missing, complete, primary };
+                };
+
+                // Step 3: sort by completeness, then how close it is, then alphabetically
+                const rows = filtered
+                    .slice()
+                    .sort((a, b) => {
+                        const A = meta(a), B = meta(b);
+                        // More complete first
+                        if (B.primary !== A.primary) return B.primary - A.primary;
+                        // Among partials/completes, fewer missing first
+                        if (A.missing !== B.missing) return A.missing - B.missing;
+                        // Finally, alphabetical by result name
+                        return nameOf(a.resultId).trim().localeCompare(nameOf(b.resultId).trim(), undefined, { sensitivity: 'base' });
+                    })
+                    .map(r => {
+                        const m = meta(r);
+                        const cells = r.ingredientIds.map(id => cellify(id, selected));
+                        while (cells.length < 3) cells.push('<td class="muted">—</td>');
+                        const notes = r.notes ? escapeHtml(r.notes) : '';
+
+                        // Apply a text color class when recipe is fully fulfilled
+                        const resultClass = m.complete ? 'result result-ready' : 'result';
+
+                        return `
+                            <tr>
+                              <td class="${resultClass}">${escapeHtml(nameOf(r.resultId))}</td>
+                              ${cells.join('')}
+                              <td class="notes">${notes}</td>
+                            </tr>`;
+                    });
+
+                els.tbody.innerHTML = rows.join('');
+
+                function cellify(id, selectedIds) {
+                    const n = nameOf(id);
+                    const isMatch = selectedIds.includes(id);
+                    return `<td${isMatch ? ' class="match"' : ''}>${escapeHtml(n)}</td>`;
+                }
+            }
+
+            /**
+               * nameOf
+               * Why: safely map item IDs to display names using the items lookup; fall back to raw ID.
+               */
+
+            function nameOf(id) {
+                return state.itemById.get(id)?.name || id;
+            }
+
+            /**
+               * escapeHtml
+               * Why: guard against untrusted strings (notes/names) breaking HTML.
+               * What: minimal escaping to render as text.
+               */
+            function escapeHtml(s) {
+                return String(s)
+                    .replaceAll('&', '&amp;')
+                    .replaceAll('<', '&lt;')
+                    .replaceAll('>', '&gt;')
+                    .replaceAll('"', '&quot;')
+                    .replaceAll("'", '&#39;');
+            }
+        })();
+    </script>
+</body>
+</html>

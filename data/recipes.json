@@ -1,0 +1,1763 @@
+[
+  {
+    "id": "r_assassins_dagger",
+    "resultId": "assassins_dagger",
+    "ingredientIds": [
+      "eagle_dagger",
+      "poison_needle"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_bandit_axe",
+    "resultId": "bandit_axe",
+    "ingredientIds": [
+      "battle_axe",
+      "thiefs_key"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_blizzard_blade",
+    "resultId": "blizzard_blade",
+    "ingredientIds": [
+      "bastard_sword",
+      "icicle_dirk",
+      "cold_cheese"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_cheirons_bow",
+    "resultId": "cheirons_bow",
+    "ingredientIds": [
+      "eros_bow",
+      "power_shield"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_copper_sword",
+    "resultId": "copper_sword",
+    "ingredientIds": [
+      "bronze_knife",
+      "bronze_knife"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_demon_spear",
+    "resultId": "demon_spear",
+    "ingredientIds": [
+      "battle_fork",
+      "poison_needle",
+      "devils_tail"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_demon_whip",
+    "resultId": "demon_whip",
+    "ingredientIds": [
+      "scourge_whip",
+      "devils_tail"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_double_edged_sword",
+    "resultId": "double_edged_sword",
+    "ingredientIds": [
+      "uber_double_edge",
+      "devils_tail"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_dragon_slayer",
+    "resultId": "dragon_slayer",
+    "ingredientIds": [
+      "dragonsbane",
+      "mighty_armlet"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_dragontail_whip",
+    "resultId": "dragontail_whip",
+    "ingredientIds": [
+      "snakeskin_whip",
+      "dragon_scale",
+      "dragon_scale"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_dragovian_king_sword",
+    "resultId": "dragovian_king_sword",
+    "ingredientIds": [
+      "dragovian_sword",
+      "liquid_metal_sword"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_eros_bow",
+    "resultId": "eros_bow",
+    "ingredientIds": [
+      "hunters_bow",
+      "garter"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_falcon_knife",
+    "resultId": "falcon_knife",
+    "ingredientIds": [
+      "slime_earrings",
+      "tough_guy_tattoo",
+      "agility_ring"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_fallen_angel_rapier",
+    "resultId": "fallen_angel_rapier",
+    "ingredientIds": [
+      "holy_silver_rapier",
+      "devils_tail",
+      "wing_of_bat"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_flametang_boomerang",
+    "resultId": "flametang_boomerang",
+    "ingredientIds": [
+      "swallowtail",
+      "flame_shield"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_golden_axe",
+    "resultId": "golden_axe",
+    "ingredientIds": [
+      "iron_axe",
+      "gold_nugget"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_hell_scythe",
+    "resultId": "hell_scythe",
+    "ingredientIds": [
+      "steel_scythe",
+      "poison_moth_knife",
+      "hades_helm"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_holy_lance",
+    "resultId": "holy_lance",
+    "ingredientIds": [
+      "long_spear",
+      "gold_rosary"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_holy_silver_rapier",
+    "resultId": "holy_silver_rapier",
+    "ingredientIds": [
+      "templars_sword",
+      "holy_talisman"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_hunters_bow",
+    "resultId": "hunters_bow",
+    "ingredientIds": [
+      "cypress_stick",
+      "cypress_stick",
+      "strength_ring"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_hunters_bow",
+    "resultId": "hunters_bow",
+    "ingredientIds": [
+      "short_bow",
+      "chain_whip"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_imp_knife",
+    "resultId": "imp_knife",
+    "ingredientIds": [
+      "assassins_dagger",
+      "devils_tail"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_iron_axe",
+    "resultId": "iron_axe",
+    "ingredientIds": [
+      "farmers_scythe",
+      "farmers_scythe"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_iron_lance",
+    "resultId": "iron_lance",
+    "ingredientIds": [
+      "cypress_stick",
+      "dagger"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_king_axe",
+    "resultId": "king_axe",
+    "ingredientIds": [
+      "golden_axe",
+      "slime_crown"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_leather_whip",
+    "resultId": "leather_whip",
+    "ingredientIds": [
+      "devils_tail",
+      "saints_ashes"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_liquid_metal_sword",
+    "resultId": "liquid_metal_sword",
+    "ingredientIds": [
+      "rusty_old_sword",
+      "slime_crown",
+      "orichalcum"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_long_spear",
+    "resultId": "long_spear",
+    "ingredientIds": [
+      "cypress_stick",
+      "cypress_stick",
+      "iron_lance"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_magma_staff",
+    "resultId": "magma_staff",
+    "ingredientIds": [
+      "wizards_staff",
+      "rockbomb_shard",
+      "rockbomb_shard"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_megaton_hammer",
+    "resultId": "megaton_hammer",
+    "ingredientIds": [
+      "uber_war_hammer",
+      "conquerors_axe",
+      "orichalcum"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_mercury_rapier",
+    "resultId": "mercury_rapier",
+    "ingredientIds": [
+      "fallen_angel_rapier",
+      "mercurys_bandana",
+      "mercurys_bandana"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_metal_wing_boomerang",
+    "resultId": "metal_wing_boomerang",
+    "ingredientIds": [
+      "razor_wing_boomerang",
+      "metal_king_spear"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_moon_axe",
+    "resultId": "moon_axe",
+    "ingredientIds": [
+      "golden_axe",
+      "moons_mercy"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_odins_bow",
+    "resultId": "odins_bow",
+    "ingredientIds": [
+      "cheirons_bow",
+      "eros_bow",
+      "great_bow"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_razor_wing_boomerang",
+    "resultId": "razor_wing_boomerang",
+    "ingredientIds": [
+      "edged_boomerang",
+      "wing_of_bat",
+      "steel_scythe"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_reinforced_boomerang",
+    "resultId": "reinforced_boomerang",
+    "ingredientIds": [
+      "boomerang",
+      "iron_nail"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_rusty_old_sword",
+    "resultId": "rusty_old_sword",
+    "ingredientIds": [
+      "liquid_metal_sword",
+      "mystifying_mixture",
+      "cowpat"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_sandstorm_spear",
+    "resultId": "sandstorm_spear",
+    "ingredientIds": [
+      "partisan",
+      "saints_ashes"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_scourge_whip",
+    "resultId": "scourge_whip",
+    "ingredientIds": [
+      "demon_whip",
+      "saints_ashes"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_shamshir_of_light",
+    "resultId": "shamshir_of_light",
+    "ingredientIds": [
+      "rune_staff",
+      "light_shield",
+      "shimmering_dress"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_sledgehammer",
+    "resultId": "sledgehammer",
+    "ingredientIds": [
+      "giant_mallet",
+      "iron_helmet",
+      "iron_helmet"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_snakeskin_whip",
+    "resultId": "snakeskin_whip",
+    "ingredientIds": [
+      "leather_whip",
+      "scale_shield"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_staff_of_antimagic",
+    "resultId": "staff_of_antimagic",
+    "ingredientIds": [
+      "wizards_staff",
+      "rune_staff"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_staff_of_resurrection",
+    "resultId": "staff_of_resurrection",
+    "ingredientIds": [
+      "rune_staff",
+      "life_bracer",
+      "yggdrasil_leaf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_stone_axe",
+    "resultId": "stone_axe",
+    "ingredientIds": [
+      "stone_hardhat",
+      "cypress_stick"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_uber_double_edge",
+    "resultId": "uber_double_edge",
+    "ingredientIds": [
+      "double_edge_sword",
+      "saints_ashes",
+      "saints_ashes"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_uber_falcon_blade",
+    "resultId": "uber_falcon_blade",
+    "ingredientIds": [
+      "falcon_blade",
+      "meteorite_bracer"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_uber_miracle_sword",
+    "resultId": "uber_miracle_sword",
+    "ingredientIds": [
+      "miracle_sword",
+      "life_bracer"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_uber_war_hammer",
+    "resultId": "uber_war_hammer",
+    "ingredientIds": [
+      "war_hammer",
+      "mighty_armlet"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_zombie_slayer",
+    "resultId": "zombie_slayer",
+    "ingredientIds": [
+      "zombiesbane",
+      "holy_talisman"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_angels_robe",
+    "resultId": "angels_robe",
+    "ingredientIds": [
+      "flowing_dress",
+      "magical_skirt"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_bandit_mail",
+    "resultId": "bandit_mail",
+    "ingredientIds": [
+      "heavy_armour",
+      "bandit_axe",
+      "bandits_grass_skirt"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_boxer_shorts",
+    "resultId": "boxer_shorts",
+    "ingredientIds": [
+      "bandits_grass_skirt",
+      "bandana"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_bronze_armour",
+    "resultId": "bronze_armour",
+    "ingredientIds": [
+      "chain_mail",
+      "bronze_shield"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_bunny_suit",
+    "resultId": "bunny_suit",
+    "ingredientIds": [
+      "silk_bustier",
+      "bunny_tail"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_chain_mail",
+    "resultId": "chain_mail",
+    "ingredientIds": [
+      "wayfarers_clothes",
+      "chain_whip"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_crimson_robe",
+    "resultId": "crimson_robe",
+    "ingredientIds": [
+      "sages_robe",
+      "magic_water",
+      "nook_grass"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_dancers_mail",
+    "resultId": "dancers_mail",
+    "ingredientIds": [
+      "silver_mail",
+      "dancers_costume"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_dark_robe",
+    "resultId": "dark_robe",
+    "ingredientIds": [
+      "cloak_of_evasion",
+      "devils_tail",
+      "wing_of_bat"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_divine_bustier",
+    "resultId": "divine_bustier",
+    "ingredientIds": [
+      "dangerous_bustier",
+      "shimmering_dress"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_dogsbodys_vest",
+    "resultId": "dogsbodys_vest",
+    "ingredientIds": [
+      "bandit_mail",
+      "plain_clothes",
+      "coral_hairpin"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_dragon_mail",
+    "resultId": "dragon_mail",
+    "ingredientIds": [
+      "silver_mail",
+      "dragon_scale",
+      "dragon_scale"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_fur_poncho",
+    "resultId": "fur_poncho",
+    "ingredientIds": [
+      "magic_beast_hide",
+      "magic_beast_hide"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_gigant_armour",
+    "resultId": "gigant_armour",
+    "ingredientIds": [
+      "bandit_mail",
+      "mighty_armlet",
+      "mighty_armlet"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_hexlets_skirt",
+    "resultId": "hexlets_skirt",
+    "ingredientIds": [
+      "magical_skirt",
+      "imp_knife",
+      "mystifying_mixture"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_iron_cuirass",
+    "resultId": "iron_cuirass",
+    "ingredientIds": [
+      "iron_shield",
+      "iron_shield"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_leather_armour",
+    "resultId": "leather_armour",
+    "ingredientIds": [
+      "wayfarers_clothes",
+      "magic_beast_hide"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_leather_dress",
+    "resultId": "leather_dress",
+    "ingredientIds": [
+      "dancers_costume",
+      "magic_beast_hide"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_leather_kilt",
+    "resultId": "leather_kilt",
+    "ingredientIds": [
+      "boxer_shorts",
+      "magic_beast_hide"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_leather_kilt",
+    "resultId": "leather_kilt",
+    "ingredientIds": [
+      "leather_whip",
+      "bandana"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_magical_skirt",
+    "resultId": "magical_skirt",
+    "ingredientIds": [
+      "bandits_grass_skirt",
+      "magical_hat",
+      "magical_mace"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_magic_armour",
+    "resultId": "magic_armour",
+    "ingredientIds": [
+      "full_plate_armour",
+      "prayer_ring",
+      "ruby_of_protection"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_metal_king_armour",
+    "resultId": "metal_king_armour",
+    "ingredientIds": [
+      "liquid_metal_armour",
+      "slime_crown",
+      "orichalcum"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_mirror_armour",
+    "resultId": "mirror_armour",
+    "ingredientIds": [
+      "silver_mail",
+      "mirror_shield",
+      "mirror_shield"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_nitid_tutu",
+    "resultId": "nitid_tutu",
+    "ingredientIds": [
+      "spangled_dress",
+      "dancers_costumer",
+      "life_bracer"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_platinum_mail",
+    "resultId": "platinum_mail",
+    "ingredientIds": [
+      "zombie_mail",
+      "saints_ashes"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_princesss_robe",
+    "resultId": "princesss_robe",
+    "ingredientIds": [
+      "angels_robe",
+      "gold_rosary",
+      "shimmering_dress"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_robe_of_serenity",
+    "resultId": "robe_of_serenity",
+    "ingredientIds": [
+      "cloak_of_evasion",
+      "boxer_shorts"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_sages_robe",
+    "resultId": "sages_robe",
+    "ingredientIds": [
+      "magic_vestment",
+      "scholars_cap"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_scale_armour",
+    "resultId": "scale_armour",
+    "ingredientIds": [
+      "leather_armour",
+      "dragon_scale"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_shimmering_dress",
+    "resultId": "shimmering_dress",
+    "ingredientIds": [
+      "spangled_dress",
+      "ruby_of_protection",
+      "gold_bracer"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_silver_cuirass",
+    "resultId": "silver_cuirass",
+    "ingredientIds": [
+      "iron_cuirass",
+      "silver_platter",
+      "silver_platter"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_spiked_armour",
+    "resultId": "spiked_armour",
+    "ingredientIds": [
+      "magic_armour",
+      "edged_boomerang"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_templars_uniform",
+    "resultId": "templars_uniform",
+    "ingredientIds": [
+      "wayfarers_clothes",
+      "templars_shield"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_uber_sacred_armour",
+    "resultId": "uber_sacred_armour",
+    "ingredientIds": [
+      "sacred_armour",
+      "ruby_of_protection",
+      "recovery_ring"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_wayfarers_clothes",
+    "resultId": "wayfarers_clothes",
+    "ingredientIds": [
+      "plain_clothes",
+      "plain_clothes"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_zombie_mail",
+    "resultId": "zombie_mail",
+    "ingredientIds": [
+      "silver_mail",
+      "zombiesbane"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_zombie_mail",
+    "resultId": "zombie_mail",
+    "ingredientIds": [
+      "platinum_mail",
+      "devils_tail"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_bronze_shield",
+    "resultId": "bronze_shield",
+    "ingredientIds": [
+      "leather_shield",
+      "bronze_knife"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_dragon_shield",
+    "resultId": "dragon_shield",
+    "ingredientIds": [
+      "steel_shield",
+      "dragon_scale",
+      "dragon_scale"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_flame_shield",
+    "resultId": "flame_shield",
+    "ingredientIds": [
+      "magic_shield",
+      "flametang_boomerang"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_goddess_shield",
+    "resultId": "goddess_shield",
+    "ingredientIds": [
+      "thanatos_shield",
+      "saints_ashes"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_ice_shield",
+    "resultId": "ice_shield",
+    "ingredientIds": [
+      "magic_shield",
+      "icicle_dirk"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_leather_shield",
+    "resultId": "leather_shield",
+    "ingredientIds": [
+      "pot_lid",
+      "magic_beast_hide"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_magic_shield",
+    "resultId": "magic_shield",
+    "ingredientIds": [
+      "steel_shield",
+      "prayer_ring",
+      "ruby_of_protection"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_metal_king_shield",
+    "resultId": "metal_king_shield",
+    "ingredientIds": [
+      "ruinous_shield",
+      "saints_ashes",
+      "orichalcum"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_power_shield",
+    "resultId": "power_shield",
+    "ingredientIds": [
+      "magic_shield",
+      "strength_ring",
+      "cured_cheese"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_ruinous_shield",
+    "resultId": "ruinous_shield",
+    "ingredientIds": [
+      "metal_king_shield",
+      "devils_tail"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_saintess_shield",
+    "resultId": "saintess_shield",
+    "ingredientIds": [
+      "mirror_shield",
+      "white_shield",
+      "holy_water"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_scale_shield",
+    "resultId": "scale_shield",
+    "ingredientIds": [
+      "leather_shield",
+      "dragon_scale"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_silver_shield",
+    "resultId": "silver_shield",
+    "ingredientIds": [
+      "mirror_shield",
+      "amor_seco_essence",
+      "magic_water"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_templars_shield",
+    "resultId": "templars_shield",
+    "ingredientIds": [
+      "iron_shield",
+      "templars_uniform"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_thanatos_shield",
+    "resultId": "thanatos_shield",
+    "ingredientIds": [
+      "goddess_shield",
+      "devils_tail"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_white_shield",
+    "resultId": "white_shield",
+    "ingredientIds": [
+      "iron_shield",
+      "silver_platter"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_white_shield",
+    "resultId": "white_shield",
+    "ingredientIds": [
+      "light_shield",
+      "fresh_milk",
+      "fresh_milk"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_bronze_helmet",
+    "resultId": "bronze_helmet",
+    "ingredientIds": [
+      "stone_hardhat",
+      "bronze_knife",
+      "bronze_knife"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_bunny_ears",
+    "resultId": "bunny_ears",
+    "ingredientIds": [
+      "hairband",
+      "bunny_tail"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_feathered_cap",
+    "resultId": "feathered_cap",
+    "ingredientIds": [
+      "leather_hat",
+      "chimaera_wing"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_fur_hood",
+    "resultId": "fur_hood",
+    "ingredientIds": [
+      "feathered_cap",
+      "fur_poncho"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_golden_tiara",
+    "resultId": "golden_tiara",
+    "ingredientIds": [
+      "thinking_cap",
+      "gold_nugget",
+      "silver_tiara"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_hades_helm",
+    "resultId": "hades_helm",
+    "ingredientIds": [
+      "mythril_helm",
+      "devils_tail"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_happy_hat",
+    "resultId": "happy_hat",
+    "ingredientIds": [
+      "feathered_cap",
+      "elevating_shoes"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_hermes_hat",
+    "resultId": "hermes_hat",
+    "ingredientIds": [
+      "feathered_cap",
+      "mercurys_bandana"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_mercurys_bandana",
+    "resultId": "mercurys_bandana",
+    "ingredientIds": [
+      "bandana",
+      "agility_ring"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_mythril_helm",
+    "resultId": "mythril_helm",
+    "ingredientIds": [
+      "hades_helm",
+      "saints_ashes"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_phantom_mask",
+    "resultId": "phantom_mask",
+    "ingredientIds": [
+      "iron_headgear",
+      "dark_robe"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_pointy_hat",
+    "resultId": "pointy_hat",
+    "ingredientIds": [
+      "leather_hat",
+      "iron_nail"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_raging_bull_helm",
+    "resultId": "raging_bull_helm",
+    "ingredientIds": [
+      "mythril_helm",
+      "cowpat",
+      "fresh_milk"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_scholars_cap",
+    "resultId": "scholars_cap",
+    "ingredientIds": [
+      "magical_hat",
+      "scholar_specs"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_silver_tiara",
+    "resultId": "silver_tiara",
+    "ingredientIds": [
+      "coral_hairpin",
+      "silver_platter"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_skull_helm",
+    "resultId": "skull_helm",
+    "ingredientIds": [
+      "sun_crown",
+      "devils_tail"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_stone_hardhat",
+    "resultId": "stone_hardhat",
+    "ingredientIds": [
+      "stone_axe",
+      "pointy_hat"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_sun_crown",
+    "resultId": "sun_crown",
+    "ingredientIds": [
+      "skull_helm",
+      "saints_ashes"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_thinking_cap",
+    "resultId": "thinking_cap",
+    "ingredientIds": [
+      "scholar_cap",
+      "iron_headgear"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_turban",
+    "resultId": "turban",
+    "ingredientIds": [
+      "bandana",
+      "bandana"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_agility_ring",
+    "resultId": "agility_ring",
+    "ingredientIds": [
+      "prayer_ring",
+      "seed_of_agility"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_catholicon_ring",
+    "resultId": "catholicon_ring",
+    "ingredientIds": [
+      "full_moon_ring",
+      "ring_of_truth",
+      "ring_of_immunity"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_elevating_shoes",
+    "resultId": "elevating_shoes",
+    "ingredientIds": [
+      "fishnet_stockings",
+      "happy_hat"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_full_moon_ring",
+    "resultId": "full_moon_ring",
+    "ingredientIds": [
+      "gold_ring",
+      "poison_moth_knife"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_goddess_ring",
+    "resultId": "goddess_ring",
+    "ingredientIds": [
+      "recovery_ring",
+      "orichalcum"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_holy_talisman",
+    "resultId": "holy_talisman",
+    "ingredientIds": [
+      "tough_guy_tattoo",
+      "holy_water",
+      "gold_rosary"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_life_bracer",
+    "resultId": "life_bracer",
+    "ingredientIds": [
+      "recovery_ring",
+      "gold_bracer"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_meteorite_bracer",
+    "resultId": "meteorite_bracer",
+    "ingredientIds": [
+      "agility_ring",
+      "agility_ring",
+      "orichalcum"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_mighty_armlet",
+    "resultId": "mighty_armlet",
+    "ingredientIds": [
+      "strength_ring",
+      "titan_belt"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_prayer_ring",
+    "resultId": "prayer_ring",
+    "ingredientIds": [
+      "gold_ring",
+      "seed_of_magic"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_recovery_ring",
+    "resultId": "recovery_ring",
+    "ingredientIds": [
+      "prayer_ring",
+      "seed_of_life"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_ring_of_awakening",
+    "resultId": "ring_of_awakening",
+    "ingredientIds": [
+      "gold_ring",
+      "dream_blade"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_ring_of_clarity",
+    "resultId": "ring_of_clarity",
+    "ingredientIds": [
+      "gold_ring",
+      "fallen_angel_rapier"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_ring_of_immunity",
+    "resultId": "ring_of_immunity",
+    "ingredientIds": [
+      "gold_ring",
+      "poison_needle"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_ring_of_truth",
+    "resultId": "ring_of_truth",
+    "ingredientIds": [
+      "gold_ring",
+      "sandstorm_spear"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_ruby_of_protection",
+    "resultId": "ruby_of_protection",
+    "ingredientIds": [
+      "prayer_ring",
+      "seed_of_defense"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_scholars_specs",
+    "resultId": "scholars_specs",
+    "ingredientIds": [
+      "ring_of_awakening",
+      "ring_of_clarity",
+      "seed_of_wisdom"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_skull_ring",
+    "resultId": "skull_ring",
+    "ingredientIds": [
+      "sorcerers_ring",
+      "devils_tail"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_sorcerers_ring",
+    "resultId": "sorcerers_ring",
+    "ingredientIds": [
+      "skull_ring",
+      "saints_ashes",
+      "saints_ashes"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_strength_ring",
+    "resultId": "strength_ring",
+    "ingredientIds": [
+      "prayer_ring",
+      "seed_of_strength"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_titan_belt",
+    "resultId": "titan_belt",
+    "ingredientIds": [
+      "leather_kilt",
+      "strength_ring"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_amor_seco_essence",
+    "resultId": "amor_seco_essence",
+    "ingredientIds": [
+      "holy_water",
+      "strong_medicine"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_angel_cheese",
+    "resultId": "angel_cheese",
+    "ingredientIds": [
+      "fresh_milk",
+      "premium_mould",
+      "yggdrasil_dew"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_c_c_cold_cheese",
+    "resultId": "c_c_cold_cheese",
+    "ingredientIds": [
+      "dragon_dung",
+      "cold_cheese",
+      "premium_mould"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_chilly_cheese",
+    "resultId": "chilly_cheese",
+    "ingredientIds": [
+      "cool_cheese",
+      "waterweed_mould"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_chimaera_wing",
+    "resultId": "chimaera_wing",
+    "ingredientIds": [
+      "wing_of_bat",
+      "wing_of_bat"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_chunky_cheese",
+    "resultId": "chunky_cheese",
+    "ingredientIds": [
+      "plain_cheese",
+      "magic_water"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_cold_cheese",
+    "resultId": "cold_cheese",
+    "ingredientIds": [
+      "chilly_cheese",
+      "waterweed_mould",
+      "waterweed_mould"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_cool_cheese",
+    "resultId": "cool_cheese",
+    "ingredientIds": [
+      "plain_cheese",
+      "waterweed_mould"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_cured_cheese",
+    "resultId": "cured_cheese",
+    "ingredientIds": [
+      "fresh_milk",
+      "premium_mould",
+      "amor_seco_essence"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_elfin_elixer",
+    "resultId": "elfin_elixer",
+    "ingredientIds": [
+      "yggdrasil_dew",
+      "magic_water"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_greater_panacea",
+    "resultId": "greater_panacea",
+    "ingredientIds": [
+      "special_medicine",
+      "special_medicine",
+      "special_medicine"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_greater_panacea",
+    "resultId": "greater_panacea",
+    "ingredientIds": [
+      "lesser_panacea",
+      "special_medicine",
+      "rose_wort"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_hard_cheese",
+    "resultId": "hard_cheese",
+    "ingredientIds": [
+      "plain_cheese",
+      "rock_salt"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_highly_strung_cheese",
+    "resultId": "highly_strung_cheese",
+    "ingredientIds": [
+      "super_spicy_cheese",
+      "cold_cheese",
+      "rock_salt"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_holy_water",
+    "resultId": "holy_water",
+    "ingredientIds": [
+      "amor_seco_essence",
+      "rock_salt"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_lesser_panacea",
+    "resultId": "lesser_panacea",
+    "ingredientIds": [
+      "special_medicine",
+      "special_medicine"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_magic_water",
+    "resultId": "magic_water",
+    "ingredientIds": [
+      "holy_water",
+      "seed_of_magic"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_mild_cheese",
+    "resultId": "mild_cheese",
+    "ingredientIds": [
+      "plain_cheese",
+      "amor_seco_essence"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_moons_mercy",
+    "resultId": "moons_mercy",
+    "ingredientIds": [
+      "moonwort_bulb",
+      "moonwort_bulb",
+      "moonwort_bulb"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_mystifying_mixture",
+    "resultId": "mystifying_mixture",
+    "ingredientIds": [
+      "holy_water",
+      "wing_of_bat",
+      "cowpat"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_mystifying_mixture",
+    "resultId": "mystifying_mixture",
+    "ingredientIds": [
+      "medicinal_herb",
+      "antidotal_herb",
+      "moonwort_bulb"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_plain_cheese",
+    "resultId": "plain_cheese",
+    "ingredientIds": [
+      "scourching_cheese",
+      "c_c_cold_cheese"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_plain_cheese",
+    "resultId": "plain_cheese",
+    "ingredientIds": [
+      "fresh_milk",
+      "rennet_powder"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_premium_mould",
+    "resultId": "premium_mould",
+    "ingredientIds": [
+      "red_mould",
+      "waterweed_mould",
+      "yggdrasil_leaf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_special_medicine",
+    "resultId": "special_medicine",
+    "ingredientIds": [
+      "medicinal_herb",
+      "medicinal_herb",
+      "medicinal_herb"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_special_medicine",
+    "resultId": "special_medicine",
+    "ingredientIds": [
+      "medicinal_herb",
+      "strong_medicine"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_rose_wort",
+    "resultId": "rose_wort",
+    "ingredientIds": [
+      "medicinal_herb",
+      "medicinal_herb",
+      "moonwort_bulb"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_rose_wort",
+    "resultId": "rose_wort",
+    "ingredientIds": [
+      "strong_medicine",
+      "moonwort_bulb"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_sages_stone",
+    "resultId": "sages_stone",
+    "ingredientIds": [
+      "gold_nugget",
+      "orichalcum",
+      "yggdrasil_dew"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_scourching_cheese",
+    "resultId": "scourching_cheese",
+    "ingredientIds": [
+      "super_spicy_cheese",
+      "premium_mould",
+      "dragon_dung"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_soft_cheese",
+    "resultId": "soft_cheese",
+    "ingredientIds": [
+      "fresh_milk",
+      "rennet_powder",
+      "rock_salt"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_special_antidote",
+    "resultId": "special_antidote",
+    "ingredientIds": [
+      "medicinal_herb",
+      "antidotal_herb",
+      "antidotal_herb"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_special_antidote",
+    "resultId": "special_antidote",
+    "ingredientIds": [
+      "strong_antidote",
+      "strong_antidote"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_special_medicine",
+    "resultId": "special_medicine",
+    "ingredientIds": [
+      "strong_medicine",
+      "strong_medicine"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_spicy_cheese",
+    "resultId": "spicy_cheese",
+    "ingredientIds": [
+      "red_mould",
+      "plain_cheese"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_strong_antidote",
+    "resultId": "strong_antidote",
+    "ingredientIds": [
+      "medicinal_herb",
+      "antidotal_herb"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_strong_medicine",
+    "resultId": "strong_medicine",
+    "ingredientIds": [
+      "medicinal_herb",
+      "medicinal_herb"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_super_spicy_cheese",
+    "resultId": "super_spicy_cheese",
+    "ingredientIds": [
+      "spicy_cheese",
+      "nook_grass"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_super_spicy_cheese",
+    "resultId": "super_spicy_cheese",
+    "ingredientIds": [
+      "spicy_cheese",
+      "red_mould",
+      "red_mould"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_thiefs_key",
+    "resultId": "thiefs_key",
+    "ingredientIds": [
+      "iron_nail",
+      "bronze_knife"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_timbrel_of_tension",
+    "resultId": "timbrel_of_tension",
+    "ingredientIds": [
+      "sun_crown",
+      "magic_beast_hide",
+      "tough_guy_tattoo"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r_yggdrasil_dew",
+    "resultId": "yggdrasil_dew",
+    "ingredientIds": [
+      "yggdrasil_leaf",
+      "magic_water"
+    ],
+    "notes": ""
+  }
+]
