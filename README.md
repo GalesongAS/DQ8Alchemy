@@ -27,7 +27,7 @@ So I built this as a lightweight static web app that works entirely offline.
 * 🔍 **Filter and search** ingredients quickly
 * ✅ **Check items you own** — updates recipes in real time
 * ⚗️ **See craftable recipes first** (sorted by completion)
-* 🧾 **Supports both Alchemy pots (2 and 3 ingridient recipes)**
+* 🧾 **Supports both Alchemy pots (2 and 3 ingredient recipes)**
 * 🌐 **Runs anywhere** — even on mobile via GitHub Pages
 
 ---
