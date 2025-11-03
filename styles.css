@@ -41,6 +41,9 @@ body {
     font-size: 0.875rem;
 }
 
+.table-wrap{overflow-x:auto} 
+
+.recipes{min-width:720px}
 
 .grid {
     display: grid;
@@ -183,3 +186,4 @@ button {
 .error {
     color: #ff9b9b;
 }
+
