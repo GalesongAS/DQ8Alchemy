@@ -141,7 +141,7 @@
   },
   {
     "id": "cheirons_bow",
-    "name": "Cheirons Bow",
+    "name": "Cheiron's Bow",
     "isIngredient": true
   },
   {
@@ -172,7 +172,7 @@
   },
   {
     "id": "conquerors_axe",
-    "name": "Conquerors Axe",
+    "name": "Conqueror's Axe",
     "isIngredient": true
   },
   {
@@ -1402,3 +1402,4 @@
   }
 
 ]
+
