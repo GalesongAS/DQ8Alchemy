@@ -562,16 +562,6 @@
     "notes": ""
   },
   {
-    "id": "r_dogsbodys_vest",
-    "resultId": "dogsbodys_vest",
-    "ingredientIds": [
-      "bandit_mail",
-      "plain_clothes",
-      "coral_hairpin"
-    ],
-    "notes": ""
-  },
-  {
     "id": "r_dragon_mail",
     "resultId": "dragon_mail",
     "ingredientIds": [
@@ -1760,4 +1750,5 @@
     ],
     "notes": ""
   }
+
 ]
