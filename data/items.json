@@ -67,7 +67,7 @@
   {
     "id": "big_boss_shield",
     "name": "Big Boss Shield",
-    "isIngredient": true
+    "isIngredient": false
   },
   {
     "id": "blizzard_blade",
@@ -1402,6 +1402,7 @@
   }
 
 ]
+
 
 
 
