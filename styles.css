@@ -1,4 +1,4 @@
-﻿:root {
+:root {
     --bg: #0b0d10;
     --card: #12161b;
     --muted: #8aa0b4;
@@ -41,9 +41,6 @@ body {
     font-size: 0.875rem;
 }
 
-.table-wrap{overflow-x:auto} 
-
-.recipes{min-width:720px}
 
 .grid {
     display: grid;
@@ -165,6 +162,29 @@ button {
     }
 
 
+.filters .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
+    border: 1px solid var(--ring);
+    border-radius: 9999px;
+    cursor: pointer;
+    margin-right: 6px
+}
+
+    .filters .chip.active {
+        border-color: var(--accent);
+        box-shadow: 0 0 0 1px var(--accent) inset
+    }
+
+    .filters .chip img {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%
+    }
+
+
 .sr-only {
     position: absolute;
     width: 1px;
@@ -176,14 +196,52 @@ button {
     border: 0;
     white-space: nowrap;
 }
+.table-wrap {
+    overflow-x: auto
+}
+
+.recipes {
+    min-width: 720px
+}
+
+
 
 /* Full-match recipe result text */
 .result-ready {
-    color: #17813b; /* subtle green; tweak to taste */
-    font-weight: 600; /* optional; remove if you want only color */
+    color: #17813b; /* subtle green; */
+    font-weight: 600; /* optional;  */
 }
 
 .error {
     color: #ff9b9b;
 }
 
+#recipes-table.hide-3col thead th:nth-child(4),
+#recipes-table.hide-3col tbody td:nth-child(4) {
+    display: none !important;
+}
+
+/* Tiny round portraits everywhere */
+.char-ico {
+    width: 22px;
+    height: 22px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    vertical-align: -3px;
+}
+
+/* Smaller inside the chips row */
+#char-filters .char-ico {
+    width: 16px;
+    height: 16px;
+}
+
+/* Keep icons on one line in the table and add spacing */
+.recipes td.usable {
+    white-space: nowrap;
+}
+
+    .recipes td.usable .char-ico {
+        margin-right: 4px;
+    }
