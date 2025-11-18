@@ -1,10 +1,10 @@
-# 🧪 DQ8 Alchemy Pot — Recipe Finder
+#  DQ8 Alchemy Pot — Recipe Finder
 
 A small web tool I built for **Dragon Quest VIII** players who love the Alchemy Pot but don’t love flipping between wikis, PDFs, and forum posts every time they pick up a new item.
 
 ---
 
-## 💡 Why this exists
+##  Why this exists
 
 After unlocking the Alchemy Pot, I found myself constantly:
 
@@ -22,17 +22,17 @@ So I built this as a lightweight static web app that works entirely offline.
 
 ---
 
-## ⚙️ Features
+##  Features
 
-* 🔍 **Filter and search** ingredients quickly
-* ✅ **Check items you own** — updates recipes in real time
-* ⚗️ **See craftable recipes first** (sorted by completion)
-* 🧾 **Supports both Alchemy pots (2 and 3 ingredient recipes)**
-* 🌐 **Runs anywhere** — even on mobile via GitHub Pages
+*  **Filter and search** ingredients quickly
+*  **Check items you own** — updates recipes in real time
+*  **See craftable recipes first** (sorted by completion)
+*  **Supports both Alchemy pots (2 and 3 ingredient recipes)**
+*  **It Runs anywhere!** — even on mobile via GitHub Pages
 
 ---
 
-## 🚀 How to use
+##  How to use
 
 1. Visit the live version:
    👉 [https://galesongas.github.io/DQ8Alchemy/)
