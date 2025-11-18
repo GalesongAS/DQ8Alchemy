@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -24,6 +24,8 @@
         <section class="card">
             <h2>Ingredients</h2>
             <div class="controls-row">
+                <div id="cat-filters" class="filters"></div>
+                <div id="char-filters" class="filters"></div>
                 <!-- Text filter for the ingredient checklist -->
                 <label for="ingredient-search" class="sr-only">Search ingredients</label>
                 <input id="ingredient-search" type="search" placeholder="Search ingredients…" autocomplete="off" />
@@ -60,11 +62,12 @@
                         <th>Item 1</th>
                         <th>Item 2</th>
                         <th>Item 3</th>
+                        <th>Usable by</th>
                         <th style="width:20%">Notes</th>
                     </tr>
                 </thead>
                 <tbody id="recipes-tbody" aria-live="polite" aria-busy="true">
-                    <tr><td colspan="5" class="muted">Loading…</td></tr>
+                    <tr><td colspan="6" class="muted">Loading…</td></tr>
                 </tbody>
             </table>
         </section>
@@ -74,22 +77,22 @@
     <footer class="container muted small">
         <p>Tip: typing in the search filters the ingredient list. Checking ingredients shows only recipes that contain <em>all</em> selected items. Uncheck “Upgraded Pot” to hide 3‑ingredient recipes.</p>
     </footer>
-    
+
     <script>
         (function () {
 
-  /**
-   * Reactive-ish state container
-   * Why: keep all data/UI flags together to drive rendering.
-   * What:
-   *  - items: available items (id, name, isIngredient)
-   *  - recipes: alchemy recipes data
-   *  - selected: checked ingredient IDs
-   *  - search: current ingredient text filter
-   *  - matchAny: OR (true) vs AND (false) for filtering recipes
-   *  - upgraded: whether to include 3-ingredient recipes
-   *  - itemById: quick lookup map from id -> item
-   */
+            /**
+             * Reactive-ish state container
+             * Why: keep all data/UI flags together to drive rendering.
+             * What:
+             *  - items: available items (id, name, isIngredient)
+             *  - recipes: alchemy recipes data
+             *  - selected: checked ingredient IDs
+             *  - search: current ingredient text filter
+             *  - matchAny: OR (true) vs AND (false) for filtering recipes
+             *  - upgraded: whether to include 3-ingredient recipes
+             *  - itemById: quick lookup map from id -> item
+             */
 
             const state = {
                 items: [],
@@ -99,7 +102,25 @@
                 matchAny: false,
                 upgraded: false,
                 itemById: new Map(),
+                selectedCategories: new Set(),
+                selectedChars: new Set(),
             };
+
+            const CHAR_ICONS = {
+                hero: 'img/chars/hero.png',
+                yangus: 'img/chars/yangus.png',
+                jessica: 'img/chars/jessica.png',
+                angelo: 'img/chars/angelo.png',
+            };
+
+            function charIcon(id) {
+                const src = CHAR_ICONS[id];
+                const title = id.charAt(0).toUpperCase() + id.slice(1);
+                return src
+                    ? `<img class="char-ico" width="22" height="22" src="${src}" alt="${title}" title="${title}">`
+                    : '';
+            }
+
 
 
             const els = {
@@ -109,6 +130,9 @@
                 list: document.getElementById('ingredient-list'),
                 tbody: document.getElementById('recipes-tbody'),
                 matchAny: document.getElementById('match-any'),
+                table: document.getElementById('recipes-table'),
+                catFilters: document.getElementById('cat-filters'),
+                charFilters: document.getElementById('char-filters'),
             };
 
             /* === PERSISTENCE (localStorage)
@@ -123,10 +147,10 @@
             };
 
             /**
- * saveSelected
- * Why: persist current selection of ingredients to localStorage.
- * What: stores an array of IDs as JSON.
- */
+* saveSelected
+* Why: persist current selection of ingredients to localStorage.
+* What: stores an array of IDs as JSON.
+*/
             function saveSelected() {
                 try { localStorage.setItem(LS_KEYS.selected, JSON.stringify([...state.selected])); } catch { }
             }
@@ -197,17 +221,18 @@
                     state.recipes = recipes;
                     state.itemById = new Map(items.map(i => [i.id, i]));
 
-                    // Reconcile persisted selection with current items (drop stale IDs)
                     if (persistedSelected) {
                         const valid = new Set(items.map(i => i.id));
                         state.selected = new Set([...persistedSelected].filter(id => valid.has(id)));
                     }
 
+                    buildFilters();  
                     renderAll();
                 })
+
                 .catch(err => {
                     console.error(err);
-                    els.tbody.innerHTML = '<tr><td colspan="5" class="error">Failed to load data. Check console.</td></tr>';
+                    els.tbody.innerHTML = '<tr><td colspan="6" class="error">Failed to load data. Check console.</td></tr>';
                 });
             /**
                * Event wiring
@@ -222,6 +247,7 @@
             els.upgraded.addEventListener('change', (e) => {
                 state.upgraded = !!e.target.checked;
                 saveFlag(LS_KEYS.upgraded, state.upgraded);
+                applyColumnVisibility();  
                 renderRecipes();
             });
 
@@ -238,6 +264,7 @@
                 saveFlag(LS_KEYS.matchAny, state.matchAny);
                 renderRecipes();
             });
+
             /**
                * renderAll
                * Why: initial paint after data load; full UI refresh entrypoint.
@@ -245,8 +272,13 @@
                */
 
             function renderAll() {
+                applyColumnVisibility(); 
                 renderIngredientList();
                 renderRecipes();
+            }
+
+            function applyColumnVisibility() {
+                els.table.classList.toggle('hide-3col', !state.upgraded);
             }
 
             /**
@@ -270,10 +302,10 @@
                 // If empty due to search, show a helper to clear it
                 if (!items.length) {
                     els.list.innerHTML = `
-                      <li class="muted">
-                        No ingredients match${q ? ` “${escapeHtml(state.search)}”` : ''}.
-                        ${q ? `<button id="clear-search" class="linklike" type="button">Clear search</button>` : ''}
-                      </li>`;
+                          <li class="muted">
+                            No ingredients match${q ? ` “${escapeHtml(state.search)}”` : ''}.
+                            ${q ? `<button id="clear-search" class="linklike" type="button">Clear search</button>` : ''}
+                          </li>`;
                     const clearBtn = document.getElementById('clear-search');
                     if (clearBtn) {
                         clearBtn.addEventListener('click', () => {
@@ -295,10 +327,10 @@
                         li.className = 'check';
                         const id = `ing-${item.id}`;
                         li.innerHTML = `
-        <label for="${id}">
-          <input id="${id}" type="checkbox" data-id="${item.id}">
-          <span>${escapeHtml(item.name)}</span>
-        </label>`;
+            <label for="${id}">
+              <input id="${id}" type="checkbox" data-id="${item.id}">
+              <span>${escapeHtml(item.name)}</span>
+            </label>`;
                         const cb = li.querySelector('input');
 
                         cb.checked = state.selected.has(item.id);
@@ -329,17 +361,33 @@
                 const selected = Array.from(state.selected);
                 const allow3 = state.upgraded;
 
-                // Step 1: filter by pot capability (2-only vs 2&3)
-                const base = state.recipes.filter(r => allow3 ? true : r.ingredientIds.length <= 2);
+                // 1) pot capability
+                let pool = state.recipes.filter(r => allow3 ? true : r.ingredientIds.length <= 2);
 
-                // Step 2: filter by selected ingredients using AND( every ) or OR( some )
-                const filtered = selected.length === 0 ? base : base.filter(r => {
+                // 2) category filter
+                if (state.selectedCategories.size) {
+                    pool = pool.filter(r => {
+                        const cat = state.itemById.get(r.resultId)?.category;
+                        return cat && state.selectedCategories.has(cat);
+                    });
+                }
+
+                // 3) usable-by filter
+                if (state.selectedChars.size) {
+                    pool = pool.filter(r => {
+                        const usable = state.itemById.get(r.resultId)?.usableBy || [];
+                        return usable.some(u => state.selectedChars.has(u));
+                    });
+                }
+
+                // 4) ingredient selection (AND vs ANY)
+                const filtered = selected.length === 0 ? pool : pool.filter(r => {
                     const has = (id) => r.ingredientIds.includes(id);
                     return state.matchAny ? selected.some(has) : selected.every(has);
                 });
 
                 if (!filtered.length) {
-                    els.tbody.innerHTML = '<tr><td colspan="5" class="muted">No recipes match your selection.</td></tr>';
+                    els.tbody.innerHTML = '<tr><td colspan="6" class="muted">No recipes match your selection.</td></tr>';
                     return;
                 }
 
@@ -356,10 +404,9 @@
                 const meta = (r) => {
                     const total = r.ingredientIds.length;
                     const have = r.ingredientIds.reduce((n, id) => n + (state.selected.has(id) ? 1 : 0), 0);
-                    const complete = have === total; // full completion means ALL ingredients are selected
-                    // Higher primary score is better: 2=complete, 1=partial, 0=no overlap
+                    const complete = have === total;
                     const primary = complete ? 2 : (have > 0 ? 1 : 0);
-                    const missing = total - have; // fewer missing is better
+                    const missing = total - have;
                     return { total, have, missing, complete, primary };
                 };
 
@@ -368,12 +415,11 @@
                     .slice()
                     .sort((a, b) => {
                         const A = meta(a), B = meta(b);
-                        // More complete first
-                        if (B.primary !== A.primary) return B.primary - A.primary;
-                        // Among partials/completes, fewer missing first
-                        if (A.missing !== B.missing) return A.missing - B.missing;
-                        // Finally, alphabetical by result name
-                        return nameOf(a.resultId).trim().localeCompare(nameOf(b.resultId).trim(), undefined, { sensitivity: 'base' });
+                        if (B.primary !== A.primary) return B.primary - A.primary;          // complete > partial > none
+                        if (A.missing !== B.missing) return A.missing - B.missing;          // fewer missing first
+                        return nameOf(a.resultId).trim().localeCompare(                    // A→Z by result
+                            nameOf(b.resultId).trim(), undefined, { sensitivity: 'base' }
+                        );
                     })
                     .map(r => {
                         const m = meta(r);
@@ -381,18 +427,23 @@
                         while (cells.length < 3) cells.push('<td class="muted">—</td>');
                         const notes = r.notes ? escapeHtml(r.notes) : '';
 
-                        // Apply a text color class when recipe is fully fulfilled
+                        const resItem = state.itemById.get(r.resultId);
+                        const usable = resItem?.usableBy ?? [];
+                        const usableTd = `<td class="usable">${usable.length ? usable.map(charIcon).join('') : '—'}</td>`;
+
                         const resultClass = m.complete ? 'result result-ready' : 'result';
 
                         return `
-                            <tr>
-                              <td class="${resultClass}">${escapeHtml(nameOf(r.resultId))}</td>
-                              ${cells.join('')}
-                              <td class="notes">${notes}</td>
-                            </tr>`;
+        <tr>
+          <td class="${resultClass}">${escapeHtml(nameOf(r.resultId))}</td>
+          ${cells.join('')}
+          ${usableTd}
+          <td class="notes">${notes}</td>
+        </tr>`;
                     });
 
                 els.tbody.innerHTML = rows.join('');
+                applyColumnVisibility();
 
                 function cellify(id, selectedIds) {
                     const n = nameOf(id);
@@ -400,6 +451,37 @@
                     return `<td${isMatch ? ' class="match"' : ''}>${escapeHtml(n)}</td>`;
                 }
             }
+
+            function cap(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1) : ''; }
+            function toggleSet(set, val) { set.has(val) ? set.delete(val) : set.add(val); }
+
+            function buildFilters() {
+                // Categories present in your items.json
+                const categories = [...new Set(state.items.map(i => i.category).filter(Boolean))]
+                    .sort((a, b) => a.localeCompare(b));
+                els.catFilters.innerHTML = categories
+                    .map(c => `<button class="chip" data-cat="${c}">${escapeHtml(cap(c))}</button>`).join('');
+                els.catFilters.addEventListener('click', e => {
+                    const b = e.target.closest('.chip'); if (!b) return;
+                    toggleSet(state.selectedCategories, b.dataset.cat);
+                    b.classList.toggle('active');
+                    renderRecipes();
+                });
+
+                // Character chips (order as you like)
+                const order = ['hero', 'yangus', 'jessica', 'angelo'];
+                els.charFilters.innerHTML = order
+                    .map(id => `<button class="chip" data-char="${id}"><img class="char-ico" src="${CHAR_ICONS[id]}" alt="${cap(id)}"><span>${cap(id)}</span></button>`)
+                    .join('');
+                els.charFilters.addEventListener('click', e => {
+                    const b = e.target.closest('.chip'); if (!b) return;
+                    toggleSet(state.selectedChars, b.dataset.char);
+                    b.classList.toggle('active');
+                    renderRecipes();
+                });
+            }
+
+
 
             /**
                * nameOf
