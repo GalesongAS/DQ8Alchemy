@@ -1,46 +1,63 @@
+/* ===== Dragon Quest-ish theme (subtle, CSS-only) ===== */
 :root {
-    --bg: #0b0d10;
-    --card: #12161b;
-    --muted: #8aa0b4;
-    --text: #e9f1f7;
-    --accent: #5ab0ff;
-    --ring: #2a3a4d;
-    --border: #1c2430;
+    /* palette: royal blues + gold */
+    --bg: #081326;
+    --bg-2: #0e1c3d;
+    --card: #0e1f3d;
+    --card-top: #122a52;
+    --muted: #a8b8d8;
+    --text: #f3f7ff;
+    --accent: #2aa2ff; /* sky blue (DQ logo fill) */
+    --accent-2: #ffd86b; /* gold outline */
+    --ring: #2c4f95;
+    --border: #10306a;
+    --shadow: rgba(0,0,0,.35);
 }
 
 * {
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 html, body {
-    height: 100%;
+    height: 100%
 }
 
 body {
     margin: 0;
-    font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    /* readable serif for “fantasy journal” feel */
+    font: 16px/1.6 "Merriweather", Georgia, serif;
     color: var(--text);
-    background: radial-gradient(1200px 800px at 20% -10%, #15202b 0, var(--bg) 60%);
+    /* night-to-royal gradient with a faint vignette */
+    background: radial-gradient(1200px 800px at 20% -10%, #0f204c 0, var(--bg) 60%), radial-gradient(60% 120% at 50% 120%, rgba(0,0,0,.35), transparent 60%);
+}
+
+/* hero headers: Cinzel + blue fill + gold outline + soft glow */
+h1, h2 {
+    font-family: "Cinzel","Merriweather",serif;
+    letter-spacing: .5px;
+    text-shadow: 0 2px 0 #001, 0 0 10px rgba(42,162,255,.35), 0 0 18px rgba(42,162,255,.15);
+}
+
+header h1 {
+    font-weight: 800;
+    color: var(--accent);
+    /* faux gold outline using multiple shadows */
+    text-shadow: -1px -1px 0 var(--accent-2), 1px -1px 0 var(--accent-2), -1px 1px 0 var(--accent-2), 1px 1px 0 var(--accent-2), 0 3px 0 #001, 0 0 10px rgba(42,162,255,.4);
 }
 
 .container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 1.2rem;
-}
-
-.header {
-    padding-top: .5rem;
+    padding: 1.2rem
 }
 
 .muted {
-    color: var(--muted);
+    color: var(--muted)
 }
 
 .small {
-    font-size: 0.875rem;
+    font-size: .875rem
 }
-
 
 .grid {
     display: grid;
@@ -49,22 +66,33 @@ body {
     align-items: start;
 }
 
-@media (max-width: 900px) {
+@media (max-width:900px) {
     .grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr
     }
 }
 
-
+/* cards: embossed royal panel with subtle gold rim */
 .card {
-    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-    border: 1px solid var(--border);
-    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015)), linear-gradient(180deg, var(--card-top), var(--card));
+    border: 1px solid #1b3d7a;
+    border-radius: 18px;
     padding: 1rem;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+    box-shadow: 0 8px 28px var(--shadow), inset 0 1px 0 rgba(255,255,255,.06);
+    position: relative;
 }
 
+    .card::before {
+        content: "";
+        position: absolute;
+        inset: -1px;
+        border-radius: 18px;
+        pointer-events: none;
+        /* thin gold highlight ring */
+        box-shadow: 0 0 0 1px rgba(255,216,107,.25), inset 0 0 0 1px rgba(255,216,107,.08);
+    }
 
+/* controls */
 .controls-row {
     display: flex;
     gap: .6rem;
@@ -77,105 +105,68 @@ input[type="search"] {
     flex: 1 1 260px;
     min-width: 220px;
     padding: .55rem .7rem;
-    border-radius: 10px;
+    border-radius: 12px;
     border: 1px solid var(--ring);
-    background: #0d1217;
+    background: #0b1a36;
     color: var(--text);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.05);
 }
+
+    input[type="search"]::placeholder {
+        color: #b6c4de
+    }
 
 .toggle {
     display: inline-flex;
     align-items: center;
-    gap: .45rem;
+    gap: .45rem
 }
 
+    .toggle input {
+        accent-color: var(--accent)
+    }
+
+/* Buttons: glossy blue with gold hover rim */
 button {
-    padding: .5rem .7rem;
-    border-radius: 10px;
+    padding: .5rem .75rem;
+    border-radius: 12px;
     border: 1px solid var(--ring);
-    background: #0d1217;
     color: var(--text);
+    background: linear-gradient(#0b1a36,#0a1730);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.05), 0 2px 8px var(--shadow);
     cursor: pointer;
+    transition: border-color .15s, box-shadow .15s, transform .05s;
 }
+
+    button:hover {
+        border-color: #3b6bd4;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.06), 0 0 0 2px rgba(42,162,255,.25), 0 6px 16px var(--shadow);
+    }
+
+    button:active {
+        transform: translateY(1px)
+    }
 
     button.secondary:hover {
-        border-color: var(--accent);
+        border-color: var(--accent-2)
     }
 
-
-.checklist {
-    list-style: none;
-    padding: 0;
-    margin: .4rem 0 0;
-    max-height: 420px;
-    overflow: auto;
-}
-
-    .checklist .check {
-        padding: .25rem 0;
-        border-bottom: 1px dashed rgba(255,255,255,0.06);
-    }
-
-    .checklist label {
-        display: inline-flex;
-        align-items: center;
-        gap: .55rem;
-        cursor: pointer;
-    }
-
-    .checklist input[type="checkbox"] {
-        width: 18px;
-        height: 18px;
-    }
-
-
-.recipes {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-    .recipes th, .recipes td {
-        padding: .55rem .6rem;
-        border-bottom: 1px solid rgba(255,255,255,0.06);
-        vertical-align: top;
-    }
-
-    .recipes th {
-        text-align: left;
-        color: var(--muted);
-        font-weight: 600;
-    }
-
-    .recipes td.result {
-        font-weight: 600;
-    }
-
-    .recipes td.match {
-        background: rgba(90, 176, 255, 0.14);
-        outline: 1px solid rgba(90,176,255,0.35);
-        border-radius: 6px;
-    }
-
-    .recipes td.notes {
-        color: var(--muted);
-        font-size: .9rem;
-    }
-
-
+/* Chips (filters) as “gem” tokens */
 .filters .chip {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    padding: 4px 8px;
-    border: 1px solid var(--ring);
+    padding: 4px 10px;
     border-radius: 9999px;
-    cursor: pointer;
-    margin-right: 6px
+    border: 1px solid #345ba8;
+    color: var(--text);
+    background: radial-gradient(120% 180% at 30% 20%, #163069 0, #0d1b3a 70%);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.05);
 }
 
     .filters .chip.active {
         border-color: var(--accent);
-        box-shadow: 0 0 0 1px var(--accent) inset
+        box-shadow: 0 0 0 1px var(--accent) inset, 0 0 10px rgba(42,162,255,.35);
     }
 
     .filters .chip img {
@@ -184,6 +175,172 @@ button {
         border-radius: 50%
     }
 
+/* checklist */
+.checklist {
+    list-style: none;
+    padding: 0;
+    margin: .4rem 0 0;
+    max-height: 420px;
+    overflow: auto
+}
+
+    .checklist .check {
+        padding: .25rem 0;
+        border-bottom: 1px dashed rgba(255,255,255,.06)
+    }
+
+    .checklist label {
+        display: inline-flex;
+        align-items: center;
+        gap: .55rem;
+        cursor: pointer
+    }
+
+    .checklist input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        accent-color: var(--accent)
+    }
+
+/* table */
+.table-wrap {
+    overflow-x: auto
+}
+
+.recipes {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 820px
+}
+
+    .recipes thead th {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background: linear-gradient(180deg, #183369, #122a52);
+        border-bottom: 2px solid rgba(255,216,107,.35);
+    }
+
+    .recipes th, .recipes td {
+        padding: .6rem .65rem;
+        border-bottom: 1px solid rgba(255,255,255,.06);
+        vertical-align: top;
+    }
+
+    .recipes th {
+        text-align: left;
+        color: #d9e4ff;
+        font-weight: 700;
+        user-select: none
+    }
+
+    .recipes td.result {
+        font-weight: 700;
+        letter-spacing: .2px
+    }
+
+    .recipes tbody tr:nth-child(even) {
+        background: rgba(255,255,255,.02)
+    }
+
+    .recipes tbody tr:hover {
+        background: rgba(42,162,255,.06)
+    }
+
+    .recipes td.match {
+        background: rgba(42,162,255,.16);
+        outline: 1px solid rgba(42,162,255,.42);
+        border-radius: 6px;
+    }
+
+    .recipes td.notes {
+        color: var(--muted);
+        font-size: .9rem
+    }
+
+    /* sort indicators */
+    .recipes th.sortable {
+        cursor: pointer
+    }
+
+    .recipes th.sort-az::after {
+        content: " ↑"
+    }
+
+    .recipes th.sort-za::after {
+        content: " ↓"
+    }
+
+    .recipes th.sort-rel::after {
+        content: " •";
+        color: var(--muted)
+    }
+
+/* hide Item 3 when not upgraded (columns: ★, Result, 1, 2, 3, Usable, Notes) */
+#recipes-table.hide-3col th:nth-child(5),
+#recipes-table.hide-3col td:nth-child(5) {
+    display: none
+}
+
+/* favorites */
+.fav-col {
+    width: 36px
+}
+
+.fav-btn {
+    font-size: 18px;
+    line-height: 1;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #d0d8e0;
+    filter: drop-shadow(0 0 2px rgba(0,0,0,.6));
+    transition: transform .05s, color .15s, filter .2s;
+}
+
+    .fav-btn:hover {
+        color: var(--accent-2);
+        filter: drop-shadow(0 0 6px rgba(255,216,107,.5))
+    }
+
+    .fav-btn.on {
+        color: var(--accent-2);
+        filter: drop-shadow(0 0 6px rgba(255,216,107,.65))
+    }
+
+    .fav-btn:active {
+        transform: translateY(1px)
+    }
+
+/* avatars */
+.char-ico {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    vertical-align: -3px;
+    margin-right: 4px;
+    box-shadow: 0 0 0 1px rgba(255,216,107,.35), 0 2px 6px var(--shadow);
+}
+
+/* badges look like enamel pins */
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 9999px;
+    border: 1px solid rgba(255,216,107,.5);
+    color: #ffe9a8;
+    background: linear-gradient(#1a2f63,#152855);
+    font-size: .8rem;
+    vertical-align: middle;
+    margin-left: 6px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.06), 0 1px 6px var(--shadow);
+}
+
+.linklike {
+    color: var(--accent);
+    text-decoration: underline;
+    cursor: pointer
+}
 
 .sr-only {
     position: absolute;
@@ -192,56 +349,17 @@ button {
     padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0, 0, 1px, 1px);
+    clip: rect(0,0,1px,1px);
     border: 0;
     white-space: nowrap;
 }
-.table-wrap {
-    overflow-x: auto
-}
 
-.recipes {
-    min-width: 720px
-}
-
-
-
-/* Full-match recipe result text */
 .result-ready {
-    color: #17813b; /* subtle green; */
-    font-weight: 600; /* optional;  */
+    color: #1bd66a;
+    font-weight: 700;
+    text-shadow: 0 0 6px rgba(27,214,106,.25)
 }
 
 .error {
-    color: #ff9b9b;
+    color: #ff9b9b
 }
-
-#recipes-table.hide-3col thead th:nth-child(4),
-#recipes-table.hide-3col tbody td:nth-child(4) {
-    display: none !important;
-}
-
-/* Tiny round portraits everywhere */
-.char-ico {
-    width: 22px;
-    height: 22px;
-    aspect-ratio: 1;
-    object-fit: cover;
-    border-radius: 50%;
-    vertical-align: -3px;
-}
-
-/* Smaller inside the chips row */
-#char-filters .char-ico {
-    width: 16px;
-    height: 16px;
-}
-
-/* Keep icons on one line in the table and add spacing */
-.recipes td.usable {
-    white-space: nowrap;
-}
-
-    .recipes td.usable .char-ico {
-        margin-right: 4px;
-    }
