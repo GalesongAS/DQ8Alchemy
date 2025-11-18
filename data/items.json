@@ -37,6 +37,8 @@
   {
     "id": "bandit_axe",
     "name": "Bandit Axe",
+    "category": "axe",
+    "usableBy": [ "yangus" ],
     "isIngredient": true
   },
   {
@@ -57,6 +59,8 @@
   {
     "id": "battle_axe",
     "name": "Battle Axe",
+    "category": "axe",
+    "usableBy": [ "yangus" ],
     "isIngredient": true
   },
   {
@@ -173,6 +177,8 @@
   {
     "id": "conquerors_axe",
     "name": "Conqueror's Axe",
+    "category": "axe",
+    "usableBy": [ "yangus" ],
     "isIngredient": false
   },
   {
@@ -476,6 +482,8 @@
   {
     "id": "golden_axe",
     "name": "Golden Axe",
+    "category": "axe",
+    "usableBy": [ "yangus" ],
     "isIngredient": true
   },
   {
@@ -571,7 +579,10 @@
   {
     "id": "ice_shield",
     "name": "Ice Shield",
-    "isIngredient": false
+    "isIngredient": false,
+    "category": "shield",
+    "usableBy": [ "hero","angelo" ]
+
   },
   {
     "id": "icicle_dirk",
@@ -586,6 +597,8 @@
   {
     "id": "iron_axe",
     "name": "Iron Axe",
+    "category": "axe",
+    "usableBy": [ "yangus" ],
     "isIngredient": true
   },
 
@@ -622,6 +635,8 @@
   {
     "id": "king_axe",
     "name": "King Axe",
+    "category": "axe",
+    "usableBy": [ "yangus" ],
     "isIngredient": false
   },
   {
@@ -802,6 +817,8 @@
   {
     "id": "moon_axe",
     "name": "Moon Axe",
+    "category": "axe",
+    "usableBy": [ "yangus" ],
     "isIngredient": false
   },
   {
@@ -1233,6 +1250,8 @@
   {
     "id": "stone_axe",
     "name": "Stone Axe",
+    "category": "axe",
+    "usableBy": [ "yangus" ],
     "isIngredient": true
   },
   {
@@ -1283,6 +1302,8 @@
   {
     "id": "templars_uniform",
     "name": "Templars Uniform",
+    "category": "armor",
+    "usableBy": [ "angelo" ],
     "isIngredient": true
   },
   {
