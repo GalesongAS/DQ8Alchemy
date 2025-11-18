@@ -2,27 +2,35 @@
   {
     "id": "agility_ring",
     "name": "Agility Ring",
-    "isIngredient": true
+    "isIngredient": true,
+    "usableBy": [ "hero", "yangus", "jessica", "angelo" ],
+    "category": "Accessories"
   },
   {
     "id": "amor_seco_essence",
     "name": "Amor Seco Essence",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "angel_cheese",
     "name": "Angel Cheese",
-    "isIngredient": false
+    "isIngredient": false,
+    "category": "Cheese"
+
   },
   {
-    "id": "angels_robe",
-    "name": "Angels Robe",
+    "id": "angel_s_robe",
+    "name": "Angel's Robe",
     "isIngredient": true
   },
   {
     "id": "antidotal_herb",
     "name": "Antidotal Herb",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "assassins_dagger",
@@ -81,7 +89,10 @@
   {
     "id": "boomerang",
     "name": "Boomerang",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Boomerangs",
+    "usableBy": [ "hero" ]
+
   },
   {
     "id": "boxer_shorts",
@@ -121,17 +132,23 @@
   {
     "id": "bunny_tail",
     "name": "Bunny Tail",
-    "isIngredient": true
+    "isIngredient": true,
+    "usableBy": [ "hero", "yangus", "jessica", "angelo" ],
+    "category": "Accessories"
   },
   {
     "id": "c_c_cold_cheese",
     "name": "C C Cold Cheese",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Cheese"
+
   },
   {
     "id": "catholicon_ring",
     "name": "Catholicon Ring",
-    "isIngredient": false
+    "isIngredient": false,
+        "usableBy": [ "hero", "yangus", "jessica", "angelo" ],
+    "category": "Accessories"
   },
   {
     "id": "chain_mail",
@@ -151,17 +168,23 @@
   {
     "id": "chilly_cheese",
     "name": "Chilly Cheese",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Cheese"
+
   },
   {
     "id": "chimaera_wing",
     "name": "Chimaera Wing",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "chunky_cheese",
     "name": "Chunky Cheese",
-    "isIngredient": false
+    "isIngredient": false,
+    "category": "Cheese"
+
   },
   {
     "id": "cloak_of_evasion",
@@ -172,7 +195,9 @@
   {
     "id": "cold_cheese",
     "name": "Cold Cheese",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Cheese"
+
   },
   {
     "id": "conquerors_axe",
@@ -184,7 +209,9 @@
   {
     "id": "cool_cheese",
     "name": "Cool Cheese",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Cheese"
+
   },
   {
     "id": "copper_sword",
@@ -199,7 +226,9 @@
   {
     "id": "cowpat",
     "name": "Cowpat",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "crimson_robe",
@@ -209,7 +238,9 @@
   {
     "id": "cured_cheese",
     "name": "Cured Cheese",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Cheese"
+
   },
   {
     "id": "cypress_stick",
@@ -285,7 +316,9 @@
   {
     "id": "dragon_dung",
     "name": "Dragon Dung",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "dragon_mail",
@@ -341,7 +374,9 @@
   {
     "id": "edged_boomerang",
     "name": "Edged Boomerang",
-    "isIngredient": true
+    "isIngredient": true,
+    "usableBy": [ "hero" ],
+    "category": "Boomerangs"
   },
   {
     "id": "elevating_shoes",
@@ -351,7 +386,9 @@
   {
     "id": "elfin_elixer",
     "name": "Elfin Elixer",
-    "isIngredient": false
+    "isIngredient": false,
+    "category": "Items"
+
   },
   {
     "id": "eros_bow",
@@ -412,7 +449,9 @@
   {
     "id": "fresh_milk",
     "name": "Fresh Milk",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "full_moon_ring",
@@ -519,7 +558,9 @@
   {
     "id": "hard_cheese",
     "name": "Hard Cheese",
-    "isIngredient": false
+    "isIngredient": false,
+    "category": "Cheese"
+
   },
   {
     "id": "heavy_armour",
@@ -549,7 +590,9 @@
   {
     "id": "highly_strung_cheese",
     "name": "Highly Strung Cheese",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Cheese"
+
   },
   {
     "id": "holy_lance",
@@ -581,7 +624,7 @@
     "name": "Ice Shield",
     "isIngredient": false,
     "category": "shield",
-    "usableBy": [ "hero","angelo" ]
+    "usableBy": [ "hero", "angelo" ]
 
   },
   {
@@ -797,7 +840,9 @@
   {
     "id": "mild_cheese",
     "name": "Mild Cheese",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Cheese"
+
   },
   {
     "id": "miracle_sword",
@@ -874,7 +919,9 @@
   {
     "id": "plain_cheese",
     "name": "Plain Cheese",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Cheese"
+
   },
   {
     "id": "plain_clothes",
@@ -935,7 +982,9 @@
   {
     "id": "razor_wing_boomerang",
     "name": "Razor Wing Boomerang",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Boomerangs",
+    "usableBy": [ "hero" ]
   },
   {
     "id": "recovery_ring",
@@ -945,17 +994,23 @@
   {
     "id": "red_mould",
     "name": "Red Mould",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "reinforced_boomerang",
     "name": "Reinforced Boomerang",
-    "isIngredient": false
+    "isIngredient": false,
+    "category": "Boomerangs",
+    "usableBy": [ "hero" ]
   },
   {
     "id": "rennet_powder",
     "name": "Rennet Powder",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "ring_of_awakening",
@@ -985,17 +1040,23 @@
   {
     "id": "rock_salt",
     "name": "Rock Salt",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "rockbomb_shard",
     "name": "Rockbomb Shard",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "rose_wort",
     "name": "Rose Wort",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "ruby_of_protection",
@@ -1040,7 +1101,9 @@
   {
     "id": "saints_ashes",
     "name": "Saints Ashes",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "sandstorm_spear",
@@ -1080,7 +1143,9 @@
   {
     "id": "scourching_cheese",
     "name": "Scourching Cheese",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Cheese"
+
   },
   {
     "id": "scourge_whip",
@@ -1090,32 +1155,44 @@
   {
     "id": "seed_of_agility",
     "name": "Seed Of Agility",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "seed_of_defense",
     "name": "Seed Of Defense",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "seed_of_life",
     "name": "Seed Of Life",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "seed_of_magic",
     "name": "Seed Of Magic",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "seed_of_strength",
     "name": "Seed Of Strength",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "seed_of_wisdom",
     "name": "Seed Of Wisdom",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "shamshir_of_light",
@@ -1195,7 +1272,10 @@
   {
     "id": "soft_cheese",
     "name": "Soft Cheese",
-    "isIngredient": false
+    "isIngredient": false,
+    "category": "Cheese"
+
+
   },
   {
     "id": "sorcerers_ring",
@@ -1210,17 +1290,23 @@
   {
     "id": "special_antidote",
     "name": "Special Antidote",
-    "isIngredient": false
+    "isIngredient": false,
+    "category": "Items"
+
   },
   {
     "id": "special_medicine",
     "name": "Special Medicine",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "spicy_cheese",
     "name": "Spicy Cheese",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Cheese"
+
   },
   {
     "id": "spiked_armour",
@@ -1240,7 +1326,9 @@
   {
     "id": "steel_scythe",
     "name": "Steel Scythe",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Scythes",
+    "usableBy": ["yangus"]
   },
   {
     "id": "steel_shield",
@@ -1267,12 +1355,16 @@
   {
     "id": "strong_antidote",
     "name": "Strong Antidote",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "strong_medicine",
     "name": "Strong Medicine",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "sun_crown",
@@ -1282,7 +1374,9 @@
   {
     "id": "super_spicy_cheese",
     "name": "Super Spicy Cheese",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Cheese"
+
   },
   {
     "id": "swallowtail",
@@ -1314,7 +1408,9 @@
   {
     "id": "thiefs_key",
     "name": "Thiefs Key",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "thinking_cap",
@@ -1324,7 +1420,9 @@
   {
     "id": "timbrel_of_tension",
     "name": "Timbrel Of Tension",
-    "isIngredient": false
+    "isIngredient": false,
+    "category": "Items"
+
   },
   {
     "id": "titan_belt",
@@ -1389,7 +1487,9 @@
   {
     "id": "wing_of_bat",
     "name": "Wing Of Bat",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "wizards_staff",
@@ -1399,12 +1499,16 @@
   {
     "id": "yggdrasil_dew",
     "name": "Yggdrasil Dew",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "yggdrasil_leaf",
     "name": "Yggdrasil Leaf",
-    "isIngredient": true
+    "isIngredient": true,
+    "category": "Items"
+
   },
   {
     "id": "zombie_mail",
