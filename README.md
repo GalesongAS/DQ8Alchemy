@@ -28,7 +28,6 @@ https://galesongas.github.io/DQ8Alchemy/
 - Craftable-only mode: show only recipes you can craft right now (every ingredient is selected)
 - Favorites: star any result and filter to favorites only
 - Sorting: relevance (complete → partial → none), A→Z, or Z→A
-- Shareable URLs: the page URL encodes your current filters, selections, and sort
 - Local persistence via `localStorage`
 - Static/offline friendly: HTML/CSS/JS + two JSON files
 
@@ -41,7 +40,6 @@ https://galesongas.github.io/DQ8Alchemy/
 5. Use **category** and **usable-by** filters to narrow results.
 6. Click the star to **favorite** a result; use **Favs only** to list only those.
 7. Click the **Recipe Result** table header to change sorting.
-8. Copy the **share link** to send your exact view to others.
 
 ## How it works
 
