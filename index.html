@@ -3,494 +3,150 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DQ8 Alchemy Pot — Recipes</title>
+  <meta name="description" content="Find Dragon Quest VIII Alchemy Pot recipes using the ingredients already in your inventory." />
+  <meta name="theme-color" content="#123f75" />
+  <meta property="og:title" content="DQ8 Alchemy Pot Recipe Finder" />
+  <meta property="og:description" content="Mark what is in your bag and discover what you can brew next." />
+  <meta property="og:type" content="website" />
+  <title>DQ8 Alchemy Pot Recipe Finder</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="container">
-    <h1>Dragon Quest VIII — Alchemy Pot Recipes</h1>
-    <p class="muted">Filter ingredients, select what you have, and see matching recipes below.</p>
+  <header class="site-header">
+    <div class="container hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Dragon Quest VIII companion</p>
+        <h1>Alchemy Pot <span>Recipe Finder</span></h1>
+        <p>Mark what is in your bag, narrow the results, and discover what you can brew next.</p>
+      </div>
+      <div class="hero-stats" aria-label="Database summary">
+        <div><strong id="total-ingredients">0</strong><span>ingredients</span></div>
+        <div><strong id="total-recipes">0</strong><span>recipes</span></div>
+      </div>
+    </div>
   </header>
 
-  <main class="container grid">
-    <!-- Controls -->
-    <section class="card">
-      <h2>Ingredients <span id="ing-count" class="badge">0</span></h2>
+  <main class="container app-grid">
+    <aside class="panel inventory-panel" aria-labelledby="inventory-title">
+      <div class="panel-heading">
+        <div>
+          <p class="section-kicker">Your bag</p>
+          <h2 id="inventory-title">Inventory</h2>
+        </div>
+        <span id="selected-count" class="badge">0 selected</span>
+      </div>
 
-      <div class="controls-row">
-        <div id="cat-filters" class="filters"></div>
-        <div id="char-filters" class="filters"></div>
-
+      <div class="search-wrap">
         <label for="ingredient-search" class="sr-only">Search ingredients</label>
-        <input id="ingredient-search" type="search" placeholder="Search ingredients…" autocomplete="off" />
+        <input id="ingredient-search" type="search" placeholder="Search ingredients..." autocomplete="off" />
+        <button id="clear-search" class="icon-button clear-search" type="button" aria-label="Clear ingredient search" hidden>&times;</button>
+      </div>
 
-        <label class="toggle">
+      <fieldset class="option-list">
+        <legend>Pot options</legend>
+        <label class="toggle-row">
           <input id="upgraded-pot" type="checkbox" />
-          <span>Upgraded Pot (allows 3-ingredient recipes)</span>
+          <span><strong>Upgraded Pot</strong><small>Include 3-ingredient recipes</small></span>
         </label>
-
-        <label class="toggle">
+        <label class="toggle-row">
           <input id="match-any" type="checkbox" />
-          <span>Match ANY selected (OR)</span>
+          <span><strong>Match any selected</strong><small>Use at least one item from your bag</small></span>
         </label>
-
-        <label class="toggle">
+        <label class="toggle-row">
           <input id="craft-only" type="checkbox" />
-          <span>Craftable only</span>
+          <span><strong>Ready to brew only</strong><small>Every ingredient must be selected</small></span>
         </label>
+      </fieldset>
 
-        <button id="fav-only" type="button" class="chip" title="Show only favorites">★ Favs only</button>
-
-        <button id="clear-selection" type="button" class="secondary">Clear selected</button>
-        <button id="clear-all" type="button" class="secondary">Clear ALL</button>
+      <div class="inventory-actions">
+        <p id="ingredient-summary" class="subtle" aria-live="polite"></p>
+        <button id="clear-selection" class="text-button" type="button">Clear inventory</button>
       </div>
 
-      <ul id="ingredient-list" class="checklist" aria-label="Ingredient list"></ul>
-    </section>
+      <ul id="ingredient-list" class="ingredient-list" aria-label="Ingredient list">
+        <li class="empty-list">Loading ingredients...</li>
+      </ul>
+    </aside>
 
-    <!-- Recipes table -->
-    <section class="card">
-      <h2>
-        Recipes <span id="rec-count" class="badge">0</span>
-      </h2>
+    <div class="workspace">
+      <section class="panel filter-panel" aria-labelledby="filters-title">
+        <div class="filter-heading">
+          <div>
+            <p class="section-kicker">Narrow the results</p>
+            <h2 id="filters-title">Recipe filters</h2>
+          </div>
+          <button id="reset-filters" class="text-button" type="button">Reset filters</button>
+        </div>
 
-      <div class="table-wrap">
-        <table id="recipes-table" class="recipes">
-          <thead>
-            <tr>
-              <th class="fav-col" title="Favorite">★</th>
-              <th id="th-result" class="sortable" data-sort="relevance" title="Click to sort Result A→Z / Z→A / Relevance">Recipe Result</th>
-              <th>Item 1</th>
-              <th>Item 2</th>
-              <th>Item 3</th>
-              <th>Usable by</th>
-              <th style="width:20%">Notes</th>
-            </tr>
-          </thead>
-          <tbody id="recipes-tbody" aria-live="polite" aria-busy="true">
-            <tr><td colspan="7" class="muted">Loading…</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+        <div class="filter-group">
+          <span class="filter-label">Result type</span>
+          <div id="category-filters" class="chip-list" aria-label="Filter by result type"></div>
+        </div>
+
+        <div class="filter-group character-group">
+          <span class="filter-label">Usable by</span>
+          <div id="character-filters" class="character-list" aria-label="Filter by character"></div>
+        </div>
+
+        <div class="filter-footer">
+          <p id="filter-summary" class="subtle" aria-live="polite">No result filters active</p>
+          <button id="favorites-only" class="secondary-button" type="button" aria-pressed="false">
+            <span aria-hidden="true">&#9734;</span> Favorites
+          </button>
+        </div>
+      </section>
+
+      <section class="panel recipes-panel" aria-labelledby="recipes-title">
+        <div class="panel-heading recipes-heading">
+          <div>
+            <p class="section-kicker">Pot possibilities</p>
+            <h2 id="recipes-title">Recipes</h2>
+          </div>
+          <div class="recipe-tools">
+            <span id="recipe-count" class="badge" aria-live="polite">0 recipes</span>
+            <label for="recipe-sort" class="sr-only">Sort recipes</label>
+            <select id="recipe-sort" aria-label="Sort recipes">
+              <option value="relevance">Best match</option>
+              <option value="az">Result A-Z</option>
+              <option value="za">Result Z-A</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="recipe-legend" aria-label="Recipe status legend">
+          <span><i class="status-dot ready"></i>Ready to brew</span>
+          <span><i class="status-dot partial"></i>Partially complete</span>
+        </div>
+
+        <div class="table-wrap">
+          <table id="recipes-table" class="recipes">
+            <thead>
+              <tr>
+                <th class="favorite-column"><span class="sr-only">Favorite</span></th>
+                <th>Recipe result</th>
+                <th>Item 1</th>
+                <th>Item 2</th>
+                <th>Item 3</th>
+                <th>Usable by</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody id="recipes-body" aria-live="polite" aria-busy="true">
+              <tr><td colspan="7" class="empty-state">Opening the Alchemy Pot...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
   </main>
 
-  <footer class="container muted small">
-    <p>Favorites and filters are saved locally on your device.</p>
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>Unofficial fan-made companion. Dragon Quest VIII belongs to its respective rights holders.</p>
+      <a href="https://ko-fi.com/galesong" target="_blank" rel="noopener noreferrer">Support on Ko-fi</a>
+    </div>
   </footer>
 
-  <script>
-    (function () {
-      'use strict';
-
-      // ------------------ constants ------------------
-      const LS_KEYS = {
-        selected: 'dq8.selected',
-        upgraded: 'dq8.upgraded',
-        matchAny: 'dq8.matchAny',
-        craftOnly: 'dq8.craftOnly',
-        search: 'dq8.search',
-        cats: 'dq8.cats',
-        chars: 'dq8.chars',
-        favs: 'dq8.favs',
-        favOnly: 'dq8.favOnly',
-        sort: 'dq8.sort'
-      };
-
-      const CHAR_ICONS = {
-        hero: 'img/chars/hero.png',
-        yangus: 'img/chars/yangus.png',
-        jessica: 'img/chars/jessica.png',
-        angelo: 'img/chars/angelo.png',
-      };
-
-      // ------------------ small utils ------------------
-      const getJson = (k, fb = null) => { try { const v = localStorage.getItem(k); return v == null ? fb : JSON.parse(v); } catch { return fb; } };
-      const setJson = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} };
-      const getRaw  = (k, fb = '') => { try { const v = localStorage.getItem(k); return v == null ? fb : v; } catch { return fb; } };
-      const setRaw  = (k, v) => { try { localStorage.setItem(k, v ?? ''); } catch {} };
-      const loadSet = (k) => new Set(getJson(k, []));
-      const saveSet = (k, s) => setJson(k, [...s]);
-      const cap = (s) => s ? s.charAt(0).toUpperCase() + s.slice(1) : '';
-      const toggleSet = (set, val) => { set.has(val) ? set.delete(val) : set.add(val); };
-      const debounce = (fn, ms = 200) => { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; };
-
-      const charIcon = (id) => {
-        const src = CHAR_ICONS[id];
-        const title = cap(id);
-        return src ? `<img class="char-ico" width="22" height="22" src="${src}" alt="${title}" title="${title}">` : '';
-      };
-
-      const els = {
-        search: document.getElementById('ingredient-search'),
-        upgraded: document.getElementById('upgraded-pot'),
-        matchAny: document.getElementById('match-any'),
-        craftOnly: document.getElementById('craft-only'),
-        clear: document.getElementById('clear-selection'),
-        clearAll: document.getElementById('clear-all'),
-
-        list: document.getElementById('ingredient-list'),
-        tbody: document.getElementById('recipes-tbody'),
-        table: document.getElementById('recipes-table'),
-
-        catFilters: document.getElementById('cat-filters'),
-        charFilters: document.getElementById('char-filters'),
-
-        ingCount: document.getElementById('ing-count'),
-        recCount: document.getElementById('rec-count'),
-        favOnly: document.getElementById('fav-only'),
-        thResult: document.getElementById('th-result'),
-      };
-
-      // ------------------ state ------------------
-      const state = {
-        items: [], recipes: [], itemById: new Map(),
-
-        selected: loadSet(LS_KEYS.selected),
-        selectedCategories: loadSet(LS_KEYS.cats),
-        selectedChars: loadSet(LS_KEYS.chars),
-        favorites: loadSet(LS_KEYS.favs),
-
-        search: getRaw(LS_KEYS.search, ''),
-        matchAny: !!getJson(LS_KEYS.matchAny, false),
-        upgraded: !!getJson(LS_KEYS.upgraded, false),
-        craftOnly: !!getJson(LS_KEYS.craftOnly, false),
-        favOnly: !!getJson(LS_KEYS.favOnly, false),
-        sortMode: getRaw(LS_KEYS.sort, 'relevance') // 'relevance' | 'az' | 'za'
-      };
-
-      // reflect UI
-      els.search.value = state.search;
-      els.upgraded.checked = state.upgraded;
-      els.matchAny.checked = state.matchAny;
-      els.craftOnly.checked = state.craftOnly;
-      els.favOnly.classList.toggle('active', state.favOnly);
-      updateSortHeader();
-
-      // ------------------ data load ------------------
-      Promise.all([
-        fetch('data/items.json').then(r => r.json()),
-        fetch('data/recipes.json').then(r => r.json()),
-      ])
-      .then(([items, recipes]) => {
-        state.items = items;
-        state.recipes = recipes;
-        state.itemById = new Map(items.map(i => [i.id, i]));
-        buildFilters();
-        renderAll();
-      })
-      .catch(err => {
-        console.error(err);
-        els.tbody.innerHTML = '<tr><td colspan="7" class="error">Failed to load data. Check console.</td></tr>';
-      });
-
-      // ------------------ events ------------------
-      els.search.addEventListener('input', debounce((e) => {
-        state.search = (e.target.value || '');
-        setRaw(LS_KEYS.search, state.search);
-        renderIngredientList();
-      }, 200));
-
-      els.upgraded.addEventListener('change', (e) => {
-        state.upgraded = !!e.target.checked;
-        setJson(LS_KEYS.upgraded, state.upgraded);
-        renderRecipes();
-      });
-
-      els.matchAny.addEventListener('change', (e) => {
-        state.matchAny = !!e.target.checked;
-        setJson(LS_KEYS.matchAny, state.matchAny);
-        renderRecipes();
-      });
-
-      els.craftOnly.addEventListener('change', (e) => {
-        state.craftOnly = !!e.target.checked;
-        setJson(LS_KEYS.craftOnly, state.craftOnly);
-        renderRecipes();
-      });
-
-      els.clear.addEventListener('click', () => {
-        state.selected.clear();
-        saveSet(LS_KEYS.selected, state.selected);
-        els.list.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
-        renderRecipes();
-      });
-
-      els.clearAll.addEventListener('click', () => {
-        state.selected.clear();
-        state.selectedCategories.clear();
-        state.selectedChars.clear();
-        state.favorites.clear();
-        state.favOnly = false;
-        state.search = '';
-        state.upgraded = false;
-        state.matchAny = false;
-        state.craftOnly = false;
-
-        els.search.value = '';
-        els.upgraded.checked = false;
-        els.matchAny.checked = false;
-        els.craftOnly.checked = false;
-        els.favOnly.classList.remove('active');
-
-        // persist clears
-        saveSet(LS_KEYS.selected, state.selected);
-        saveSet(LS_KEYS.cats, state.selectedCategories);
-        saveSet(LS_KEYS.chars, state.selectedChars);
-        saveSet(LS_KEYS.favs, state.favorites);
-        setJson(LS_KEYS.favOnly, state.favOnly);
-        setRaw(LS_KEYS.search, '');
-        setJson(LS_KEYS.upgraded, false);
-        setJson(LS_KEYS.matchAny, false);
-        setJson(LS_KEYS.craftOnly, false);
-
-        buildFilters();
-        renderAll();
-      });
-
-      els.favOnly.addEventListener('click', () => {
-        state.favOnly = !state.favOnly;
-        els.favOnly.classList.toggle('active', state.favOnly);
-        setJson(LS_KEYS.favOnly, state.favOnly);
-        renderRecipes();
-      });
-
-      els.thResult.addEventListener('click', () => {
-        state.sortMode = nextSort(state.sortMode);
-        setRaw(LS_KEYS.sort, state.sortMode);
-        updateSortHeader();
-        renderRecipes();
-      });
-
-      // delegate favorites toggle
-      els.tbody.addEventListener('click', (e) => {
-        const btn = e.target.closest('.fav-btn');
-        if (!btn) return;
-        const rid = btn.dataset.res;
-        toggleSet(state.favorites, rid);
-        saveSet(LS_KEYS.favs, state.favorites);
-        renderRecipes();
-      });
-
-      // ------------------ render orchestration ------------------
-      function renderAll() {
-        renderIngredientList();
-        renderRecipes();
-      }
-
-      function applyColumnVisibility() {
-        els.table.classList.toggle('hide-3col', !state.upgraded);
-      }
-
-      // ------------------ selectors ------------------
-      function visibleIngredients() {
-        const q = state.search.trim().toLowerCase();
-        return state.items
-          .filter(i => i.isIngredient !== false)
-          .filter(i => !q || (i.name || '').toLowerCase().includes(q))
-          .sort((a, b) => a.name.trim().localeCompare(b.name.trim(), undefined, { sensitivity: 'base' }));
-      }
-
-      function recipePool() {
-        let pool = state.recipes.filter(r => state.upgraded || r.ingredientIds.length <= 2);
-
-        if (state.selectedCategories.size) {
-          pool = pool.filter(r => {
-            const cat = state.itemById.get(r.resultId)?.category;
-            return cat && state.selectedCategories.has(cat);
-          });
-        }
-
-        if (state.selectedChars.size) {
-          pool = pool.filter(r => {
-            const usable = state.itemById.get(r.resultId)?.usableBy || [];
-            return usable.some(u => state.selectedChars.has(u));
-          });
-        }
-
-        if (state.favOnly) {
-          pool = pool.filter(r => state.favorites.has(r.resultId));
-        }
-
-        return pool;
-      }
-
-      function matchesSelection(recipe) {
-        // Craftable only: every ingredient must be selected.
-        if (state.craftOnly) {
-          if (!state.selected.size) return false; // with none selected, nothing is craftable
-          return recipe.ingredientIds.every(id => state.selected.has(id));
-        }
-
-        // Otherwise use ANY vs ALL toggle logic
-        if (!state.selected.size) return true;
-        const has = (id) => recipe.ingredientIds.includes(id);
-        return state.matchAny
-          ? [...state.selected].some(has)
-          : [...state.selected].every(has);
-      }
-
-      function meta(recipe) {
-        const total = recipe.ingredientIds.length;
-        let have = 0;
-        for (const id of recipe.ingredientIds) if (state.selected.has(id)) have++;
-        const complete = have === total;
-        const primary = complete ? 2 : (have > 0 ? 1 : 0);
-        return { total, have, missing: total - have, complete, primary };
-      }
-
-      // ------------------ renderers ------------------
-      function renderIngredientList() {
-        const items = visibleIngredients();
-        els.ingCount.textContent = String(items.length);
-
-        if (!items.length) {
-          els.list.innerHTML = `
-            <li class="muted">
-              No ingredients match${state.search ? ` “${escapeHtml(state.search)}”` : ''}.
-              ${state.search ? `<button id="clear-search" class="linklike" type="button">Clear search</button>` : ''}
-            </li>`;
-          const clearBtn = document.getElementById('clear-search');
-          if (clearBtn) clearBtn.addEventListener('click', () => {
-            state.search = '';
-            els.search.value = '';
-            setRaw(LS_KEYS.search, '');
-            renderIngredientList();
-          });
-          return;
-        }
-
-        const frag = document.createDocumentFragment();
-        for (const item of items) {
-          const li = document.createElement('li');
-          li.className = 'check';
-          const id = `ing-${item.id}`;
-          li.innerHTML = `
-            <label for="${id}">
-              <input id="${id}" type="checkbox" data-id="${item.id}">
-              <span>${escapeHtml(item.name)}</span>
-            </label>`;
-          const cb = li.querySelector('input');
-          cb.checked = state.selected.has(item.id);
-          cb.addEventListener('change', (e) => {
-            const iid = e.target.getAttribute('data-id');
-            if (e.target.checked) state.selected.add(iid); else state.selected.delete(iid);
-            saveSet(LS_KEYS.selected, state.selected);
-            renderRecipes();
-          });
-          frag.appendChild(li);
-        }
-        els.list.innerHTML = '';
-        els.list.appendChild(frag);
-      }
-
-      function renderRecipes() {
-        const filtered = recipePool().filter(matchesSelection);
-        els.recCount.textContent = String(filtered.length);
-
-        if (!filtered.length) {
-          els.tbody.innerHTML = '<tr><td colspan="7" class="muted">No recipes match your selection.</td></tr>';
-          applyColumnVisibility();
-          return;
-        }
-
-        const rows = filtered
-          .slice()
-          .sort(sortByMode(state.sortMode))
-          .map(r => {
-            const m = meta(r);
-            const cells = r.ingredientIds.map(id => {
-              const n = nameOf(id);
-              const isMatch = state.selected.has(id);
-              return `<td${isMatch ? ' class="match"' : ''}>${escapeHtml(n)}</td>`;
-            });
-            while (cells.length < 3) cells.push('<td class="muted">—</td>');
-
-            const resItem = state.itemById.get(r.resultId);
-            const usable = resItem?.usableBy ?? [];
-            const usableTd = `<td class="usable">${usable.length ? usable.map(charIcon).join('') : '—'}</td>`;
-
-            const notes = r.notes ? escapeHtml(r.notes) : '';
-            const resultClass = m.complete ? 'result result-ready' : 'result';
-
-            const isFav = state.favorites.has(r.resultId);
-            const favBtn = `<button class="fav-btn${isFav ? ' on' : ''}" data-res="${r.resultId}" title="${isFav ? 'Unfavorite' : 'Favorite'}">${isFav ? '★' : '☆'}</button>`;
-
-            return `
-              <tr>
-                <td class="fav-col">${favBtn}</td>
-                <td class="${resultClass}">${escapeHtml(nameOf(r.resultId))}</td>
-                ${cells.join('')}
-                ${usableTd}
-                <td class="notes">${notes}</td>
-              </tr>`;
-          });
-
-        els.tbody.innerHTML = rows.join('');
-        applyColumnVisibility();
-      }
-
-      // ------------------ filters UI ------------------
-      function buildFilters() {
-        // Categories from items.json
-        const categories = [...new Set(state.items.map(i => i.category).filter(Boolean))]
-          .sort((a, b) => a.localeCompare(b));
-
-        els.catFilters.innerHTML = categories.map(c =>
-          `<button class="chip${state.selectedCategories.has(c) ? ' active' : ''}" data-cat="${c}">
-            ${escapeHtml(cap(c))}
-          </button>`).join('');
-
-        els.catFilters.onclick = (e) => {
-          const b = e.target.closest('.chip'); if (!b) return;
-          toggleSet(state.selectedCategories, b.dataset.cat);
-          b.classList.toggle('active');
-          saveSet(LS_KEYS.cats, state.selectedCategories);
-          renderRecipes();
-        };
-
-        // Character chips
-        const order = ['hero', 'yangus', 'jessica', 'angelo'];
-        els.charFilters.innerHTML = order.map(id =>
-          `<button class="chip${state.selectedChars.has(id) ? ' active' : ''}" data-char="${id}">
-            <img class="char-ico" src="${CHAR_ICONS[id]}" alt="${cap(id)}"><span>${cap(id)}</span>
-          </button>`).join('');
-
-        els.charFilters.onclick = (e) => {
-          const b = e.target.closest('.chip'); if (!b) return;
-          toggleSet(state.selectedChars, b.dataset.char);
-          b.classList.toggle('active');
-          saveSet(LS_KEYS.chars, state.selectedChars);
-          renderRecipes();
-        };
-      }
-
-      // ------------------ sorting ------------------
-      function nextSort(cur) { return cur === 'relevance' ? 'az' : cur === 'az' ? 'za' : 'relevance'; }
-      function updateSortHeader() {
-        els.thResult.dataset.sort = state.sortMode;
-        els.thResult.classList.remove('sort-az', 'sort-za', 'sort-rel');
-        els.thResult.classList.add(state.sortMode === 'az' ? 'sort-az' : state.sortMode === 'za' ? 'sort-za' : 'sort-rel');
-      }
-      function sortByMode(mode) {
-        if (mode === 'az') return (a, b) => nameOf(a.resultId).trim().localeCompare(nameOf(b.resultId).trim(), undefined, { sensitivity: 'base' });
-        if (mode === 'za') return (a, b) => nameOf(b.resultId).trim().localeCompare(nameOf(a.resultId).trim(), undefined, { sensitivity: 'base' });
-        return (a, b) => { // relevance
-          const A = meta(a), B = meta(b);
-          if (B.primary !== A.primary) return B.primary - A.primary;
-          if (A.missing !== B.missing) return A.missing - B.missing;
-          return nameOf(a.resultId).trim().localeCompare(nameOf(b.resultId).trim(), undefined, { sensitivity: 'base' });
-        };
-      }
-
-      // ------------------ misc helpers ------------------
-      function nameOf(id) { return state.itemById.get(id)?.name || id; }
-      function escapeHtml(s) {
-        return String(s)
-          .replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;')
-          .replaceAll('"', '&quot;').replaceAll("'", '&#39;');
-      }
-    })();
-  </script>
+  <script src="app.js"></script>
 </body>
 </html>

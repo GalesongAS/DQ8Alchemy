@@ -470,7 +470,7 @@
   },
   {
     "id": "r_angels_robe",
-    "resultId": "angels_robe",
+    "resultId": "angel_s_robe",
     "ingredientIds": [
       "flowing_dress",
       "magical_skirt"
@@ -690,7 +690,7 @@
     "resultId": "nitid_tutu",
     "ingredientIds": [
       "spangled_dress",
-      "dancers_costumer",
+      "dancers_costume",
       "life_bracer"
     ],
     "notes": ""
@@ -708,7 +708,7 @@
     "id": "r_princesss_robe",
     "resultId": "princesss_robe",
     "ingredientIds": [
-      "angels_robe",
+      "angel_s_robe",
       "gold_rosary",
       "shimmering_dress"
     ],
