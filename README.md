@@ -1,64 +1,78 @@
-# DQ8 Alchemy Pot — Recipe Finder
+# DQ8 Alchemy Pot Recipe Finder
 
-A lightweight, static web app for Dragon Quest VIII players who love the Alchemy Pot but don’t love flipping between wikis, PDFs, and forum posts every time they pick up a new item.
+A fast, mobile-friendly recipe companion for the Alchemy Pot in **Dragon Quest VIII**. Mark the items in your inventory and the app immediately shows what you can brew, what is almost complete, and which ingredients are still missing.
 
-## Why this exists
+[Open the live app](https://galesongas.github.io/DQ8Alchemy/)
 
-After unlocking the Alchemy Pot, I kept:
+![DQ8 Alchemy Pot Recipe Finder showing a ready recipe](docs/preview.png)
 
-- Searching external sites to check what a new drop could combine into
-- Trying to remember which ingredients I already had
-- Wondering whether I was one item away from an upgrade or still needed to grind
+## Highlights
 
-I wanted a simple page where I could tick what’s in my bag and instantly see what I can make now, what I’m close to, and what still needs parts. So I built this as a small, client-only app.
+- Search and track 211 possible ingredients
+- Browse 187 two- and three-ingredient recipes
+- Keep selected inventory items at the top of the list
+- See ready and partially complete recipes at a glance
+- Add a missing ingredient directly from a recipe
+- Filter results by equipment type and playable character
+- Include upgraded three-ingredient recipes when needed
+- Match every selected item or any selected item
+- Show only recipes that are ready to brew
+- Favorite recipes and sort results by relevance or name
+- Preserve inventory, filters, favorites, and sorting between visits
+- Use a responsive card layout on phones and a compact table on larger screens
 
-## Live demo
+The hosted version needs no account or installation. Everything runs locally in the browser and no usage data is collected.
 
-https://galesongas.github.io/DQ8Alchemy/
+## How to use it
 
-(Works on mobile and desktop. No sign-in. No server.)
+1. Search or browse the **Inventory** panel.
+2. Select every ingredient currently in your bag.
+3. Review the recipes ordered by their match with your inventory.
+4. Select a missing ingredient inside a recipe to add it to your inventory.
+5. Use result-type or character filters to narrow the list.
+6. Enable **Upgraded Pot**, **Match any selected**, or **Ready to brew only** when useful.
+7. Star useful recipes and use **Favorites** to return to them quickly.
 
-## Features
-
-- Fast ingredient search with live filtering
-- Category chips (e.g., Armor, Axe, etc.)
-- Usability filters (Hero, Yangus, Jessica, Angelo) to show results usable by selected characters
-- Upgraded Pot toggle to include 3-ingredient recipes
-- Match mode: “ANY” (OR) vs “ALL” (AND) for selected ingredients
-- Craftable-only mode: show only recipes you can craft right now (every ingredient is selected)
-- Favorites: star any result and filter to favorites only
-- Sorting: relevance (complete → partial → none), A→Z, or Z→A
-- Local persistence via `localStorage`
-- Static/offline friendly: HTML/CSS/JS + two JSON files
-
-## How to use
-
-1. Open the demo (or your local `index.html`).
-2. Search or browse the **Ingredients** list and tick items you own.
-3. Toggle **Upgraded Pot** to include 3-ingredient recipes.
-4. Choose **ANY** vs **ALL**, or enable **Craftable only** to see only fully makeable recipes.
-5. Use **category** and **usable-by** filters to narrow results.
-6. Click the star to **favorite** a result; use **Favs only** to list only those.
-7. Click the **Recipe Result** table header to change sorting.
-
-## How it works
-
-Everything runs in the browser. Data comes from two static files in `/data`:
-
-- `items.json` — item metadata (id, name, category, optional `usableBy`)
-- `recipes.json` — each recipe with `resultId`, `ingredientIds` (2 or 3), and optional `notes`
-
-Selections and UI state are saved to `localStorage` so your setup persists across visits.
+Selected ingredients, filters, favorites, and sorting are saved with `localStorage`. They stay on the current device and browser. Resetting recipe filters does not erase the inventory or favorites.
 
 ## Run locally
 
-Clone the repo and open `index.html` in a browser. If your browser restricts `fetch()` on file URLs, serve the folder with any static server (e.g., `python -m http.server` or VS Code Live Server).
+Clone the repository and serve its root directory with any static server:
+
+```powershell
+python -m http.server 8000
+```
+
+Then open `http://localhost:8000`. Opening `index.html` directly may prevent some browsers from loading the JSON data files.
+
+No build step or third-party frontend dependency is required.
+
+## Project layout
+
+```text
+DQ8Alchemy/
+|-- index.html          Semantic application structure
+|-- styles.css          Dragon Quest-inspired responsive theme
+|-- app.js              State, filtering, persistence, and rendering
+|-- data/
+|   |-- items.json      Item names, categories, and character metadata
+|   `-- recipes.json    Recipe results, ingredients, and notes
+|-- img/chars/          Character filter icons
+`-- docs/preview.png    README preview
+```
+
+## Data format
+
+Each item has a stable `id`, a display `name`, and optional `category`, `usableBy`, and `isIngredient` fields. Recipes reference those IDs through `resultId` and `ingredientIds`.
+
+Changes to the JSON files should keep every referenced ID valid. Multiple recipes may intentionally produce the same result.
 
 ## Contributing
 
-Issues and PRs that improve data accuracy, add missing recipes, or refine UI/UX are welcome. Keep changes simple and static so the page remains fast and hostable on GitHub Pages.
+Corrections to recipe data, missing combinations, accessibility improvements, and focused interface refinements are welcome. Keep the application lightweight and compatible with static GitHub Pages hosting.
 
-## Credits
+## Disclaimer
 
-- Dragon Quest VIII and related assets are property of their respective owners.
-- This is a fan-made utility for personal use. No assets from the game are bundled here.
+This is an unofficial, fan-made companion. Dragon Quest VIII and its related names and imagery are property of their respective rights holders.
+
+If the tool saved you a few trips to a wiki, you can [support its development on Ko-fi](https://ko-fi.com/galesong).
