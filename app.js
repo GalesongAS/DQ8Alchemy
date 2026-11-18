@@ -2,6 +2,7 @@
   'use strict';
 
   const STORAGE = {
+    masterpiece: 'dq8.masterpiece',
     selected: 'dq8.selected',
     upgraded: 'dq8.upgraded',
     matchAny: 'dq8.matchAny',
@@ -26,10 +27,11 @@
     ingredients: [],
     recipes: [],
     itemById: new Map(),
-    selected: loadSet(STORAGE.selected),
-    selectedCategories: loadSet(STORAGE.categories),
+    masterpiece: loadBoolean(STORAGE.masterpiece),
+    selected: new Set(),
+    selectedCategories: new Set(),
     selectedCharacters: loadSet(STORAGE.characters),
-    favorites: loadSet(STORAGE.favorites),
+    favorites: new Set(),
     search: loadRaw(STORAGE.search, ''),
     upgraded: loadBoolean(STORAGE.upgraded),
     matchAny: loadBoolean(STORAGE.matchAny),
@@ -44,6 +46,8 @@
     selectedCount: byId('selected-count'),
     search: byId('ingredient-search'),
     clearSearch: byId('clear-search'),
+    masterpiece: byId('masterpiece-reborn'),
+    catalogError: byId('catalog-error'),
     upgraded: byId('upgraded-pot'),
     matchAny: byId('match-any'),
     craftOnly: byId('craft-only'),
@@ -63,15 +67,24 @@
 
   reflectSavedState();
   bindEvents();
-  loadData();
+  loadData(state.masterpiece);
 
-  async function loadData() {
+  async function loadData(masterpiece) {
+    elements.masterpiece.disabled = true;
+    elements.catalogError.hidden = true;
+    elements.recipesBody.setAttribute('aria-busy', 'true');
+    const directory = masterpiece ? 'data/masterpiece-reborn' : 'data';
     try {
       const [items, recipes] = await Promise.all([
-        fetchJson('data/items.json'),
-        fetchJson('data/recipes.json'),
+        fetchJson(`${directory}/items.json`),
+        fetchJson(`${directory}/recipes.json`),
       ]);
 
+      state.masterpiece = masterpiece;
+      saveBoolean(STORAGE.masterpiece, masterpiece);
+      state.selected = loadSet(catalogKey(STORAGE.selected));
+      state.selectedCategories = loadSet(catalogKey(STORAGE.categories));
+      state.favorites = loadSet(catalogKey(STORAGE.favorites));
       state.items = items;
       state.ingredients = items.filter((item) => item.isIngredient !== false);
       state.recipes = recipes;
@@ -80,18 +93,47 @@
 
       elements.totalIngredients.textContent = String(state.ingredients.length);
       elements.totalRecipes.textContent = String(state.recipes.length);
-      elements.recipesBody.setAttribute('aria-busy', 'false');
 
       renderFilters();
       renderAll();
     } catch (error) {
       console.error(error);
+      elements.catalogError.hidden = false;
+      if (state.recipes.length === 0) elements.recipesBody.innerHTML = '';
+    } finally {
+      elements.masterpiece.checked = state.masterpiece;
+      elements.masterpiece.disabled = false;
       elements.recipesBody.setAttribute('aria-busy', 'false');
-      elements.recipesBody.innerHTML = '<tr><td colspan="7" class="empty-state error">The recipe data could not be loaded. Please refresh the page.</td></tr>';
     }
   }
 
+  function catalogKey(key) {
+    return state.masterpiece ? `${key}.masterpiece` : key;
+  }
+
   function bindEvents() {
+    elements.masterpiece.addEventListener('change', () => loadData(elements.masterpiece.checked));
+
+    elements.categoryFilters.addEventListener('click', (event) => {
+      const button = event.target.closest('[data-category]');
+      if (!button) return;
+      toggleSet(state.selectedCategories, button.dataset.category);
+      saveSet(catalogKey(STORAGE.categories), state.selectedCategories);
+      reflectFilterButtons();
+      renderFilterSummary();
+      renderRecipes();
+    });
+
+    elements.characterFilters.addEventListener('click', (event) => {
+      const button = event.target.closest('[data-character]');
+      if (!button) return;
+      toggleSet(state.selectedCharacters, button.dataset.character);
+      saveSet(STORAGE.characters, state.selectedCharacters);
+      reflectFilterButtons();
+      renderFilterSummary();
+      renderRecipes();
+    });
+
     elements.search.addEventListener('input', (event) => {
       state.search = event.target.value || '';
       saveRaw(STORAGE.search, state.search);
@@ -124,7 +166,7 @@
 
     elements.clearSelection.addEventListener('click', () => {
       state.selected.clear();
-      saveSet(STORAGE.selected, state.selected);
+      saveSet(catalogKey(STORAGE.selected), state.selected);
       renderAll();
     });
 
@@ -148,7 +190,7 @@
       const favoriteButton = event.target.closest('[data-favorite]');
       if (favoriteButton) {
         toggleSet(state.favorites, favoriteButton.dataset.favorite);
-        saveSet(STORAGE.favorites, state.favorites);
+        saveSet(catalogKey(STORAGE.favorites), state.favorites);
         renderRecipes();
         return;
       }
@@ -156,7 +198,7 @@
       const ingredientButton = event.target.closest('[data-add-ingredient]');
       if (ingredientButton) {
         state.selected.add(ingredientButton.dataset.addIngredient);
-        saveSet(STORAGE.selected, state.selected);
+        saveSet(catalogKey(STORAGE.selected), state.selected);
         renderAll();
         return;
       }
@@ -210,7 +252,7 @@
       checkbox.addEventListener('change', (event) => {
         const itemId = event.target.dataset.ingredientId;
         event.target.checked ? state.selected.add(itemId) : state.selected.delete(itemId);
-        saveSet(STORAGE.selected, state.selected);
+        saveSet(catalogKey(STORAGE.selected), state.selected);
         renderAll();
       });
     });
@@ -225,15 +267,6 @@
       return `<button class="filter-chip${active ? ' active' : ''}" type="button" data-category="${escapeAttribute(category)}" aria-pressed="${active}">${escapeHtml(titleCase(category))}</button>`;
     }).join('');
 
-    elements.categoryFilters.addEventListener('click', (event) => {
-      const button = event.target.closest('[data-category]');
-      if (!button) return;
-      toggleSet(state.selectedCategories, button.dataset.category);
-      saveSet(STORAGE.categories, state.selectedCategories);
-      reflectFilterButtons();
-      renderFilterSummary();
-      renderRecipes();
-    });
 
     elements.characterFilters.innerHTML = CHARACTERS.map((character) => {
       const active = state.selectedCharacters.has(character.id);
@@ -243,15 +276,6 @@
       </button>`;
     }).join('');
 
-    elements.characterFilters.addEventListener('click', (event) => {
-      const button = event.target.closest('[data-character]');
-      if (!button) return;
-      toggleSet(state.selectedCharacters, button.dataset.character);
-      saveSet(STORAGE.characters, state.selectedCharacters);
-      reflectFilterButtons();
-      renderFilterSummary();
-      renderRecipes();
-    });
   }
 
   function renderFilterSummary() {
@@ -377,7 +401,7 @@
     state.craftOnly = false;
     state.favoritesOnly = false;
 
-    saveSet(STORAGE.categories, state.selectedCategories);
+    saveSet(catalogKey(STORAGE.categories), state.selectedCategories);
     saveSet(STORAGE.characters, state.selectedCharacters);
     saveRaw(STORAGE.search, '');
     saveBoolean(STORAGE.upgraded, false);
@@ -404,6 +428,7 @@
   }
 
   function reflectSavedState() {
+    elements.masterpiece.checked = state.masterpiece;
     elements.search.value = state.search;
     elements.upgraded.checked = state.upgraded;
     elements.matchAny.checked = state.matchAny;
@@ -442,9 +467,9 @@
     state.selectedCategories = new Set([...state.selectedCategories].filter((category) => categories.has(category)));
     state.selectedCharacters = new Set([...state.selectedCharacters].filter((id) => characterIds.has(id)));
 
-    saveSet(STORAGE.selected, state.selected);
-    saveSet(STORAGE.favorites, state.favorites);
-    saveSet(STORAGE.categories, state.selectedCategories);
+    saveSet(catalogKey(STORAGE.selected), state.selected);
+    saveSet(catalogKey(STORAGE.favorites), state.favorites);
+    saveSet(catalogKey(STORAGE.categories), state.selectedCategories);
     saveSet(STORAGE.characters, state.selectedCharacters);
   }
 

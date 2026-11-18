@@ -8,8 +8,8 @@ A fast, mobile-friendly recipe companion for the Alchemy Pot in **Dragon Quest V
 
 ## Highlights
 
-- Search and track 211 possible ingredients
-- Browse 187 two- and three-ingredient recipes
+- Browse 187 recipes in the default catalog or 201 with Masterpiece Reborn enabled
+- Search and track ingredients for the selected edition
 - Keep selected inventory items at the top of the list
 - See ready and partially complete recipes at a glance
 - Add a missing ingredient directly from a recipe
@@ -32,6 +32,8 @@ The hosted version needs no account or installation. Everything runs locally in 
 5. Use result-type or character filters to narrow the list.
 6. Enable **Upgraded Pot**, **Match any selected**, or **Ready to brew only** when useful.
 7. Star useful recipes and use **Favorites** to return to them quickly.
+
+Enable **Masterpiece Reborn** under Pot options to switch to the PC mod's catalog, including its 16 additional recipes and edition-specific combinations. The selected edition is remembered. Each edition keeps its own inventory, favorites, and result type filters.
 
 Selected ingredients, filters, favorites, and sorting are saved with `localStorage`. They stay on the current device and browser. Resetting recipe filters does not erase the inventory or favorites.
 

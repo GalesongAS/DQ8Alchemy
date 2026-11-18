@@ -1,0 +1,2867 @@
+[
+  {
+    "id": "agility_ring",
+    "name": "Agility Ring",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "amor_seco_essence",
+    "name": "Amor Seco Essence",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "angel_cheese",
+    "name": "Angel Cheese",
+    "category": "Cheese",
+    "isIngredient": false,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "angel_s_robe",
+    "name": "Angel's Robe",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "antidotal_herb",
+    "name": "Antidotal Herb",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "assassins_dagger",
+    "name": "Assassin's Dagger",
+    "category": "Knives",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "axe_a_rang",
+    "name": "Axe-a-rang",
+    "category": "Boomerangs",
+    "isIngredient": false,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "bandana",
+    "name": "Bandana",
+    "category": "Headgear",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "bandit_axe",
+    "name": "Bandit Axe",
+    "category": "Scythes",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "bandit_mail",
+    "name": "Bandit Mail",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "bandits_grass_skirt",
+    "name": "Bandit's Grass Skirt",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "bastard_sword",
+    "name": "Bastard Sword",
+    "category": "Swords",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "jessica"
+    ]
+  },
+  {
+    "id": "battle_fork",
+    "name": "Battle Fork",
+    "category": "Spears",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "battle_axe",
+    "name": "Battle-axe",
+    "category": "Scythes",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "baumrens_bell",
+    "name": "Baumren's Bell",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "big_boss_shield",
+    "name": "Big Boss Shield",
+    "category": "Shields",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "blizzard_blade",
+    "name": "Blizzard Blade",
+    "category": "Swords",
+    "isIngredient": false,
+    "usableBy": [
+      "hero",
+      "jessica"
+    ]
+  },
+  {
+    "id": "boomerang",
+    "name": "Boomerang",
+    "category": "Boomerangs",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "boxer_shorts",
+    "name": "Boxer shorts",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "bronze_armour",
+    "name": "Bronze Armour",
+    "category": "Armour",
+    "isIngredient": false,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "bronze_helmet",
+    "name": "Bronze Helmet",
+    "category": "Headgear",
+    "isIngredient": false,
+    "usableBy": [
+      "hero",
+      "angelo"
+    ]
+  },
+  {
+    "id": "bronze_knife",
+    "name": "Bronze Knife",
+    "category": "Knives",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "bronze_shield",
+    "name": "Bronze Shield",
+    "category": "Shields",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus"
+    ]
+  },
+  {
+    "id": "bunny_ears",
+    "name": "Bunny Ears",
+    "category": "Headgear",
+    "isIngredient": false,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "bunny_suit",
+    "name": "Bunny Suit",
+    "category": "Armour",
+    "isIngredient": false,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "bunny_tail",
+    "name": "Bunny Tail",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "c_c_cold_cheese",
+    "name": "C-C-Cold Cheese",
+    "category": "Cheese",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "catholicon_ring",
+    "name": "Catholicon Ring",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "chain_mail",
+    "name": "Chain Mail",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "chain_whip",
+    "name": "Chain Whip",
+    "category": "Whips",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "cheirons_bow",
+    "name": "Cheiron's Bow",
+    "category": "Fisticuffs",
+    "isIngredient": true,
+    "usableBy": [
+      "angelo"
+    ]
+  },
+  {
+    "id": "chilly_cheese",
+    "name": "Chilly Cheese",
+    "category": "Cheese",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "chimaera_wing",
+    "name": "Chimaera Wing",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "chunky_cheese",
+    "name": "Chunky Cheese",
+    "category": "Cheese",
+    "isIngredient": false,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "cloak_of_evasion",
+    "name": "Cloak of Evasion",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "cold_cheese",
+    "name": "Cold Cheese",
+    "category": "Cheese",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "colossal_cleaver",
+    "name": "Colossal Cleaver",
+    "category": "Axes",
+    "isIngredient": false,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "conquerors_axe",
+    "name": "Conqueror's Axe",
+    "category": "Scythes",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "cool_cheese",
+    "name": "Cool Cheese",
+    "category": "Cheese",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "copper_sword",
+    "name": "Copper Sword",
+    "category": "Swords",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "jessica"
+    ]
+  },
+  {
+    "id": "coral_hairpin",
+    "name": "Coral Hairpin",
+    "category": "Headgear",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "cowpat",
+    "name": "Cowpat",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": []
+  },
+  {
+    "id": "crimson_robe",
+    "name": "Crimson Robe",
+    "category": "Armour",
+    "isIngredient": false,
+    "usableBy": [
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "cured_cheese",
+    "name": "Cured Cheese",
+    "category": "Cheese",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "cypress_stick",
+    "name": "Cypress Stick",
+    "category": "Swords",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "dagger",
+    "name": "Dagger",
+    "category": "Knives",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "dancers_costume",
+    "name": "Dancer's Costume",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "dancers_mail",
+    "name": "Dancer's Mail",
+    "category": "Armour",
+    "isIngredient": false,
+    "usableBy": [
+      "angelo"
+    ]
+  },
+  {
+    "id": "dangerous_bustier",
+    "name": "Dangerous Bustier",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "dark_robe",
+    "name": "Dark Robe",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "demon_spear",
+    "name": "Demon Spear",
+    "category": "Spears",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "demon_whip",
+    "name": "Demon Whip",
+    "category": "Whips",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "devils_tail",
+    "name": "Devil's Tail",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "divine_bustier",
+    "name": "Divine Bustier",
+    "category": "Armour",
+    "isIngredient": false,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "double_edge_sword",
+    "name": "Double-edged Sword",
+    "category": "Swords",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "jessica"
+    ]
+  },
+  {
+    "id": "dragon_dung",
+    "name": "Dragon Dung",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": []
+  },
+  {
+    "id": "dragon_mail",
+    "name": "Dragon Mail",
+    "category": "Armour",
+    "isIngredient": false,
+    "usableBy": [
+      "hero",
+      "yangus"
+    ]
+  },
+  {
+    "id": "dragon_scale",
+    "name": "Dragon Scale",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "dragon_shield",
+    "name": "Dragon Shield",
+    "category": "Shields",
+    "isIngredient": false,
+    "usableBy": [
+      "hero",
+      "yangus"
+    ]
+  },
+  {
+    "id": "dragon_slayer",
+    "name": "Dragon Slayer",
+    "category": "Swords",
+    "isIngredient": false,
+    "usableBy": [
+      "hero",
+      "jessica"
+    ]
+  },
+  {
+    "id": "dragonsbane",
+    "name": "Dragonsbane",
+    "category": "Swords",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "jessica"
+    ]
+  },
+  {
+    "id": "dragontail_whip",
+    "name": "Dragontail Whip",
+    "category": "Whips",
+    "isIngredient": false,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "dragovian_king_sword",
+    "name": "Dragovian King Sword",
+    "category": "Swords",
+    "isIngredient": false,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "dragovian_sword",
+    "name": "Dragovian Sword",
+    "category": "Swords",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "dream_blade",
+    "name": "Dream Blade",
+    "category": "Swords",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "eagle_dagger",
+    "name": "Eagle Dagger",
+    "category": "Knives",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "edged_boomerang",
+    "name": "Edged Boomerang",
+    "category": "Boomerangs",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "elevating_shoes",
+    "name": "Elevating Shoes",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "elfin_elixer",
+    "name": "Elfin Elixir",
+    "category": "Items",
+    "isIngredient": false,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "eros_bow",
+    "name": "Eros' Bow",
+    "category": "Bows",
+    "isIngredient": true,
+    "usableBy": [
+      "angelo"
+    ]
+  },
+  {
+    "id": "falcon_blade",
+    "name": "Falcon Blade",
+    "category": "Swords",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "falcon_knife",
+    "name": "Falcon Knife",
+    "category": "Knives",
+    "isIngredient": false,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "fallen_angel_rapier",
+    "name": "Fallen Angel Rapier",
+    "category": "Rapiers",
+    "isIngredient": true,
+    "usableBy": [
+      "angelo"
+    ]
+  },
+  {
+    "id": "farmers_scythe",
+    "name": "Farmer's Scythe",
+    "category": "Axes",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "feathered_cap",
+    "name": "Feathered Cap",
+    "category": "Headgear",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "fishnet_stockings",
+    "name": "Fishnet Stockings",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "flail_of_fury",
+    "name": "Flail of Fury",
+    "category": "Flails",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "flame_shield",
+    "name": "Flame Shield",
+    "category": "Shields",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus",
+      "jessica"
+    ]
+  },
+  {
+    "id": "flametang_boomerang",
+    "name": "Flametang Boomerang",
+    "category": "Boomerangs",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "flowing_dress",
+    "name": "Flowing Dress",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "fresh_milk",
+    "name": "Fresh Milk",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": []
+  },
+  {
+    "id": "full_moon_ring",
+    "name": "Full Moon Ring",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "full_plate_armour",
+    "name": "Full Plate Armour",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "fur_hood",
+    "name": "Fur Hood",
+    "category": "Headgear",
+    "isIngredient": false,
+    "usableBy": [
+      "hero",
+      "yangus"
+    ]
+  },
+  {
+    "id": "fur_poncho",
+    "name": "Fur Poncho",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "garter",
+    "name": "Garter",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "giant_mallet",
+    "name": "Giant Mallet",
+    "category": "Clubs",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "gigant_armour",
+    "name": "Gigant Armour",
+    "category": "Armour",
+    "isIngredient": false,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "goddess_ring",
+    "name": "Goddess Ring",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "goddess_shield",
+    "name": "Goddess Shield",
+    "category": "Shields",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "gold_bracer",
+    "name": "Gold Bracer",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "gold_nugget",
+    "name": "Gold Nugget",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": []
+  },
+  {
+    "id": "gold_ring",
+    "name": "Gold Ring",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "gold_rosary",
+    "name": "Gold Rosary",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "golden_axe",
+    "name": "Golden Axe",
+    "category": "Scythes",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "golden_shield",
+    "name": "Golden Shield",
+    "category": "Shields",
+    "isIngredient": false,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "golden_tiara",
+    "name": "Golden Tiara",
+    "category": "Headgear",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "great_bow",
+    "name": "Great Bow",
+    "category": "Bows",
+    "isIngredient": true,
+    "usableBy": [
+      "angelo"
+    ]
+  },
+  {
+    "id": "greater_panacea",
+    "name": "Greater Panacea",
+    "category": "Items",
+    "isIngredient": false,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "hades_helm",
+    "name": "Hades' Helm",
+    "category": "Headgear",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus"
+    ]
+  },
+  {
+    "id": "hairband",
+    "name": "Hairband",
+    "category": "Headgear",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "happy_hat",
+    "name": "Happy Hat",
+    "category": "Headgear",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "hard_cheese",
+    "name": "Hard Cheese",
+    "category": "Cheese",
+    "isIngredient": false,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "heavy_armour",
+    "name": "Heavy Armour",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "heavy_hatchet",
+    "name": "Heavy Hatchet",
+    "category": "Axes",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "hell_scythe",
+    "name": "Hell Scythe",
+    "category": "Axes",
+    "isIngredient": false,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "hermes_hat",
+    "name": "Hermes' Hat",
+    "category": "Headgear",
+    "isIngredient": false,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "highly_strung_cheese",
+    "name": "Highly Strung Cheese",
+    "category": "Cheese",
+    "isIngredient": false,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "holy_lance",
+    "name": "Holy Lance",
+    "category": "Spears",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "holy_moly_water",
+    "name": "Holy Moly Water",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "holy_silver_rapier",
+    "name": "Holy Silver Rapier",
+    "category": "Rapiers",
+    "isIngredient": true,
+    "usableBy": [
+      "angelo"
+    ]
+  },
+  {
+    "id": "holy_talisman",
+    "name": "Holy Talisman",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "holy_water",
+    "name": "Holy Water",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "hunters_bow",
+    "name": "Hunter's Bow",
+    "category": "Fisticuffs",
+    "isIngredient": true,
+    "usableBy": [
+      "angelo"
+    ]
+  },
+  {
+    "id": "ice_shield",
+    "name": "Ice Shield",
+    "category": "Shields",
+    "isIngredient": false,
+    "usableBy": [
+      "hero",
+      "angelo"
+    ]
+  },
+  {
+    "id": "icicle_dirk",
+    "name": "Icicle Dirk",
+    "category": "Knives",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "imp_knife",
+    "name": "Imp Knife",
+    "category": "Knives",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "iron_axe",
+    "name": "Iron Axe",
+    "category": "Scythes",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "iron_cuirass",
+    "name": "Iron Cuirass",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "iron_headgear",
+    "name": "Iron Headgear",
+    "category": "Headgear",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus"
+    ]
+  },
+  {
+    "id": "iron_helmet",
+    "name": "Iron Helmet",
+    "category": "Headgear",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "angelo"
+    ]
+  },
+  {
+    "id": "iron_lance",
+    "name": "Iron Lance",
+    "category": "Spears",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "iron_nail",
+    "name": "Iron Nail",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": []
+  },
+  {
+    "id": "iron_shield",
+    "name": "Iron Shield",
+    "category": "Shields",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus"
+    ]
+  },
+  {
+    "id": "king_axe",
+    "name": "King Axe",
+    "category": "Scythes",
+    "isIngredient": false,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "leather_armour",
+    "name": "Leather Armour",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "angelo"
+    ]
+  },
+  {
+    "id": "leather_dress",
+    "name": "Leather Dress",
+    "category": "Armour",
+    "isIngredient": false,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "leather_hat",
+    "name": "Leather Hat",
+    "category": "Headgear",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "leather_kilt",
+    "name": "Leather Kilt",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "leather_shield",
+    "name": "Leather Shield",
+    "category": "Shields",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "angelo"
+    ]
+  },
+  {
+    "id": "leather_whip",
+    "name": "Leather Whip",
+    "category": "Whips",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "lesser_panacea",
+    "name": "Lesser Panacea",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "life_bracer",
+    "name": "Life Bracer",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "light_shield",
+    "name": "Light Shield",
+    "category": "Shields",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "liquid_metal_armour",
+    "name": "Liquid Metal Armour",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "liquid_metal_sword",
+    "name": "Liquid Metal Sword",
+    "category": "Swords",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "long_spear",
+    "name": "Long Spear",
+    "category": "Spears",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "magic_armour",
+    "name": "Magic Armour",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "angelo"
+    ]
+  },
+  {
+    "id": "magic_beast_hide",
+    "name": "Magic Beast Hide",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": []
+  },
+  {
+    "id": "magic_shield",
+    "name": "Magic Shield",
+    "category": "Shields",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "angelo"
+    ]
+  },
+  {
+    "id": "magic_vestment",
+    "name": "Magic Vestment",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "magic_water",
+    "name": "Magic Water",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "magical_hat",
+    "name": "Magical Hat",
+    "category": "Headgear",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "magical_mace",
+    "name": "Magical Mace",
+    "category": "Staves",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "magical_skirt",
+    "name": "Magical Skirt",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "magma_staff",
+    "name": "Magma Staff",
+    "category": "Staves",
+    "isIngredient": false,
+    "usableBy": [
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "marcellos_rapier",
+    "name": "Marcello's Rapier",
+    "category": "Rapiers",
+    "isIngredient": false,
+    "usableBy": [
+      "angelo"
+    ]
+  },
+  {
+    "id": "marcellos_uniform",
+    "name": "Marcello's Uniform",
+    "category": "Armour",
+    "isIngredient": false,
+    "usableBy": [
+      "angelo"
+    ]
+  },
+  {
+    "id": "medeas_dress",
+    "name": "Medea's Dress",
+    "category": "Armour",
+    "isIngredient": false,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "medeas_staff",
+    "name": "Medea's Staff",
+    "category": "Staves",
+    "isIngredient": false,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "medicinal_herb",
+    "name": "Medicinal Herb",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "megaton_hammer",
+    "name": "Megaton Hammer",
+    "category": "Clubs",
+    "isIngredient": false,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "mercurys_bandana",
+    "name": "Mercury's Bandana",
+    "category": "Headgear",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "mercury_rapier",
+    "name": "Mercury's Rapier",
+    "category": "Rapiers",
+    "isIngredient": true,
+    "usableBy": [
+      "angelo"
+    ]
+  },
+  {
+    "id": "metal_king_armour",
+    "name": "Metal King Armour",
+    "category": "Armour",
+    "isIngredient": false,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "metal_king_greatsword",
+    "name": "Metal King Greatsword",
+    "category": "Swords",
+    "isIngredient": false,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "metal_king_shield",
+    "name": "Metal King Shield",
+    "category": "Shields",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "metal_king_spear",
+    "name": "Metal King Spear",
+    "category": "Spears",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "metal_wing_boomerang",
+    "name": "Metal Wing Boomerang",
+    "category": "Boomerangs",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "meteorite_bracer",
+    "name": "Meteorite Bracer",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "mighty_armlet",
+    "name": "Mighty Armlet",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "mild_cheese",
+    "name": "Mild Cheese",
+    "category": "Cheese",
+    "isIngredient": false,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "minervas_glaive",
+    "name": "Minerva's Glaive",
+    "category": "Spears",
+    "isIngredient": false,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "miracle_sword",
+    "name": "Miracle Sword",
+    "category": "Swords",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "jessica"
+    ]
+  },
+  {
+    "id": "mirror_armour",
+    "name": "Mirror Armour",
+    "category": "Armour",
+    "isIngredient": false,
+    "usableBy": [
+      "hero",
+      "angelo"
+    ]
+  },
+  {
+    "id": "mirror_shield",
+    "name": "Mirror Shield",
+    "category": "Shields",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "angelo"
+    ]
+  },
+  {
+    "id": "moon_axe",
+    "name": "Moon Axe",
+    "category": "Scythes",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "moons_mercy",
+    "name": "Moon's Mercy",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "moonwort_bulb",
+    "name": "Moonwort Bulb",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "mystifying_mixture",
+    "name": "Mystifying Mixture",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "mythril_helm",
+    "name": "Mythril Helm",
+    "category": "Headgear",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "angelo"
+    ]
+  },
+  {
+    "id": "nightblade",
+    "name": "Nightblade",
+    "category": "Knives",
+    "isIngredient": false,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "nook_grass",
+    "name": "Nook Grass",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": []
+  },
+  {
+    "id": "oaken_club",
+    "name": "Oaken Club",
+    "category": "Clubs",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "odins_bow",
+    "name": "Odin's Bow",
+    "category": "Bows",
+    "isIngredient": false,
+    "usableBy": [
+      "angelo"
+    ]
+  },
+  {
+    "id": "orichalcum",
+    "name": "Orichalcum",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": []
+  },
+  {
+    "id": "partisan",
+    "name": "Partisan",
+    "category": "Spears",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "phantom_mask",
+    "name": "Phantom Mask",
+    "category": "Headgear",
+    "isIngredient": false,
+    "usableBy": [
+      "angelo"
+    ]
+  },
+  {
+    "id": "plain_cheese",
+    "name": "Plain Cheese",
+    "category": "Cheese",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "plain_clothes",
+    "name": "Plain Clothes",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "platinum_mail",
+    "name": "Platinum Mail",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "angelo"
+    ]
+  },
+  {
+    "id": "pointy_hat",
+    "name": "Pointy Hat",
+    "category": "Headgear",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "poison_moth_knife",
+    "name": "Poison Moth Knife",
+    "category": "Knives",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "poison_needle",
+    "name": "Poison Needle",
+    "category": "Knives",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "pot_lid",
+    "name": "Pot Lid",
+    "category": "Shields",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus",
+      "jessica"
+    ]
+  },
+  {
+    "id": "power_shield",
+    "name": "Power Shield",
+    "category": "Shields",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "angelo"
+    ]
+  },
+  {
+    "id": "prayer_ring",
+    "name": "Prayer Ring",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "premium_mould",
+    "name": "Premium Mould",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": []
+  },
+  {
+    "id": "princesss_robe",
+    "name": "Princess's Robe",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "raging_bull_helm",
+    "name": "Raging Bull Helm",
+    "category": "Headgear",
+    "isIngredient": false,
+    "usableBy": [
+      "hero",
+      "yangus"
+    ]
+  },
+  {
+    "id": "razor_sword",
+    "name": "Razor Sword",
+    "category": "Swords",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "jessica"
+    ]
+  },
+  {
+    "id": "razor_wing_boomerang",
+    "name": "Razor Wing Boomerang",
+    "category": "Boomerangs",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "recovery_ring",
+    "name": "Recovery Ring",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "red_mould",
+    "name": "Red Mould",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": []
+  },
+  {
+    "id": "reinforced_boomerang",
+    "name": "Reinforced Boomerang",
+    "category": "Boomerangs",
+    "isIngredient": false,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "rennet_powder",
+    "name": "Rennet Powder",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": []
+  },
+  {
+    "id": "ring_of_awakening",
+    "name": "Ring of Awakening",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "ring_of_clarity",
+    "name": "Ring of Clarity",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "ring_of_immunity",
+    "name": "Ring of Immunity",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "ring_of_truth",
+    "name": "Ring of Truth",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "robe_of_serenity",
+    "name": "Robe of Serenity",
+    "category": "Armour",
+    "isIngredient": false,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "rock_salt",
+    "name": "Rock Salt",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": []
+  },
+  {
+    "id": "rockbomb_shard",
+    "name": "Rockbomb Shard",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "rose_root",
+    "name": "Rose-root",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "rose_wort",
+    "name": "Rose-wort",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "ruby_of_protection",
+    "name": "Ruby of Protection",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "ruinous_shield",
+    "name": "Ruinous Shield",
+    "category": "Shields",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "angelo"
+    ]
+  },
+  {
+    "id": "rune_staff",
+    "name": "Rune Staff",
+    "category": "Staves",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "rusty_old_sword",
+    "name": "Rusty Old Sword",
+    "category": "Swords",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "jessica"
+    ]
+  },
+  {
+    "id": "sages_robe",
+    "name": "Sage's Robe",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "angelo"
+    ]
+  },
+  {
+    "id": "sages_stone",
+    "name": "Sage's Stone",
+    "category": "Items",
+    "isIngredient": false,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "saints_ashes",
+    "name": "Saint's Ashes",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": []
+  },
+  {
+    "id": "saintess_shield",
+    "name": "Saintess Shield",
+    "category": "Shields",
+    "isIngredient": false,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "sandstorm_spear",
+    "name": "Sandstorm Spear",
+    "category": "Spears",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "scale_armour",
+    "name": "Scale Armour",
+    "category": "Armour",
+    "isIngredient": false,
+    "usableBy": [
+      "hero",
+      "angelo"
+    ]
+  },
+  {
+    "id": "scale_shield",
+    "name": "Scale Shield",
+    "category": "Shields",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "scholars_cap",
+    "name": "Scholar's Cap",
+    "category": "Headgear",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "scholars_specs",
+    "name": "Scholar's Specs",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "scourching_cheese",
+    "name": "Scorching Cheese",
+    "category": "Cheese",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "scourge_whip",
+    "name": "Scourge Whip",
+    "category": "Whips",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "seed_of_agility",
+    "name": "Seed of Agility",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "seed_of_defense",
+    "name": "Seed of Defence",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "seed_of_life",
+    "name": "Seed of Life",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "seed_of_magic",
+    "name": "Seed of Magic",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "seed_of_strength",
+    "name": "Seed of Strength",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "seed_of_wisdom",
+    "name": "Seed of Wisdom",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "shamshir_of_light",
+    "name": "Shamshir of Light",
+    "category": "Rapiers",
+    "isIngredient": false,
+    "usableBy": [
+      "angelo"
+    ]
+  },
+  {
+    "id": "shimmering_dress",
+    "name": "Shimmering Dress",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "short_bow",
+    "name": "Short Bow",
+    "category": "Fisticuffs",
+    "isIngredient": true,
+    "usableBy": [
+      "angelo"
+    ]
+  },
+  {
+    "id": "silk_bustier",
+    "name": "Silk Bustier",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "silly_club",
+    "name": "Silly Club",
+    "category": "Clubs",
+    "isIngredient": false,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "silver_bell",
+    "name": "Silver Bell",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "silver_cuirass",
+    "name": "Silver Cuirass",
+    "category": "Armour",
+    "isIngredient": false,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "silver_mail",
+    "name": "Silver Mail",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "angelo"
+    ]
+  },
+  {
+    "id": "silver_ore",
+    "name": "Silver Ore",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": []
+  },
+  {
+    "id": "silver_platter",
+    "name": "Silver Platter",
+    "category": "Shields",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "silver_shield",
+    "name": "Silver Shield",
+    "category": "Shields",
+    "isIngredient": false,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "angelo"
+    ]
+  },
+  {
+    "id": "silver_tiara",
+    "name": "Silver Tiara",
+    "category": "Headgear",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "skull_helm",
+    "name": "Skull Helm",
+    "category": "Headgear",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "skull_ring",
+    "name": "Skull Ring",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "sledgehammer",
+    "name": "Sledgehammer",
+    "category": "Clubs",
+    "isIngredient": false,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "slime_crown",
+    "name": "Slime Crown",
+    "category": "Headgear",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "slime_earrings",
+    "name": "Slime Earrings",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "snakeskin_whip",
+    "name": "Snakeskin Whip",
+    "category": "Whips",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "soft_cheese",
+    "name": "Soft Cheese",
+    "category": "Cheese",
+    "isIngredient": false,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "soldiers_halberd",
+    "name": "Soldier's Halberd",
+    "category": "Scythes",
+    "isIngredient": false,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "soldiers_shield",
+    "name": "Soldier's Shield",
+    "category": "Shields",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "sorcerers_ring",
+    "name": "Sorcerer's Ring",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "spangled_dress",
+    "name": "Spangled Dress",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica"
+    ]
+  },
+  {
+    "id": "special_antidote",
+    "name": "Special Antidote",
+    "category": "Items",
+    "isIngredient": false,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "special_medicine",
+    "name": "Special Medicine",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "spicy_cheese",
+    "name": "Spicy Cheese",
+    "category": "Cheese",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "spiked_armour",
+    "name": "Spiked Armour",
+    "category": "Armour",
+    "isIngredient": false,
+    "usableBy": [
+      "hero",
+      "yangus"
+    ]
+  },
+  {
+    "id": "staff_of_antimagic",
+    "name": "Staff of Antimagic",
+    "category": "Staves",
+    "isIngredient": false,
+    "usableBy": [
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "staff_of_resurrection",
+    "name": "Staff of Resurrection",
+    "category": "Staves",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "steel_scythe",
+    "name": "Steel Scythe",
+    "category": "Axes",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "steel_shield",
+    "name": "Steel Shield",
+    "category": "Shields",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus"
+    ]
+  },
+  {
+    "id": "stone_axe",
+    "name": "Stone Axe",
+    "category": "Scythes",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "stone_hardhat",
+    "name": "Stone Hardhat",
+    "category": "Headgear",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "strength_ring",
+    "name": "Strength Ring",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "strong_antidote",
+    "name": "Strong Antidote",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "strong_medicine",
+    "name": "Strong Medicine",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "sun_crown",
+    "name": "Sun Crown",
+    "category": "Headgear",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "jessica"
+    ]
+  },
+  {
+    "id": "super_spicy_cheese",
+    "name": "Super Spicy Cheese",
+    "category": "Cheese",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "swallowtail",
+    "name": "Swallowtail",
+    "category": "Boomerangs",
+    "isIngredient": true,
+    "usableBy": [
+      "hero"
+    ]
+  },
+  {
+    "id": "templars_shield",
+    "name": "Templar's Shield",
+    "category": "Shields",
+    "isIngredient": true,
+    "usableBy": [
+      "angelo"
+    ]
+  },
+  {
+    "id": "templars_sword",
+    "name": "Templar's Sword",
+    "category": "Rapiers",
+    "isIngredient": true,
+    "usableBy": [
+      "angelo"
+    ]
+  },
+  {
+    "id": "templars_uniform",
+    "name": "Templar's Uniform",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "angelo"
+    ]
+  },
+  {
+    "id": "thanatos_shield",
+    "name": "Thanatos' Shield",
+    "category": "Shields",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "angelo"
+    ]
+  },
+  {
+    "id": "thiefs_key",
+    "name": "Thief's Key",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": []
+  },
+  {
+    "id": "thinking_cap",
+    "name": "Thinking Cap",
+    "category": "Headgear",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "timbrel_of_tension",
+    "name": "Timbrel of Tension",
+    "category": "Items",
+    "isIngredient": false,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "titan_belt",
+    "name": "Titan Belt",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "tough_guy_tattoo",
+    "name": "Tough Guy Tattoo",
+    "category": "Accessories",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "turban",
+    "name": "Turban",
+    "category": "Headgear",
+    "isIngredient": false,
+    "usableBy": [
+      "hero",
+      "yangus"
+    ]
+  },
+  {
+    "id": "uber_falcon_blade",
+    "name": "�ber Falcon Blade",
+    "category": "Swords",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "uber_miracle_sword",
+    "name": "�ber Miracle Sword",
+    "category": "Swords",
+    "isIngredient": false,
+    "usableBy": [
+      "hero",
+      "jessica"
+    ]
+  },
+  {
+    "id": "uber_war_hammer",
+    "name": "�ber War Hammer",
+    "category": "Clubs",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "ultimate_shield",
+    "name": "Ultimate Shield",
+    "category": "Shields",
+    "isIngredient": false,
+    "usableBy": [
+      "hero",
+      "yangus"
+    ]
+  },
+  {
+    "id": "war_hammer",
+    "name": "War Hammer",
+    "category": "Clubs",
+    "isIngredient": true,
+    "usableBy": [
+      "yangus"
+    ]
+  },
+  {
+    "id": "waterweed_mould",
+    "name": "Waterweed Mould",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": []
+  },
+  {
+    "id": "wayfarers_clothes",
+    "name": "Wayfarer's Clothes",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "white_shield",
+    "name": "White Shield",
+    "category": "Shields",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "wing_of_bat",
+    "name": "Wing of Bat",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": []
+  },
+  {
+    "id": "wizards_staff",
+    "name": "Wizard's Staff",
+    "category": "Staves",
+    "isIngredient": true,
+    "usableBy": [
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "yggdrasil_dew",
+    "name": "Yggdrasil Dew",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "yggdrasil_leaf",
+    "name": "Yggdrasil Leaf",
+    "category": "Items",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "yangus",
+      "jessica",
+      "angelo"
+    ]
+  },
+  {
+    "id": "zombie_mail",
+    "name": "Zombie Mail",
+    "category": "Armour",
+    "isIngredient": true,
+    "usableBy": [
+      "angelo"
+    ]
+  },
+  {
+    "id": "zombie_slayer",
+    "name": "Zombie Slayer",
+    "category": "Swords",
+    "isIngredient": false,
+    "usableBy": [
+      "hero",
+      "jessica"
+    ]
+  },
+  {
+    "id": "zombiesbane",
+    "name": "Zombiesbane",
+    "category": "Swords",
+    "isIngredient": true,
+    "usableBy": [
+      "hero",
+      "jessica"
+    ]
+  }
+]
