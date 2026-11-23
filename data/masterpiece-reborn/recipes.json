@@ -1736,7 +1736,8 @@
       "bastard_sword",
       "orichalcum"
     ],
-    "notes": ""
+    "notes": "",
+    "masterpieceExclusive": true
   },
   {
     "id": "r_mr_213",
@@ -1746,7 +1747,8 @@
       "long_spear",
       "gold_ring"
     ],
-    "notes": ""
+    "notes": "",
+    "masterpieceExclusive": true
   },
   {
     "id": "r_mr_214",
@@ -1756,7 +1758,8 @@
       "light_shield",
       "copper_sword"
     ],
-    "notes": ""
+    "notes": "",
+    "masterpieceExclusive": true
   },
   {
     "id": "r_mr_215",
@@ -1766,7 +1769,8 @@
       "big_boss_shield",
       "orichalcum"
     ],
-    "notes": ""
+    "notes": "",
+    "masterpieceExclusive": true
   },
   {
     "id": "r_mr_216",
@@ -1776,7 +1780,8 @@
       "eagle_dagger",
       "wing_of_bat"
     ],
-    "notes": ""
+    "notes": "",
+    "masterpieceExclusive": true
   },
   {
     "id": "r_mr_217",
@@ -1786,7 +1791,8 @@
       "moon_axe",
       "heavy_armour"
     ],
-    "notes": ""
+    "notes": "",
+    "masterpieceExclusive": true
   },
   {
     "id": "r_mr_218",
@@ -1796,7 +1802,8 @@
       "flametang_boomerang",
       "razor_wing_boomerang"
     ],
-    "notes": ""
+    "notes": "",
+    "masterpieceExclusive": true
   },
   {
     "id": "r_mr_219",
@@ -1805,7 +1812,8 @@
       "soldiers_shield",
       "golden_axe"
     ],
-    "notes": ""
+    "notes": "",
+    "masterpieceExclusive": true
   },
   {
     "id": "r_mr_220",
@@ -1815,7 +1823,8 @@
       "flail_of_fury",
       "orichalcum"
     ],
-    "notes": ""
+    "notes": "",
+    "masterpieceExclusive": true
   },
   {
     "id": "r_mr_221",
@@ -1825,7 +1834,8 @@
       "golden_tiara",
       "goddess_ring"
     ],
-    "notes": ""
+    "notes": "",
+    "masterpieceExclusive": true
   },
   {
     "id": "r_mr_222",
@@ -1835,7 +1845,8 @@
       "holy_silver_rapier",
       "uber_falcon_blade"
     ],
-    "notes": ""
+    "notes": "",
+    "masterpieceExclusive": true
   },
   {
     "id": "r_mr_223",
@@ -1845,7 +1856,8 @@
       "dream_blade",
       "wing_of_bat"
     ],
-    "notes": ""
+    "notes": "",
+    "masterpieceExclusive": true
   },
   {
     "id": "r_mr_224",
@@ -1855,7 +1867,8 @@
       "flowing_dress",
       "sages_robe"
     ],
-    "notes": ""
+    "notes": "",
+    "masterpieceExclusive": true
   },
   {
     "id": "r_mr_225",
@@ -1865,7 +1878,8 @@
       "holy_moly_water",
       "catholicon_ring"
     ],
-    "notes": ""
+    "notes": "",
+    "masterpieceExclusive": true
   },
   {
     "id": "r_mr_226",
@@ -1874,7 +1888,8 @@
       "baumrens_bell",
       "silver_ore"
     ],
-    "notes": ""
+    "notes": "",
+    "masterpieceExclusive": true
   },
   {
     "id": "r_mr_227",
@@ -1883,6 +1898,7 @@
       "silver_bell",
       "gold_nugget"
     ],
-    "notes": ""
+    "notes": "",
+    "masterpieceExclusive": true
   }
 ]

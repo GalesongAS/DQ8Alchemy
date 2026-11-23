@@ -178,7 +178,7 @@
   },
   {
     "id": "boxer_shorts",
-    "name": "Boxer shorts",
+    "name": "Boxer Shorts",
     "category": "Armour",
     "isIngredient": true,
     "usableBy": [
@@ -2718,7 +2718,7 @@
   },
   {
     "id": "uber_falcon_blade",
-    "name": "�ber Falcon Blade",
+    "name": "\u00dcber Falcon Blade",
     "category": "Swords",
     "isIngredient": true,
     "usableBy": [
@@ -2729,7 +2729,7 @@
   },
   {
     "id": "uber_miracle_sword",
-    "name": "�ber Miracle Sword",
+    "name": "\u00dcber Miracle Sword",
     "category": "Swords",
     "isIngredient": false,
     "usableBy": [
@@ -2739,7 +2739,7 @@
   },
   {
     "id": "uber_war_hammer",
-    "name": "�ber War Hammer",
+    "name": "\u00dcber War Hammer",
     "category": "Clubs",
     "isIngredient": true,
     "usableBy": [

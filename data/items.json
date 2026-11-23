@@ -56,7 +56,7 @@
   },
   {
     "id": "assassins_dagger",
-    "name": "Assassins Dagger",
+    "name": "Assassin's Dagger",
     "isIngredient": true,
     "category": "Knives",
     "usableBy": [
@@ -111,7 +111,7 @@
   },
   {
     "id": "battle_axe",
-    "name": "Battle Axe",
+    "name": "Battle-axe",
     "category": "axe",
     "usableBy": [
       "yangus"
@@ -234,7 +234,7 @@
   },
   {
     "id": "c_c_cold_cheese",
-    "name": "C C Cold Cheese",
+    "name": "C-C-Cold Cheese",
     "isIngredient": true,
     "category": "Cheese",
     "usableBy": [
@@ -312,7 +312,7 @@
   },
   {
     "id": "cloak_of_evasion",
-    "name": "Cloak Of Evasion",
+    "name": "Cloak of Evasion",
     "isIngredient": true,
     "category": "Armour",
     "usableBy": [
@@ -412,7 +412,7 @@
   },
   {
     "id": "dancers_costume",
-    "name": "Dancers Costume",
+    "name": "Dancer's Costume",
     "isIngredient": true,
     "category": "Armour",
     "usableBy": [
@@ -421,7 +421,7 @@
   },
   {
     "id": "dancers_mail",
-    "name": "Dancers Mail",
+    "name": "Dancer's Mail",
     "isIngredient": false,
     "category": "Armour",
     "usableBy": [
@@ -486,17 +486,17 @@
   },
   {
     "id": "dogsbodys_hood",
-    "name": "Dogsbodys Hood",
+    "name": "Dogsbody's Hood",
     "isIngredient": false
   },
   {
     "id": "dogsbodys_vest",
-    "name": "Dogsbodys Vest",
+    "name": "Dogsbody's Vest",
     "isIngredient": false
   },
   {
     "id": "double_edge_sword",
-    "name": "Double Edge Sword",
+    "name": "Double-edged Sword",
     "isIngredient": true,
     "category": "Swords",
     "usableBy": [
@@ -506,7 +506,7 @@
   },
   {
     "id": "double_edged_sword",
-    "name": "Double Edged Sword",
+    "name": "Double-edged Sword",
     "isIngredient": false,
     "category": "Swords",
     "usableBy": [
@@ -643,7 +643,7 @@
   },
   {
     "id": "elfin_elixer",
-    "name": "Elfin Elixer",
+    "name": "Elfin Elixir",
     "isIngredient": false,
     "category": "Items",
     "usableBy": [
@@ -698,7 +698,7 @@
   },
   {
     "id": "farmers_scythe",
-    "name": "Farmers Scythe",
+    "name": "Farmer's Scythe",
     "isIngredient": true,
     "category": "Axes",
     "usableBy": [
@@ -990,7 +990,7 @@
   },
   {
     "id": "hermes_hat",
-    "name": "Hermes Hat",
+    "name": "Hermes' Hat",
     "isIngredient": true,
     "category": "Headgear",
     "usableBy": [
@@ -1002,12 +1002,12 @@
   },
   {
     "id": "hexlets_hat",
-    "name": "Hexlets Hat",
+    "name": "Hexlet's Hat",
     "isIngredient": false
   },
   {
     "id": "hexlets_skirt",
-    "name": "Hexlets Skirt",
+    "name": "Hexlet's Skirt",
     "isIngredient": false
   },
   {
@@ -1063,7 +1063,7 @@
   },
   {
     "id": "hunters_bow",
-    "name": "Hunters Bow",
+    "name": "Hunter's Bow",
     "isIngredient": true,
     "category": "Fisticuffs",
     "usableBy": [
@@ -1409,7 +1409,7 @@
   },
   {
     "id": "mercury_rapier",
-    "name": "Mercury Rapier",
+    "name": "Mercury's Rapier",
     "isIngredient": false,
     "category": "Rapiers",
     "usableBy": [
@@ -1599,7 +1599,7 @@
   },
   {
     "id": "odins_bow",
-    "name": "Odins Bow",
+    "name": "Odin's Bow",
     "isIngredient": false,
     "category": "Bows",
     "usableBy": [
@@ -1794,7 +1794,7 @@
   },
   {
     "id": "ring_of_awakening",
-    "name": "Ring Of Awakening",
+    "name": "Ring of Awakening",
     "isIngredient": true,
     "category": "Accessories",
     "usableBy": [
@@ -1806,7 +1806,7 @@
   },
   {
     "id": "ring_of_clarity",
-    "name": "Ring Of Clarity",
+    "name": "Ring of Clarity",
     "isIngredient": true,
     "category": "Accessories",
     "usableBy": [
@@ -1818,7 +1818,7 @@
   },
   {
     "id": "ring_of_immunity",
-    "name": "Ring Of Immunity",
+    "name": "Ring of Immunity",
     "isIngredient": true,
     "category": "Accessories",
     "usableBy": [
@@ -1830,7 +1830,7 @@
   },
   {
     "id": "ring_of_truth",
-    "name": "Ring Of Truth",
+    "name": "Ring of Truth",
     "isIngredient": true,
     "category": "Accessories",
     "usableBy": [
@@ -1842,7 +1842,7 @@
   },
   {
     "id": "robe_of_serenity",
-    "name": "Robe Of Serenity",
+    "name": "Robe of Serenity",
     "isIngredient": false,
     "category": "Armour",
     "usableBy": [
@@ -1870,7 +1870,7 @@
   },
   {
     "id": "rose_wort",
-    "name": "Rose Wort",
+    "name": "Rose-wort",
     "isIngredient": true,
     "category": "Items",
     "usableBy": [
@@ -1882,7 +1882,7 @@
   },
   {
     "id": "ruby_of_protection",
-    "name": "Ruby Of Protection",
+    "name": "Ruby of Protection",
     "isIngredient": true,
     "category": "Accessories",
     "usableBy": [
@@ -1930,7 +1930,7 @@
   },
   {
     "id": "sages_robe",
-    "name": "Sages Robe",
+    "name": "Sage's Robe",
     "isIngredient": true,
     "category": "Armour",
     "usableBy": [
@@ -1939,7 +1939,7 @@
   },
   {
     "id": "sages_stone",
-    "name": "Sages Stone",
+    "name": "Sage's Stone",
     "isIngredient": false,
     "category": "Items",
     "usableBy": [
@@ -1960,7 +1960,7 @@
   },
   {
     "id": "saints_ashes",
-    "name": "Saints Ashes",
+    "name": "Saint's Ashes",
     "isIngredient": true,
     "category": "Items",
     "usableBy": []
@@ -1998,7 +1998,7 @@
   },
   {
     "id": "scholar_cap",
-    "name": "Scholar Cap",
+    "name": "Scholar's Cap",
     "isIngredient": true,
     "category": "Headgear",
     "usableBy": [
@@ -2008,7 +2008,7 @@
   },
   {
     "id": "scholar_specs",
-    "name": "Scholar Specs",
+    "name": "Scholar's Specs",
     "isIngredient": true,
     "category": "Accessories",
     "usableBy": [
@@ -2042,7 +2042,7 @@
   },
   {
     "id": "scourching_cheese",
-    "name": "Scourching Cheese",
+    "name": "Scorching Cheese",
     "isIngredient": true,
     "category": "Cheese",
     "usableBy": [
@@ -2060,7 +2060,7 @@
   },
   {
     "id": "seed_of_agility",
-    "name": "Seed Of Agility",
+    "name": "Seed of Agility",
     "isIngredient": true,
     "category": "Items",
     "usableBy": [
@@ -2072,7 +2072,7 @@
   },
   {
     "id": "seed_of_defense",
-    "name": "Seed Of Defense",
+    "name": "Seed of Defence",
     "isIngredient": true,
     "category": "Items",
     "usableBy": [
@@ -2084,7 +2084,7 @@
   },
   {
     "id": "seed_of_life",
-    "name": "Seed Of Life",
+    "name": "Seed of Life",
     "isIngredient": true,
     "category": "Items",
     "usableBy": [
@@ -2096,7 +2096,7 @@
   },
   {
     "id": "seed_of_magic",
-    "name": "Seed Of Magic",
+    "name": "Seed of Magic",
     "isIngredient": true,
     "category": "Items",
     "usableBy": [
@@ -2108,7 +2108,7 @@
   },
   {
     "id": "seed_of_strength",
-    "name": "Seed Of Strength",
+    "name": "Seed of Strength",
     "isIngredient": true,
     "category": "Items",
     "usableBy": [
@@ -2120,7 +2120,7 @@
   },
   {
     "id": "seed_of_wisdom",
-    "name": "Seed Of Wisdom",
+    "name": "Seed of Wisdom",
     "isIngredient": true,
     "category": "Items",
     "usableBy": [
@@ -2132,7 +2132,7 @@
   },
   {
     "id": "shamshir_of_light",
-    "name": "Shamshir Of Light",
+    "name": "Shamshir of Light",
     "isIngredient": false,
     "category": "Rapiers",
     "usableBy": [
@@ -2284,7 +2284,7 @@
   },
   {
     "id": "sorcerers_ring",
-    "name": "Sorcerers Ring",
+    "name": "Sorcerer's Ring",
     "isIngredient": true,
     "category": "Accessories",
     "usableBy": [
@@ -2348,7 +2348,7 @@
   },
   {
     "id": "staff_of_antimagic",
-    "name": "Staff Of Antimagic",
+    "name": "Staff of Antimagic",
     "isIngredient": false,
     "category": "Staves",
     "usableBy": [
@@ -2358,7 +2358,7 @@
   },
   {
     "id": "staff_of_resurrection",
-    "name": "Staff Of Resurrection",
+    "name": "Staff of Resurrection",
     "isIngredient": false,
     "category": "Staves",
     "usableBy": [
@@ -2469,7 +2469,7 @@
   },
   {
     "id": "templars_shield",
-    "name": "Templars Shield",
+    "name": "Templar's Shield",
     "isIngredient": true,
     "category": "Shields",
     "usableBy": [
@@ -2478,7 +2478,7 @@
   },
   {
     "id": "templars_sword",
-    "name": "Templars Sword",
+    "name": "Templar's Sword",
     "isIngredient": true,
     "category": "Rapiers",
     "usableBy": [
@@ -2487,7 +2487,7 @@
   },
   {
     "id": "templars_uniform",
-    "name": "Templars Uniform",
+    "name": "Templar's Uniform",
     "category": "armor",
     "usableBy": [
       "angelo"
@@ -2507,7 +2507,7 @@
   },
   {
     "id": "thiefs_key",
-    "name": "Thiefs Key",
+    "name": "Thief's Key",
     "isIngredient": true,
     "category": "Items",
     "usableBy": []
@@ -2524,7 +2524,7 @@
   },
   {
     "id": "timbrel_of_tension",
-    "name": "Timbrel Of Tension",
+    "name": "Timbrel of Tension",
     "isIngredient": false,
     "category": "Items",
     "usableBy": [
@@ -2570,7 +2570,7 @@
   },
   {
     "id": "uber_double_edge",
-    "name": "�ber Double Edge",
+    "name": "\u00dcber Double-Edge",
     "isIngredient": true,
     "category": "Swords",
     "usableBy": [
@@ -2580,7 +2580,7 @@
   },
   {
     "id": "uber_falcon_blade",
-    "name": "�ber Falcon Blade",
+    "name": "\u00dcber Falcon Blade",
     "isIngredient": false,
     "category": "Swords",
     "usableBy": [
@@ -2591,7 +2591,7 @@
   },
   {
     "id": "uber_miracle_sword",
-    "name": "�ber Miracle Sword",
+    "name": "\u00dcber Miracle Sword",
     "isIngredient": false,
     "category": "Swords",
     "usableBy": [
@@ -2601,12 +2601,12 @@
   },
   {
     "id": "uber_sacred_armour",
-    "name": "�ber Sacred Armour",
+    "name": "\u00dcber Sacred Armour",
     "isIngredient": false
   },
   {
     "id": "uber_war_hammer",
-    "name": "�ber War Hammer",
+    "name": "\u00dcber War Hammer",
     "isIngredient": true,
     "category": "Clubs",
     "usableBy": [
@@ -2631,7 +2631,7 @@
   },
   {
     "id": "wayfarers_clothes",
-    "name": "Wayfarers Clothes",
+    "name": "Wayfarer's Clothes",
     "isIngredient": true,
     "category": "Armour",
     "usableBy": [
@@ -2653,14 +2653,14 @@
   },
   {
     "id": "wing_of_bat",
-    "name": "Wing Of Bat",
+    "name": "Wing of Bat",
     "isIngredient": true,
     "category": "Items",
     "usableBy": []
   },
   {
     "id": "wizards_staff",
-    "name": "Wizards Staff",
+    "name": "Wizard's Staff",
     "isIngredient": true,
     "category": "Staves",
     "usableBy": [

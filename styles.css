@@ -1048,3 +1048,14 @@ select {
     scroll-behavior: auto;
   }
 }
+
+.recipes .masterpiece-badge {
+  display: table;
+  margin: .25rem 0;
+  padding: .15rem .45rem;
+  border-radius: .4rem;
+  background: #57347c;
+  color: #fff;
+  font-size: .72rem;
+  font-weight: 700;
+}

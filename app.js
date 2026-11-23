@@ -336,6 +336,7 @@
       </td>
       <td class="result" data-label="Result">
         <span>${escapeHtml(result?.name || recipe.resultId)}</span>
+        ${recipe.masterpieceExclusive ? '<small class="masterpiece-badge">Masterpiece Reborn only</small>' : ''}
         <small class="progress${details.complete ? ' ready' : ''}">${details.complete ? 'Ready' : `${details.have}/${details.total} items`}</small>
       </td>
       ${ingredientCells.join('')}
