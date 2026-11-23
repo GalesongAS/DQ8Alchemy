@@ -187,7 +187,7 @@
     "notes": ""
   },
   {
-    "id": "r_hunters_bow",
+    "id": "r_hunters_bow_v2",
     "resultId": "hunters_bow",
     "ingredientIds": [
       "short_bow",
@@ -637,7 +637,7 @@
     "notes": ""
   },
   {
-    "id": "r_leather_kilt",
+    "id": "r_leather_kilt_v2",
     "resultId": "leather_kilt",
     "ingredientIds": [
       "leather_whip",
@@ -808,7 +808,7 @@
     "notes": ""
   },
   {
-    "id": "r_zombie_mail",
+    "id": "r_zombie_mail_v2",
     "resultId": "zombie_mail",
     "ingredientIds": [
       "platinum_mail",
@@ -967,7 +967,7 @@
     "notes": ""
   },
   {
-    "id": "r_white_shield",
+    "id": "r_white_shield_v2",
     "resultId": "white_shield",
     "ingredientIds": [
       "light_shield",
@@ -1458,7 +1458,7 @@
     "notes": ""
   },
   {
-    "id": "r_greater_panacea",
+    "id": "r_greater_panacea_v2",
     "resultId": "greater_panacea",
     "ingredientIds": [
       "lesser_panacea",
@@ -1543,7 +1543,7 @@
     "notes": ""
   },
   {
-    "id": "r_mystifying_mixture",
+    "id": "r_mystifying_mixture_v2",
     "resultId": "mystifying_mixture",
     "ingredientIds": [
       "medicinal_herb",
@@ -1562,7 +1562,7 @@
     "notes": ""
   },
   {
-    "id": "r_plain_cheese",
+    "id": "r_plain_cheese_v2",
     "resultId": "plain_cheese",
     "ingredientIds": [
       "fresh_milk",
@@ -1591,7 +1591,7 @@
     "notes": ""
   },
   {
-    "id": "r_special_medicine",
+    "id": "r_special_medicine_v2",
     "resultId": "special_medicine",
     "ingredientIds": [
       "medicinal_herb",
@@ -1610,7 +1610,7 @@
     "notes": ""
   },
   {
-    "id": "r_rose_wort",
+    "id": "r_rose_wort_v2",
     "resultId": "rose_wort",
     "ingredientIds": [
       "strong_medicine",
@@ -1659,7 +1659,7 @@
     "notes": ""
   },
   {
-    "id": "r_special_antidote",
+    "id": "r_special_antidote_v2",
     "resultId": "special_antidote",
     "ingredientIds": [
       "strong_antidote",
@@ -1668,7 +1668,7 @@
     "notes": ""
   },
   {
-    "id": "r_special_medicine",
+    "id": "r_special_medicine_v3",
     "resultId": "special_medicine",
     "ingredientIds": [
       "strong_medicine",
@@ -1713,7 +1713,7 @@
     "notes": ""
   },
   {
-    "id": "r_super_spicy_cheese",
+    "id": "r_super_spicy_cheese_v2",
     "resultId": "super_spicy_cheese",
     "ingredientIds": [
       "spicy_cheese",

@@ -17,7 +17,7 @@ A fast, mobile-friendly recipe companion for the Alchemy Pot in **Dragon Quest V
 - Include upgraded three-ingredient recipes when needed
 - Match every selected item or any selected item
 - Show only recipes that are ready to brew
-- Favorite recipes and sort results by relevance or name
+- Favorite result items and sort results by relevance or name
 - Preserve inventory, filters, favorites, and sorting between visits
 - Use a responsive card layout on phones and a compact table on larger screens
 
@@ -29,9 +29,9 @@ The hosted version needs no account or installation. Everything runs locally in 
 2. Select every ingredient currently in your bag.
 3. Review the recipes ordered by their match with your inventory.
 4. Select a missing ingredient inside a recipe to add it to your inventory.
-5. Use result-type or character filters to narrow the list.
+5. Use item-type or character filters to narrow the list.
 6. Enable **Upgraded Pot**, **Match any selected**, or **Ready to brew only** when useful.
-7. Star useful recipes and use **Favorites** to return to them quickly.
+7. Star useful result items and use **Favorites** to return to them quickly.
 
 Enable **Masterpiece Reborn** under Pot options to switch to the PC mod's catalog, including its 16 additional recipes and edition-specific combinations. The selected edition is remembered. Each edition keeps its own inventory, favorites, and result type filters.
 
@@ -78,3 +78,11 @@ Corrections to recipe data, missing combinations, accessibility improvements, an
 This is an unofficial, fan-made companion. Dragon Quest VIII and its related names and imagery are property of their respective rights holders.
 
 If the tool saved you a few trips to a wiki, you can [support its development on Ko-fi](https://ko-fi.com/galesong).
+
+## Matching, favorites and checks
+
+Inventory is binary. Selecting Bronze Knife once makes both positions in Bronze Knife + Bronze Knife available. The default search requires every selected ID to appear in the recipe. Match any accepts one overlapping ID. Ready to brew checks every recipe slot and allows additional inventory items. Upgraded Pot includes three-slot combinations.
+
+Stars save the resulting item within the current edition, including all recipes that produce it. Edition-specific selections, categories and favorites use browser local storage. Clearing filters preserves the bag.
+
+Run `node --test tests/*.test.mjs` with Node 22 or newer. The tests validate both shipped catalogs and exercise the same matching and validation functions that the browser imports from `catalog.mjs`. Each recipe needs its own ID, a valid result ID and two or three valid ingredient IDs. Only the mod catalog supports the exclusive flag. Serve the repository over HTTP to run locally. GitHub Pages serves these files directly from main.
