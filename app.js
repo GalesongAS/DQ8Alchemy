@@ -41,8 +41,6 @@
   };
 
   const elements = {
-    totalIngredients: byId('total-ingredients'),
-    totalRecipes: byId('total-recipes'),
     selectedCount: byId('selected-count'),
     search: byId('ingredient-search'),
     clearSearch: byId('clear-search'),
@@ -85,14 +83,13 @@
       state.selected = loadSet(catalogKey(STORAGE.selected));
       state.selectedCategories = loadSet(catalogKey(STORAGE.categories));
       state.favorites = loadSet(catalogKey(STORAGE.favorites));
+      items.forEach((item) => { item.category = itemType(item.category); });
       state.items = items;
       state.ingredients = items.filter((item) => item.isIngredient !== false);
       state.recipes = recipes;
       state.itemById = new Map(items.map((item) => [item.id, item]));
       reconcileSavedState();
 
-      elements.totalIngredients.textContent = String(state.ingredients.length);
-      elements.totalRecipes.textContent = String(state.recipes.length);
 
       renderFilters();
       renderAll();
@@ -280,10 +277,10 @@
 
   function renderFilterSummary() {
     const parts = [];
-    if (state.selectedCategories.size) parts.push(`${state.selectedCategories.size} result type${state.selectedCategories.size === 1 ? '' : 's'}`);
+    if (state.selectedCategories.size) parts.push(`${state.selectedCategories.size} item type${state.selectedCategories.size === 1 ? '' : 's'}`);
     if (state.selectedCharacters.size) parts.push(`${state.selectedCharacters.size} character${state.selectedCharacters.size === 1 ? '' : 's'}`);
     if (state.favoritesOnly) parts.push('favorites only');
-    elements.filterSummary.textContent = parts.length ? parts.join(' - ') : 'No result filters active';
+    elements.filterSummary.textContent = parts.length ? `(${parts.join(', ')})` : '';
     elements.resetFilters.disabled = parts.length === 0 && !state.search && !state.upgraded && !state.matchAny && !state.craftOnly;
   }
 
@@ -337,7 +334,7 @@
       <td class="result" data-label="Result">
         <span>${escapeHtml(result?.name || recipe.resultId)}</span>
         ${recipe.masterpieceExclusive ? '<small class="masterpiece-badge">Masterpiece Reborn only</small>' : ''}
-        <small class="progress${details.complete ? ' ready' : ''}">${details.complete ? 'Ready' : `${details.have}/${details.total} items`}</small>
+        ${details.have ? `<small class="progress${details.complete ? ' ready' : ''}">${details.complete ? 'Ready' : `${details.have}/${details.total} items`}</small>` : ''}
       </td>
       ${ingredientCells.join('')}
       <td class="usable-by" data-label="Usable by">${renderCharacterIcons(result?.usableBy || [])}</td>
@@ -457,6 +454,17 @@
     elements.favoritesOnly.innerHTML = `<span aria-hidden="true">${state.favoritesOnly ? '&#9733;' : '&#9734;'}</span> ${state.favoritesOnly ? 'Favorites only' : 'Favorites'}`;
   }
 
+  function itemType(category) {
+    return {
+      armor: 'Armour',
+      armour: 'Armour',
+      axe: 'Axes',
+      axes: 'Axes',
+      shield: 'Shields',
+      shields: 'Shields',
+    }[category?.toLowerCase()] ?? category;
+  }
+
   function reconcileSavedState() {
     const itemIds = new Set(state.items.map((item) => item.id));
     const resultIds = new Set(state.recipes.map((recipe) => recipe.resultId));
@@ -465,7 +473,7 @@
 
     state.selected = new Set([...state.selected].filter((id) => itemIds.has(id)));
     state.favorites = new Set([...state.favorites].filter((id) => resultIds.has(id)));
-    state.selectedCategories = new Set([...state.selectedCategories].filter((category) => categories.has(category)));
+    state.selectedCategories = new Set([...state.selectedCategories].map(itemType).filter((category) => categories.has(category)));
     state.selectedCharacters = new Set([...state.selectedCharacters].filter((id) => characterIds.has(id)));
 
     saveSet(catalogKey(STORAGE.selected), state.selected);

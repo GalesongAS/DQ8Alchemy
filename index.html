@@ -9,7 +9,7 @@
   <meta property="og:description" content="Mark what is in your bag and discover what you can brew next." />
   <meta property="og:type" content="website" />
   <title>DQ8 Alchemy Pot Recipe Finder</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=compact" />
 </head>
 <body>
   <header class="site-header">
@@ -17,11 +17,6 @@
       <div class="hero-copy">
         <p class="eyebrow">Dragon Quest VIII companion</p>
         <h1>Alchemy Pot <span>Recipe Finder</span></h1>
-        <p>Mark what is in your bag, narrow the results, and discover what you can brew next.</p>
-      </div>
-      <div class="hero-stats" aria-label="Database summary">
-        <div><strong id="total-ingredients">0</strong><span>ingredients</span></div>
-        <div><strong id="total-recipes">0</strong><span>recipes</span></div>
       </div>
     </div>
   </header>
@@ -30,7 +25,7 @@
     <aside class="panel inventory-panel" aria-labelledby="inventory-title">
       <div class="panel-heading">
         <div>
-          <p class="section-kicker">Your bag</p>
+
           <h2 id="inventory-title">Inventory</h2>
         </div>
         <span id="selected-count" class="badge">0 selected</span>
@@ -42,26 +37,29 @@
         <button id="clear-search" class="icon-button clear-search" type="button" aria-label="Clear ingredient search" hidden>&times;</button>
       </div>
 
-      <fieldset class="option-list">
-        <legend>Pot options</legend>
-        <label class="toggle-row">
+        <label class="toggle-row edition-toggle">
           <input id="masterpiece-reborn" type="checkbox" disabled />
-          <span><strong>Masterpiece Reborn</strong><small>Use the PC mod's recipes and ingredients</small></span>
+          <span>Masterpiece Reborn</span>
         </label>
         <p id="catalog-error" class="subtle" role="alert" hidden>Could not load the recipe catalog. Try switching editions again or reload the page.</p>
+
+      <details class="pot-options">
+        <summary>Pot options</summary>
+        <fieldset class="option-list" aria-label="Pot options">
         <label class="toggle-row">
           <input id="upgraded-pot" type="checkbox" />
-          <span><strong>Upgraded Pot</strong><small>Include 3-ingredient recipes</small></span>
+          <span>Upgraded Pot (3 ingredients)</span>
         </label>
         <label class="toggle-row">
           <input id="match-any" type="checkbox" />
-          <span><strong>Match any selected</strong><small>Use at least one item from your bag</small></span>
+          <span>Match any selected</span>
         </label>
         <label class="toggle-row">
           <input id="craft-only" type="checkbox" />
-          <span><strong>Ready to brew only</strong><small>Every ingredient must be selected</small></span>
+          <span>Ready to brew only</span>
         </label>
-      </fieldset>
+        </fieldset>
+      </details>
 
       <div class="inventory-actions">
         <p id="ingredient-summary" class="subtle" aria-live="polite"></p>
@@ -74,41 +72,17 @@
     </aside>
 
     <div class="workspace">
-      <section class="panel filter-panel" aria-labelledby="filters-title">
-        <div class="filter-heading">
-          <div>
-            <p class="section-kicker">Narrow the results</p>
-            <h2 id="filters-title">Recipe filters</h2>
-          </div>
-          <button id="reset-filters" class="text-button" type="button">Reset filters</button>
-        </div>
-
-        <div class="filter-group">
-          <span class="filter-label">Result type</span>
-          <div id="category-filters" class="chip-list" aria-label="Filter by result type"></div>
-        </div>
-
-        <div class="filter-group character-group">
-          <span class="filter-label">Usable by</span>
-          <div id="character-filters" class="character-list" aria-label="Filter by character"></div>
-        </div>
-
-        <div class="filter-footer">
-          <p id="filter-summary" class="subtle" aria-live="polite">No result filters active</p>
-          <button id="favorites-only" class="secondary-button" type="button" aria-pressed="false">
-            <span aria-hidden="true">&#9734;</span> Favorites
-          </button>
-        </div>
-      </section>
-
       <section class="panel recipes-panel" aria-labelledby="recipes-title">
         <div class="panel-heading recipes-heading">
           <div>
-            <p class="section-kicker">Pot possibilities</p>
+
             <h2 id="recipes-title">Recipes</h2>
           </div>
           <div class="recipe-tools">
             <span id="recipe-count" class="badge" aria-live="polite">0 recipes</span>
+          <button id="favorites-only" class="secondary-button" type="button" aria-pressed="false">
+            <span aria-hidden="true">&#9734;</span> Favorites
+          </button>
             <label for="recipe-sort" class="sr-only">Sort recipes</label>
             <select id="recipe-sort" aria-label="Sort recipes">
               <option value="relevance">Best match</option>
@@ -118,10 +92,21 @@
           </div>
         </div>
 
-        <div class="recipe-legend" aria-label="Recipe status legend">
-          <span><i class="status-dot ready"></i>Ready to brew</span>
-          <span><i class="status-dot partial"></i>Partially complete</span>
+        <details class="recipe-filters">
+          <summary>Filters <span id="filter-summary" aria-live="polite"></span></summary>
+          <div class="filter-controls">
+        <div class="filter-group">
+          <span class="filter-label">Item type</span>
+          <div id="category-filters" class="chip-list" aria-label="Filter by item type"></div>
         </div>
+
+        <div class="filter-group character-group">
+          <span class="filter-label">Usable by</span>
+          <div id="character-filters" class="character-list" aria-label="Filter by character"></div>
+        </div>
+            <button id="reset-filters" class="text-button" type="button">Reset filters</button>
+          </div>
+        </details>
 
         <div class="table-wrap">
           <table id="recipes-table" class="recipes">
@@ -136,7 +121,7 @@
                 <th>Notes</th>
               </tr>
             </thead>
-            <tbody id="recipes-body" aria-live="polite" aria-busy="true">
+            <tbody id="recipes-body" aria-busy="true">
               <tr><td colspan="7" class="empty-state">Opening the Alchemy Pot...</td></tr>
             </tbody>
           </table>
@@ -152,6 +137,6 @@
     </div>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=compact"></script>
 </body>
 </html>

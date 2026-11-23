@@ -69,7 +69,7 @@ a:focus-visible {
 .site-header {
   position: relative;
   overflow: hidden;
-  padding: 2.8rem 0 2.15rem;
+  padding: 1.25rem 0 1rem;
 }
 
 .site-header::before,
@@ -126,7 +126,7 @@ h2 {
 
 h1 {
   color: var(--sea-deep);
-  font-size: clamp(2.45rem, 5.8vw, 4.8rem);
+  font-size: clamp(1.9rem, 4vw, 3.25rem);
   line-height: .92;
   letter-spacing: -.05em;
   text-shadow: 0 2px 0 #fff, 0 6px 18px rgba(18, 63, 117, .16);
@@ -197,7 +197,7 @@ h2 {
 
 .app-grid {
   display: grid;
-  grid-template-columns: minmax(18rem, 21.5rem) minmax(0, 1fr);
+  grid-template-columns: minmax(15.5rem, 18rem) minmax(0, 1fr);
   align-items: start;
   gap: 1.2rem;
   padding-bottom: 3rem;
@@ -628,7 +628,7 @@ select {
 
 .recipes {
   width: 100%;
-  min-width: 55rem;
+  min-width: 40rem;
   border-collapse: collapse;
 }
 
@@ -869,7 +869,7 @@ select {
   }
 
   .ingredient-list {
-    max-height: 20rem;
+    max-height: 12rem;
   }
 }
 
@@ -879,7 +879,7 @@ select {
   }
 
   .site-header {
-    padding: 1.6rem 0 1.3rem;
+    padding: .85rem 0;
   }
 
   .hero {
@@ -1058,4 +1058,50 @@ select {
   color: #fff;
   font-size: .72rem;
   font-weight: 700;
+}
+
+.recipe-filters,
+.pot-options {
+  position: relative;
+  z-index: 1;
+  margin-bottom: .75rem;
+}
+
+.recipe-filters summary,
+.pot-options summary {
+  width: fit-content;
+  min-height: 2rem;
+  padding: .35rem 0;
+  color: var(--sea-deep);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.recipe-filters summary:focus-visible,
+.pot-options summary:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+
+#filter-summary {
+  color: var(--muted);
+  font-size: .75rem;
+}
+
+.filter-controls {
+  display: grid;
+  gap: .65rem;
+  padding-block: .35rem;
+}
+
+.filter-controls > button {
+  justify-self: start;
+}
+
+.recipe-tools {
+  flex-wrap: wrap;
+}
+
+.edition-toggle {
+  margin-block: .35rem;
 }
